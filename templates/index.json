@@ -75,6 +75,7 @@
     },
     "featured_collection_zGfzRX": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "display_id": false,
@@ -141,7 +142,7 @@
           "settings": {
             "star_color": "#00b67a",
             "bg_star_color": "#c8c8c8",
-            "star_symbol_color": "#fff",
+            "star_symbol_color": "#ffffff",
             "stars_rating": 5,
             "title": "Heading",
             "text": "<p>Share positive thoughts and feedback from your customer..</p>",
@@ -153,7 +154,7 @@
           "settings": {
             "star_color": "#00b67a",
             "bg_star_color": "#c8c8c8",
-            "star_symbol_color": "#fff",
+            "star_symbol_color": "#ffffff",
             "stars_rating": 5,
             "title": "Heading",
             "text": "<p>Share positive thoughts and feedback from your customer..</p>",
@@ -165,7 +166,7 @@
           "settings": {
             "star_color": "#00b67a",
             "bg_star_color": "#c8c8c8",
-            "star_symbol_color": "#fff",
+            "star_symbol_color": "#ffffff",
             "stars_rating": 5,
             "title": "Heading",
             "text": "<p>Share positive thoughts and feedback from your customer..</p>",
@@ -177,7 +178,7 @@
           "settings": {
             "star_color": "#00b67a",
             "bg_star_color": "#c8c8c8",
-            "star_symbol_color": "#fff",
+            "star_symbol_color": "#ffffff",
             "stars_rating": 5,
             "title": "Heading",
             "text": "<p>Share positive thoughts and feedback from your customer..</p>",
@@ -189,7 +190,7 @@
           "settings": {
             "star_color": "#00b67a",
             "bg_star_color": "#c8c8c8",
-            "star_symbol_color": "#fff",
+            "star_symbol_color": "#ffffff",
             "stars_rating": 5,
             "title": "Heading",
             "text": "<p>Share positive thoughts and feedback from your customer..</p>",
@@ -221,7 +222,7 @@
         "subheading_font": "body",
         "star_color": "#00b67a",
         "bg_star_color": "#c8c8c8",
-        "star_symbol_color": "#fff",
+        "star_symbol_color": "#ffffff",
         "stars_rating": 5,
         "text": "",
         "cards_border_radius": 10,
@@ -251,12 +252,12 @@
         "mobile_arrows_position": "sides",
         "padding_top": 36,
         "padding_bottom": 36,
-        "custom_colors_background": "#FFFFFF",
+        "custom_colors_background": "#ffffff",
         "custom_gradient_background": "",
-        "custom_colors_text": "#2E2A39",
-        "custom_cards_colors_background": "#F3F3F3",
+        "custom_colors_text": "#2e2a39",
+        "custom_cards_colors_background": "#f3f3f3",
         "custom_cards_gradient_background": "",
-        "custom_cards_colors_text": "#2E2A39"
+        "custom_cards_colors_text": "#2e2a39"
       }
     }
   },
