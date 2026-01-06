@@ -60,7 +60,7 @@
           "type": "heading",
           "settings": {
             "title": "DÉ",
-            "title_highlight_color": "#6D388B",
+            "title_highlight_color": "#ec612a",
             "heading_size": "h1"
           }
         },
@@ -96,8 +96,8 @@
         "visibility": "always-display",
         "color_scheme": "custom",
         "icon_size": "xl",
-        "icon_position": "next-to-title",
-        "icon_color": "accent-1",
+        "icon_position": "above",
+        "icon_color": "accent-2",
         "icon_heading_size": "h3",
         "icon_text_alignment": "left",
         "icons_desktop_layout": "2-columns",
