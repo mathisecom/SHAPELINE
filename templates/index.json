@@ -64,6 +64,14 @@
             "heading_size": "h1"
           }
         },
+        "caption_p4waTe": {
+          "type": "caption",
+          "settings": {
+            "caption": "Add a tagline",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
         "text_N7JFTx": {
           "type": "text",
           "settings": {
@@ -74,7 +82,7 @@
         "button_9iTJPd": {
           "type": "button",
           "settings": {
-            "button_label": "DÉCOUVRIR",
+            "button_label": "Profiter De L'Offre !",
             "button_link": "shopify://products/t-shirt-respirant",
             "button_style_secondary": false
           }
@@ -87,6 +95,7 @@
         "icon_nwJ4NT",
         "image_mter4Y",
         "heading_QpUCET",
+        "caption_p4waTe",
         "text_N7JFTx",
         "button_9iTJPd"
       ],
