@@ -9,6 +9,113 @@
  */
 {
   "sections": {
+    "icons_with_content_yHCTp4": {
+      "type": "icons-with-content",
+      "blocks": {
+        "icon_LtJp9E": {
+          "type": "icon",
+          "settings": {
+            "icon": "check_circle",
+            "filled_icon": false,
+            "title": "Icon with text",
+            "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post</p>"
+          }
+        },
+        "icon_77Fnbd": {
+          "type": "icon",
+          "settings": {
+            "icon": "check_circle",
+            "filled_icon": false,
+            "title": "Icon with text",
+            "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post</p>"
+          }
+        },
+        "icon_9FtpCw": {
+          "type": "icon",
+          "settings": {
+            "icon": "check_circle",
+            "filled_icon": false,
+            "title": "Icon with text",
+            "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post</p>"
+          }
+        },
+        "icon_nwJ4NT": {
+          "type": "icon",
+          "settings": {
+            "icon": "check_circle",
+            "filled_icon": false,
+            "title": "Icon with text",
+            "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post</p>"
+          }
+        },
+        "image_mter4Y": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/hero-section-desk-without-tag_1800x1000_1.webp",
+            "atc_product": "",
+            "atc_skip_cart": false
+          }
+        },
+        "heading_QpUCET": {
+          "type": "heading",
+          "settings": {
+            "title": "DÉ",
+            "title_highlight_color": "#6D388B",
+            "heading_size": "h1"
+          }
+        },
+        "text_N7JFTx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair icons with content to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_9iTJPd": {
+          "type": "button",
+          "settings": {
+            "button_label": "DÉCOUVRIR",
+            "button_link": "shopify://products/t-shirt-respirant",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "icon_LtJp9E",
+        "icon_77Fnbd",
+        "icon_9FtpCw",
+        "icon_nwJ4NT",
+        "image_mter4Y",
+        "heading_QpUCET",
+        "text_N7JFTx",
+        "button_9iTJPd"
+      ],
+      "name": "Icons with content",
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "color_scheme": "custom",
+        "icon_size": "xl",
+        "icon_position": "next-to-title",
+        "icon_color": "accent-1",
+        "icon_heading_size": "h3",
+        "icon_text_alignment": "left",
+        "icons_desktop_layout": "2-columns",
+        "icons_mobile_layout": "2-columns",
+        "desktop_content_alignment": "center",
+        "layout": "text_first",
+        "mobile_layout": "text_first",
+        "hide_content_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "custom_colors_background": "#000000",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#ffffff",
+        "custom_colors_solid_button_background": "#ec612a",
+        "custom_colors_solid_button_text": "#ffffff",
+        "custom_colors_outline_button": "#ffffff"
+      }
+    },
     "horizontal_ticker_J47Hik": {
       "type": "horizontal-ticker",
       "blocks": {
@@ -262,6 +369,7 @@
     }
   },
   "order": [
+    "icons_with_content_yHCTp4",
     "horizontal_ticker_J47Hik",
     "featured_collection_zGfzRX",
     "trustpilot_reviews_9eViaT"
