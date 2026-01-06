@@ -275,6 +275,7 @@
         "blocks": {
           "6269cf6e-8e24-4068-8e2a-35bb4addad4e": {
             "type": "countdown_timer",
+            "disabled": true,
             "settings": {
               "timer_text": "<strong>Cart reserved for [timer]</strong>",
               "timer_duration": 300,
@@ -415,6 +416,7 @@
           },
           "68fdc0a0-cd7c-40b9-97b3-a76eb7917a47": {
             "type": "payment_badges",
+            "disabled": true,
             "settings": {
               "enabled_payment_types": "",
               "margin_top": 12,
