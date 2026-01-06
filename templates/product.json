@@ -76,7 +76,7 @@
             "picker_types": "pills, dropdown, dropdown",
             "custom_labels": "[name] - [selected]",
             "skip_unavailable": false,
-            "swatches_size": "medium",
+            "swatches_size": "small",
             "swatches_custom_colors": "disabled",
             "swatches_custom_colors_list": "#000000, #6D388B, #0000FF, #FFCC00",
             "full_width_dropdowns": false,
