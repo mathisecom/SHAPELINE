@@ -345,95 +345,6 @@
             "margin_bottom": 15
           }
         },
-        "quantity_selector_yVPmjE": {
-          "type": "quantity_selector",
-          "settings": {
-            "full_width_classic": false,
-            "atc_append": "none",
-            "atc_append_heights": "stretch-quantity",
-            "enable_quantity_discounts": false,
-            "style": "normal",
-            "headline": "BUNDLE & SAVE",
-            "preselected": "option_1",
-            "display_selected_indicator": true,
-            "border_radius": 10,
-            "border_width": 2,
-            "color_scheme": "accent-1",
-            "enable_variant_selectors": true,
-            "enable_variant_selectors_on_quantity_of_1": false,
-            "update_prices": false,
-            "skip_unavailable": false,
-            "full_width_pickers": false,
-            "hide_pickers_overlay": true,
-            "pickers_label": "",
-            "image_width": 70,
-            "space_images": true,
-            "vertical_images_position": "top",
-            "vertical_prices_layout": "vertical",
-            "option_1_quantity": 1,
-            "option_1_badge": "",
-            "option_1_badge_style": "1",
-            "option_1_badge_color": "accent-1",
-            "option_1_label": "Buy [quantity]",
-            "option_1_benefit": "",
-            "option_1_benefit_position": "top",
-            "option_1_benefit_style": "outlined",
-            "option_1_benefit_color": "accent-1",
-            "option_1_caption": "You save [amount_saved]",
-            "option_1_percentage_off_text": "0",
-            "option_1_fixed_amount_off": "0",
-            "option_1_price_text": "[price]",
-            "option_1_compare_price": "compare_price",
-            "option_1_compare_price_text": "[compare_price]",
-            "option_2_quantity": 2,
-            "option_2_badge": "",
-            "option_2_badge_style": "1",
-            "option_2_badge_color": "accent-1",
-            "option_2_label": "Buy [quantity]",
-            "option_2_benefit": "",
-            "option_2_benefit_position": "top",
-            "option_2_benefit_style": "outlined",
-            "option_2_benefit_color": "accent-1",
-            "option_2_caption": "You save [amount_saved]",
-            "option_2_percentage_off_text": "0",
-            "option_2_fixed_amount_off": "0",
-            "option_2_price_text": "[price]",
-            "option_2_compare_price": "compare_price",
-            "option_2_compare_price_text": "[compare_price]",
-            "option_3_quantity": 3,
-            "option_3_badge": "",
-            "option_3_badge_style": "1",
-            "option_3_badge_color": "accent-1",
-            "option_3_label": "Buy [quantity]",
-            "option_3_benefit": "",
-            "option_3_benefit_position": "top",
-            "option_3_benefit_style": "outlined",
-            "option_3_benefit_color": "accent-1",
-            "option_3_caption": "You save [amount_saved]",
-            "option_3_percentage_off_text": "0",
-            "option_3_fixed_amount_off": "0",
-            "option_3_price_text": "[price]",
-            "option_3_compare_price": "compare_price",
-            "option_3_compare_price_text": "[compare_price]",
-            "option_4_quantity": 4,
-            "option_4_badge": "",
-            "option_4_badge_style": "1",
-            "option_4_badge_color": "accent-1",
-            "option_4_label": "Buy [quantity]",
-            "option_4_benefit": "",
-            "option_4_benefit_position": "top",
-            "option_4_benefit_style": "outlined",
-            "option_4_benefit_color": "accent-1",
-            "option_4_caption": "You save [amount_saved]",
-            "option_4_percentage_off_text": "0",
-            "option_4_fixed_amount_off": "0",
-            "option_4_price_text": "[price]",
-            "option_4_compare_price": "compare_price",
-            "option_4_compare_price_text": "[compare_price]",
-            "margin_top": 15,
-            "margin_bottom": 15
-          }
-        },
         "buy_buttons_j6aYPw": {
           "type": "buy_buttons",
           "settings": {
@@ -450,7 +361,79 @@
             "secondary_btn_enable_custom_color": false,
             "secondary_btn_custom_color": "#dd1d1d",
             "margin_top": 24,
-            "margin_bottom": 24
+            "margin_bottom": 12
+          }
+        },
+        "payment_badges_fxJmLE": {
+          "type": "payment_badges",
+          "settings": {
+            "enabled_payment_types": "apple_pay, visa, paypal, maestro, master, american_express",
+            "margin_top": 0,
+            "margin_bottom": 15
+          }
+        },
+        "collapsible_tab_XKFNqR": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible row",
+            "heading_size": "medium",
+            "icon": "",
+            "filled_icon": false,
+            "collapse_icon": "carret",
+            "display_top_border": true,
+            "open": false,
+            "content": "",
+            "page": "",
+            "margin_top": 24,
+            "margin_bottom": 0
+          }
+        },
+        "collapsible_tab_8aqhqR": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible row",
+            "heading_size": "medium",
+            "icon": "",
+            "filled_icon": false,
+            "collapse_icon": "carret",
+            "display_top_border": true,
+            "open": false,
+            "content": "",
+            "page": "",
+            "margin_top": 24,
+            "margin_bottom": 0
+          }
+        },
+        "collapsible_tab_K6CnNw": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible row",
+            "heading_size": "medium",
+            "icon": "",
+            "filled_icon": false,
+            "collapse_icon": "carret",
+            "display_top_border": true,
+            "open": false,
+            "content": "",
+            "page": "",
+            "margin_top": 24,
+            "margin_bottom": 0
+          }
+        },
+        "collapsible_tab_KhtPXt": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible row",
+            "heading_size": "medium",
+            "icon": "",
+            "filled_icon": false,
+            "collapse_icon": "carret",
+            "display_top_border": true,
+            "open": false,
+            "content": "",
+            "page": "",
+            "margin_top": 24,
+            "margin_bottom": 0
           }
         }
       },
@@ -458,8 +441,12 @@
         "title_nCgLUf",
         "price_aBQUKW",
         "variant_picker_Q4CxVK",
-        "quantity_selector_yVPmjE",
-        "buy_buttons_j6aYPw"
+        "buy_buttons_j6aYPw",
+        "payment_badges_fxJmLE",
+        "collapsible_tab_XKFNqR",
+        "collapsible_tab_8aqhqR",
+        "collapsible_tab_K6CnNw",
+        "collapsible_tab_KhtPXt"
       ],
       "name": "t:sections.featured-product.presets.name",
       "settings": {
