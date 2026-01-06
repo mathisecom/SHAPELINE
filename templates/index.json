@@ -17,6 +17,7 @@
           "settings": {
             "icon": "check_circle",
             "filled_icon": false,
+            "image": "shopify://shop_images/microplastics-icon_60x60_cb5fa741-a935-46ee-bcd4-0350c24592d1.webp",
             "title": "Icon with text",
             "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post</p>"
           }
@@ -26,6 +27,7 @@
           "settings": {
             "icon": "check_circle",
             "filled_icon": false,
+            "image": "shopify://shop_images/insane-airflow-icon_60x60_c3e44d60-2162-42c1-891e-28cbc6b682ce.webp",
             "title": "Icon with text",
             "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post</p>"
           }
@@ -35,6 +37,7 @@
           "settings": {
             "icon": "check_circle",
             "filled_icon": false,
+            "image": "shopify://shop_images/comfortable-icon_60x60_549cf516-67b3-4c2a-8372-2a8d924ba0e4.webp",
             "title": "Icon with text",
             "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post</p>"
           }
@@ -44,6 +47,27 @@
           "settings": {
             "icon": "check_circle",
             "filled_icon": false,
+            "image": "shopify://shop_images/alpha-fit-icon_60x60_c801f30e-7240-4d8d-afa9-a1f0068d0433.webp",
+            "title": "Icon with text",
+            "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post</p>"
+          }
+        },
+        "icon_e9pnge": {
+          "type": "icon",
+          "settings": {
+            "icon": "check_circle",
+            "filled_icon": false,
+            "image": "shopify://shop_images/plant-icon_60x60_8031408b-2281-4a9f-b090-a35288a668dd.webp",
+            "title": "Icon with text",
+            "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post</p>"
+          }
+        },
+        "icon_WcDKrg": {
+          "type": "icon",
+          "settings": {
+            "icon": "check_circle",
+            "filled_icon": false,
+            "image": "shopify://shop_images/lifetime-guarantee-icon_60x60_679783eb-5003-4371-a66b-36ff01989c1a.webp",
             "title": "Icon with text",
             "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post</p>"
           }
@@ -67,7 +91,7 @@
         "caption_p4waTe": {
           "type": "caption",
           "settings": {
-            "caption": "Add a tagline",
+            "caption": "Zéro PFAS toxiques ☠️",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
@@ -81,6 +105,7 @@
         },
         "button_9iTJPd": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "Profiter De L'Offre !",
             "button_link": "shopify://products/t-shirt-respirant",
@@ -93,6 +118,8 @@
         "icon_77Fnbd",
         "icon_9FtpCw",
         "icon_nwJ4NT",
+        "icon_e9pnge",
+        "icon_WcDKrg",
         "image_mter4Y",
         "heading_QpUCET",
         "caption_p4waTe",
@@ -104,7 +131,7 @@
         "display_id": false,
         "visibility": "always-display",
         "color_scheme": "custom",
-        "icon_size": "xl",
+        "icon_size": "xxl",
         "icon_position": "above",
         "icon_color": "accent-2",
         "icon_heading_size": "h3",
