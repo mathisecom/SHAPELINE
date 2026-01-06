@@ -275,12 +275,11 @@
         "blocks": {
           "6269cf6e-8e24-4068-8e2a-35bb4addad4e": {
             "type": "countdown_timer",
-            "disabled": true,
             "settings": {
-              "timer_text": "<strong>Cart reserved for [timer]</strong>",
+              "timer_text": "<strong>Panier Réservé Pendant [timer]</strong>",
               "timer_duration": 300,
               "font_size": "1.4",
-              "color_scheme": "inverse",
+              "color_scheme": "accent-2",
               "margin_top": 0,
               "margin_bottom": 15
             }
@@ -381,7 +380,7 @@
             "type": "subtotals",
             "settings": {
               "display_total_savings": true,
-              "savings_left_text": "<strong>Savings</strong>",
+              "savings_left_text": "<strong>Total</strong>",
               "savings_right_text": "<strong>-[savings]</strong>",
               "savings_alignment": "spaced",
               "savings_text_color": "accent-1",
@@ -416,9 +415,8 @@
           },
           "68fdc0a0-cd7c-40b9-97b3-a76eb7917a47": {
             "type": "payment_badges",
-            "disabled": true,
             "settings": {
-              "enabled_payment_types": "",
+              "enabled_payment_types": "apple_pay, visa, paypal, maestro, master, american_express",
               "margin_top": 12,
               "margin_bottom": 12
             }
@@ -436,7 +434,7 @@
         ],
         "settings": {
           "test_mode": false,
-          "heading_text": "Cart • [count] items",
+          "heading_text": "Panier • [count]",
           "heading_alignment": "flex-start",
           "desktop_width": "normal",
           "mobile_width": "full",
