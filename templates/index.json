@@ -409,7 +409,7 @@
             "margin_bottom": 0
           }
         },
-        "collapsible_tab_pXqbTX": {
+        "collapsible_tab_PGPnh8": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Taille & Coupe",
@@ -420,6 +420,38 @@
             "display_top_border": true,
             "open": false,
             "content": "<ul><li><strong>Coupe</strong> : ajustée au niveau des bras et de la poitrine, plus ample au niveau du ventre. Une silhouette musclée, quelle que soit votre morphologie.</li></ul><p></p><ul><li><strong>Pour une coupe légèrement</strong> décontractée, prenez votre <strong>taille habituelle</strong>. Pour un rendu plus ajusté, prenez <strong>une taille en dessous</strong>.</li></ul>",
+            "page": "",
+            "margin_top": 24,
+            "margin_bottom": 0
+          }
+        },
+        "collapsible_tab_gDTeJG": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Garantie UndrDog à vie",
+            "heading_size": "large",
+            "icon": "",
+            "filled_icon": false,
+            "collapse_icon": "plus",
+            "display_top_border": true,
+            "open": false,
+            "content": "<p><strong>Vous n’aimez pas la coupe ? Vous n’aimez pas la matière ?</strong><br/><br/>Contactez simplement <a><strong>support@undrdoghemp.com</strong></a> pour un retour facile.<br/><br/><strong>Garantie UndrDog à vie, sans compromis.</strong><br/><br/>Oui… on est aussi confiants que ça. </p>",
+            "page": "",
+            "margin_top": 24,
+            "margin_bottom": 0
+          }
+        },
+        "collapsible_tab_pXqbTX": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Existe-t-il d’autres couleurs ?",
+            "heading_size": "large",
+            "icon": "",
+            "filled_icon": false,
+            "collapse_icon": "plus",
+            "display_top_border": true,
+            "open": false,
+            "content": "<p>Ceci est <strong>« Project 001 : Midnight »</strong>. Le <strong>seul projet disponible au public</strong>.<br/><br/>C’est <strong>l’emblème officiel d’UndrDog</strong>.</p><p>Après votre achat, vous rejoindrez <strong>des milliers de membres du collectif UndrDog</strong>, avec un accès <strong>exclusif aux futurs projets en édition limitée</strong> (différentes couleurs, styles, designs, etc.).</p>",
             "page": "",
             "margin_top": 24,
             "margin_bottom": 0
@@ -435,6 +467,8 @@
         "payment_badges_fxJmLE",
         "custom_liquid_fRnyBz",
         "collapsible_tab_XKFNqR",
+        "collapsible_tab_PGPnh8",
+        "collapsible_tab_gDTeJG",
         "collapsible_tab_pXqbTX"
       ],
       "name": "t:sections.featured-product.presets.name",
