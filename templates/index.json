@@ -291,6 +291,21 @@
             "margin_bottom": 15
           }
         },
+        "trustpilot_stars_UjNj74": {
+          "type": "trustpilot_stars",
+          "settings": {
+            "rating": 4.7,
+            "star_color": "#00b67a",
+            "bg_star_color": "#c8c8c8",
+            "star_symbol_color": "#ffffff",
+            "label": "<strong>4,7/5</strong> Basé sur 1,465 Avis",
+            "size": 13,
+            "alignment": "flex-start",
+            "scroll_id": "",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
         "price_aBQUKW": {
           "type": "price",
           "settings": {
@@ -439,6 +454,7 @@
       },
       "block_order": [
         "title_nCgLUf",
+        "trustpilot_stars_UjNj74",
         "price_aBQUKW",
         "variant_picker_Q4CxVK",
         "buy_buttons_j6aYPw",
