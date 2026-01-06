@@ -69,9 +69,74 @@
         "custom_colors_solid_button_background": "#dd1d1d",
         "custom_colors_solid_button_text": "#ffffff"
       }
+    },
+    "horizontal_ticker_J47Hik": {
+      "type": "horizontal-ticker",
+      "blocks": {
+        "image_nJQQ8d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Progetto_senza_titolo_12-removebg-preview_2_24ebc353-5bdb-4e03-9861-e4e35cf716d0_3.webp"
+          }
+        },
+        "image_bTpj3T": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Progetto_senza_titolo__16_-removebg-preview_2_7838fd08-61c0-4513-addd-4e6cac82cda8_3.webp"
+          }
+        },
+        "image_zCRDxY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Progetto_senza_titolo_11-removebg-preview_2_797308d9-724a-4964-bfc7-64652a839f01_3.avif"
+          }
+        },
+        "image_kAp6mH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Progetto_senza_titolo_7-removebg-preview_2_d3a0e434-d57e-4479-b6bb-a3020133ec8c_3.avif"
+          }
+        }
+      },
+      "block_order": [
+        "image_nJQQ8d",
+        "image_bTpj3T",
+        "image_zCRDxY",
+        "image_kAp6mH"
+      ],
+      "name": "Horizontal Ticker",
+      "settings": {
+        "visibility": "always-display",
+        "speed": 3,
+        "direction": "normal",
+        "stop_on_hover": false,
+        "mobile_spacing": 60,
+        "desktop_spacing": 100,
+        "color_scheme": "custom",
+        "mobile_text_size": 16,
+        "desktop_text_size": 18,
+        "italic_text": false,
+        "uppercase_text": false,
+        "bold_text": false,
+        "mobile_image_height": 26,
+        "desktop_image_height": 40,
+        "mobile_reviews_width": 300,
+        "desktop_reviews_width": 400,
+        "hidden_products": "",
+        "enable_specific_display": false,
+        "displayed_products": "",
+        "mobile_padding_top": 12,
+        "mobile_padding_bottom": 12,
+        "desktop_padding_top": 16,
+        "desktop_padding_bottom": 16,
+        "custom_colors_background": "#f4f3ed",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#2E2A39"
+      }
     }
   },
   "order": [
-    "featured_collection_zGfzRX"
+    "featured_collection_zGfzRX",
+    "horizontal_ticker_J47Hik"
   ]
 }
