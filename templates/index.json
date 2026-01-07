@@ -153,6 +153,48 @@
         "custom_colors_outline_button": "#ffffff"
       }
     },
+    "gp_global_section_601118744537727852_TBMqx3": {
+      "type": "gp-global-section-601118744537727852",
+      "name": "MOBILE BANNER",
+      "settings": {
+        "section_preload": "off_lazy_script",
+        "checksum": "",
+        "gglFiJDIuG__text": "Le t-shirt <span style=\"color:#EF5301;\">respirant en chanvre et bambou</span>, fait pour durer dans le temps.",
+        "ggyOMepLwvJ_text": "<p>Sans PFAS toxiques ☠️ ni produits chimiques</p>",
+        "ggtcI9Po-8Y_text": "Sans PFAS",
+        "gghqiWdw2nB_text": "<p>Sans polyester, sans microplastiques</p>",
+        "ggSKVcDqEVh_text": "Respirant",
+        "gg8-DocWpIN_text": "<p>La puissance naturelle </p><p>du bambou</p>",
+        "ggSGo98K6n4_text": "Ultra Confortable",
+        "ggO1JJWLXib_text": "<p>Douceur </p><p>incomparable</p>",
+        "ggTRIeEeMjq_text": "Camoufle le ventre",
+        "ggcR5gaPFqH_text": "<p>Ajusté en haut, </p><p>plus ample en bas</p>",
+        "ggdQTjXmV4e_text": "Ultra résistant",
+        "ggP_Duva27W_text": "<p>La force du chanvre</p>",
+        "ggmHt4OcEfV_text": "Garantie à vie",
+        "ggd1mrBt-Zc_text": "<p>Portez-le toute une vie</p>",
+        "ggQzP8q55dB_text": "Sans PFAS",
+        "gg9I0kEJ6Sp_text": "<p>Sans polyester, sans microplastiques</p>",
+        "ggyvPCvwTg5_text": "Respirant",
+        "ggBTRPHetOK_text": "<p>La puissance naturelle du bambou</p>",
+        "gg3y0rM1WCo_text": "Ultra confortable",
+        "ggwg4qts5Jj_text": "<p>Douceur incomparable</p>",
+        "gg2U1ZL4NM7_text": "Camoufle le ventre",
+        "ggbBH5hNjS3_text": "<p>Ajusté en haut, plus ample en bas</p>",
+        "gg8M3W8QcfV_text": "Ultra résistant",
+        "ggZASwReBpb_text": "<p>La force du chanvre</p>",
+        "ggHhgKaXcAz_text": "Garantie à vie",
+        "ggedQ3KGJSc_text": "<p>Portez-le toute une vie</p>",
+        "gg0cVZFE8ga_text": "<p>Adopté Par 100,000 Hommes</p>",
+        "ggbA5HdTH6R_label": "<p>PROFITER DE L'OFFRE !</p>",
+        "gg2kpq-D4hd_childItem_0": "<p>Garantie à Vie</p>",
+        "ggEvB01FVC3_childItem_0": "<p>Achetez-en 3 = Livraison gratuite</p>",
+        "ggxs2vIuGuJ_text": "<p><strong>Michael H.</strong></p>",
+        "ggJGKnFkApX_text": "<p>Client Vérifié</p>",
+        "ggQW1B5vZDO_text": "<p><strong>Les héros méconnus de ma garde-robe</strong></p>",
+        "ggPxccV8aBU_text": "<p><strong>Le champion de mon dressing ! </strong>Les t-shirts UndrDog Hemp. Ils ne montent pas le niveau, ils le définissent. L’engouement est réel : j’en ai sept noirs en rotation, zéro regret.</p>"
+      }
+    },
     "horizontal_ticker_J47Hik": {
       "type": "horizontal-ticker",
       "blocks": {
@@ -656,6 +698,7 @@
   },
   "order": [
     "icons_with_content_yHCTp4",
+    "gp_global_section_601118744537727852_TBMqx3",
     "horizontal_ticker_J47Hik",
     "featured_collection_zGfzRX",
     "featured_product_xFdh3j",
