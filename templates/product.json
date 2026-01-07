@@ -116,7 +116,7 @@
             "icon_scale": 120,
             "icon_spacing": 10,
             "display_price": false,
-            "enable_custom_color": false,
+            "enable_custom_color": true,
             "custom_color": "#53af01",
             "enable_secondary_btn": false,
             "secondary_btn_label": "Buy It Now",
@@ -162,6 +162,7 @@
         },
         "e7a28cbe-03cb-4c9d-a2c4-0e3e76ffb3e5": {
           "type": "sticky_atc",
+          "disabled": true,
           "settings": {
             "function": "add_to_cart",
             "display_when": "after_scroll",
@@ -233,6 +234,7 @@
         },
         "de158e68-5d0d-4819-a625-e2dabdff87d1": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Collapsible row",
             "heading_size": "medium",
