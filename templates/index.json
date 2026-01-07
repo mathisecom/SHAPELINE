@@ -9,150 +9,6 @@
  */
 {
   "sections": {
-    "icons_with_content_yHCTp4": {
-      "type": "icons-with-content",
-      "blocks": {
-        "icon_LtJp9E": {
-          "type": "icon",
-          "settings": {
-            "icon": "check_circle",
-            "filled_icon": false,
-            "image": "shopify://shop_images/microplastics-icon_60x60_cb5fa741-a935-46ee-bcd4-0350c24592d1.webp",
-            "title": "Icon with text",
-            "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post</p>"
-          }
-        },
-        "icon_77Fnbd": {
-          "type": "icon",
-          "settings": {
-            "icon": "check_circle",
-            "filled_icon": false,
-            "image": "shopify://shop_images/insane-airflow-icon_60x60_c3e44d60-2162-42c1-891e-28cbc6b682ce.webp",
-            "title": "Icon with text",
-            "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post</p>"
-          }
-        },
-        "icon_9FtpCw": {
-          "type": "icon",
-          "settings": {
-            "icon": "check_circle",
-            "filled_icon": false,
-            "image": "shopify://shop_images/comfortable-icon_60x60_549cf516-67b3-4c2a-8372-2a8d924ba0e4.webp",
-            "title": "Icon with text",
-            "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post</p>"
-          }
-        },
-        "icon_nwJ4NT": {
-          "type": "icon",
-          "settings": {
-            "icon": "check_circle",
-            "filled_icon": false,
-            "image": "shopify://shop_images/alpha-fit-icon_60x60_c801f30e-7240-4d8d-afa9-a1f0068d0433.webp",
-            "title": "Icon with text",
-            "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post</p>"
-          }
-        },
-        "icon_e9pnge": {
-          "type": "icon",
-          "settings": {
-            "icon": "check_circle",
-            "filled_icon": false,
-            "image": "shopify://shop_images/plant-icon_60x60_8031408b-2281-4a9f-b090-a35288a668dd.webp",
-            "title": "Icon with text",
-            "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post</p>"
-          }
-        },
-        "icon_WcDKrg": {
-          "type": "icon",
-          "settings": {
-            "icon": "check_circle",
-            "filled_icon": false,
-            "image": "shopify://shop_images/lifetime-guarantee-icon_60x60_679783eb-5003-4371-a66b-36ff01989c1a.webp",
-            "title": "Icon with text",
-            "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post</p>"
-          }
-        },
-        "image_mter4Y": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/hero-section-desk-without-tag_1800x1000_1.webp",
-            "atc_product": "",
-            "atc_skip_cart": false
-          }
-        },
-        "heading_QpUCET": {
-          "type": "heading",
-          "settings": {
-            "title": "DÉ",
-            "title_highlight_color": "#ec612a",
-            "heading_size": "h1"
-          }
-        },
-        "caption_p4waTe": {
-          "type": "caption",
-          "settings": {
-            "caption": "Zéro PFAS toxiques ☠️",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "text_N7JFTx": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair icons with content to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_9iTJPd": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Profiter De L'Offre !",
-            "button_link": "shopify://products/t-shirt-respirant",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "icon_LtJp9E",
-        "icon_77Fnbd",
-        "icon_9FtpCw",
-        "icon_nwJ4NT",
-        "icon_e9pnge",
-        "icon_WcDKrg",
-        "image_mter4Y",
-        "heading_QpUCET",
-        "caption_p4waTe",
-        "text_N7JFTx",
-        "button_9iTJPd"
-      ],
-      "disabled": true,
-      "name": "Icons with content",
-      "settings": {
-        "display_id": false,
-        "visibility": "always-display",
-        "color_scheme": "custom",
-        "icon_size": "xxl",
-        "icon_position": "above",
-        "icon_color": "accent-2",
-        "icon_heading_size": "h3",
-        "icon_text_alignment": "left",
-        "icons_desktop_layout": "2-columns",
-        "icons_mobile_layout": "2-columns",
-        "desktop_content_alignment": "center",
-        "layout": "text_first",
-        "mobile_layout": "text_first",
-        "hide_content_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "custom_colors_background": "#000000",
-        "custom_gradient_background": "",
-        "custom_colors_text": "#ffffff",
-        "custom_colors_solid_button_background": "#ec612a",
-        "custom_colors_solid_button_text": "#ffffff",
-        "custom_colors_outline_button": "#ffffff"
-      }
-    },
     "gp_global_section_601118744537727852_TBMqx3": {
       "type": "gp-global-section-601118744537727852",
       "name": "MOBILE BANNER",
@@ -257,6 +113,28 @@
         "custom_colors_background": "#f4f3ed",
         "custom_gradient_background": "",
         "custom_colors_text": "#2e2a39"
+      }
+    },
+    "gp_global_section_601118538362520498_7yywC6": {
+      "type": "gp-global-section-601118538362520498",
+      "name": "Présenation PC",
+      "settings": {
+        "section_preload": "off_lazy_script",
+        "checksum": "",
+        "ggnEUYlrn7k_text": "Salut, je suis <strong>Tom</strong>",
+        "gg9bt1ViMzE_text": "Fondateur <span style=\"color:#EC6129;\">d’<strong>UndrDog Hemp</strong>.</span>",
+        "ggHQGerDwul_text": "<p><span style=\"font-size:16px;\"><i>Le monde du t-shirt était complètement cassé… alors j’ai décidé de le réparer.</i></span></p><p> </p><p><span style=\"font-size:16px;\">Mais ça n’a pas été sans obstacles.</span></p><p> </p><p><span style=\"font-size:16px;\">Je bosse dur depuis l’enfance. J’ai créé des marques, aidé des millions de personnes.</span></p><p> </p><p><span style=\"font-size:16px;\">Mais les t-shirts… là, c’est devenu une véritable obsession.</span></p><p> </p><p><span style=\"font-size:16px;\">Chaque t-shirt que j’aimais perdait sa forme, sentait mauvais, rétrécissait, se déchirait ou se décolorait… et quelques mois plus tard, je devais en racheter un autre.</span></p><p> </p><p><span style=\"font-size:16px;\"><strong>Ça me rendait fou.</strong></span></p>"
+      }
+    },
+    "gp_global_section_601118599599358828_myxwWA": {
+      "type": "gp-global-section-601118599599358828",
+      "name": "presentation mobile",
+      "settings": {
+        "section_preload": "off_lazy_script",
+        "checksum": "",
+        "ggETLaDozIs_text": "Salut, je suis <strong>Tom</strong>",
+        "gglZ7v2fIFC_text": "Fondateur <span style=\"color:#EC6129;\">d’<strong>UndrDog Hemp</strong>.</span>",
+        "ggkZwgCVeCG_text": "<p><span style=\"font-size:16px;\"><i>Le monde du t-shirt était complètement cassé… alors j’ai décidé de le réparer.</i></span></p><p> </p><p><span style=\"font-size:16px;\">Mais ça n’a pas été sans obstacles.</span></p><p> </p><p><span style=\"font-size:16px;\">Je bosse dur depuis l’enfance. J’ai créé des marques, aidé des millions de personnes.</span></p><p> </p><p><span style=\"font-size:16px;\">Mais les t-shirts… là, c’est devenu une véritable obsession.</span></p><p> </p><p><span style=\"font-size:16px;\">Chaque t-shirt que j’aimais perdait sa forme, sentait mauvais, rétrécissait, se déchirait ou se décolorait… et quelques mois plus tard, je devais en racheter un autre.</span></p><p> </p><p><span style=\"font-size:16px;\"><strong>Ça me rendait fou.</strong></span></p>"
       }
     },
     "featured_collection_zGfzRX": {
@@ -697,9 +575,10 @@
     }
   },
   "order": [
-    "icons_with_content_yHCTp4",
     "gp_global_section_601118744537727852_TBMqx3",
     "horizontal_ticker_J47Hik",
+    "gp_global_section_601118538362520498_7yywC6",
+    "gp_global_section_601118599599358828_myxwWA",
     "featured_collection_zGfzRX",
     "featured_product_xFdh3j",
     "trustpilot_reviews_9eViaT"
