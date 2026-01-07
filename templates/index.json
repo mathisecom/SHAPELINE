@@ -193,16 +193,6 @@
         "ggBt_dkhZ2w_text": "<p>C’est ainsi qu’est né le <strong>Forever Tee</strong>. Un t-shirt qui <strong>ne s’abîme pas, ne vous empoisonne pas, ne coûte pas une fortune et n’a pas besoin d’être remplacé</strong> !</p><p> </p><p>Et en plus, <strong>une coupe sculptée pour vous donner un look carrément musclé</strong>.</p>"
       }
     },
-    "gp_global_section_601120300758729650_pb8rJR": {
-      "type": "gp-global-section-601120300758729650",
-      "name": "RESPIRE BAMBOU",
-      "settings": {
-        "section_preload": "off_lazy_script",
-        "checksum": "",
-        "gg3QzAcbQUe_text": "<span style=\"color:#F2F2F2;\">Respirabilité</span> <span style=\"color:#ED6129;\">Inégalée</span>",
-        "ggWbvJicCkg_text": "<p>Restez au frais grâce à la respirabilité naturelle du bambou.</p>"
-      }
-    },
     "gp_global_section_601121248470107058_AXwNqg": {
       "type": "gp-global-section-601121248470107058",
       "name": "camoufle le ventre",
@@ -212,6 +202,16 @@
         "ggFORxgWn3P_text": "Camoufle le ventre et la poitrine",
         "ggxtRyrQ61k_text": "<p>La résistance ferme du chanvre épouse votre corps là où il faut.</p>",
         "ggzNzsmv9np_label": "<p>Profiter de L'Offre !</p>"
+      }
+    },
+    "gp_global_section_601120300758729650_pb8rJR": {
+      "type": "gp-global-section-601120300758729650",
+      "name": "RESPIRE BAMBOU",
+      "settings": {
+        "section_preload": "off_lazy_script",
+        "checksum": "",
+        "gg3QzAcbQUe_text": "<span style=\"color:#F2F2F2;\">Respirabilité</span> <span style=\"color:#ED6129;\">Inégalée</span>",
+        "ggWbvJicCkg_text": "<p>Restez au frais grâce à la respirabilité naturelle du bambou.</p>"
       }
     },
     "gp_global_section_601120352080233317_AWCHf8": {
@@ -325,6 +325,7 @@
         },
         "price_aBQUKW": {
           "type": "price",
+          "disabled": true,
           "settings": {
             "layout": "price_first",
             "price_color": "accent-2",
@@ -342,6 +343,7 @@
         },
         "variant_picker_Q4CxVK": {
           "type": "variant_picker",
+          "disabled": true,
           "settings": {
             "picker_types": "pills, pills, pills",
             "custom_labels": "",
@@ -375,6 +377,13 @@
             "breaks_compare_price_texts": "[compare_price], [compare_price], [compare_price]",
             "margin_top": 15,
             "margin_bottom": 15
+          }
+        },
+        "kaching_bundles_app_block_ygTeMD": {
+          "type": "shopify://apps/kaching-bundles/blocks/app-block/6c637362-a106-4a32-94ac-94dcfd68cdb8",
+          "settings": {
+            "product": "{{section.settings.product}}",
+            "manual_deal_block_id": ""
           }
         },
         "buy_buttons_j6aYPw": {
@@ -480,6 +489,7 @@
         "trustpilot_stars_UjNj74",
         "price_aBQUKW",
         "variant_picker_Q4CxVK",
+        "kaching_bundles_app_block_ygTeMD",
         "buy_buttons_j6aYPw",
         "payment_badges_fxJmLE",
         "custom_liquid_fRnyBz",
