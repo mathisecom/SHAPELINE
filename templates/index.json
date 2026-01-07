@@ -137,6 +137,24 @@
         "ggkZwgCVeCG_text": "<p><span style=\"font-size:16px;\"><i>Le monde du t-shirt était complètement cassé… alors j’ai décidé de le réparer.</i></span></p><p> </p><p><span style=\"font-size:16px;\">Mais ça n’a pas été sans obstacles.</span></p><p> </p><p><span style=\"font-size:16px;\">Je bosse dur depuis l’enfance. J’ai créé des marques, aidé des millions de personnes.</span></p><p> </p><p><span style=\"font-size:16px;\">Mais les t-shirts… là, c’est devenu une véritable obsession.</span></p><p> </p><p><span style=\"font-size:16px;\">Chaque t-shirt que j’aimais perdait sa forme, sentait mauvais, rétrécissait, se déchirait ou se décolorait… et quelques mois plus tard, je devais en racheter un autre.</span></p><p> </p><p><span style=\"font-size:16px;\"><strong>Ça me rendait fou.</strong></span></p>"
       }
     },
+    "gp_global_section_601118565122179948_8FLKKm": {
+      "type": "gp-global-section-601118565122179948",
+      "name": "LE PLUS RÉSISTANT",
+      "settings": {
+        "section_preload": "off_lazy_script",
+        "checksum": "",
+        "gg8W9SLKKg3_text": "Créer le t-shirt le <span style=\"color:#ED6129;\">plus résistant du monde</span>",
+        "ggJ9ZpnCJc4_text": "<p>J’avais un seul objectif : <strong>créer le t-shirt le plus résistant au monde, avec une garantie à vie</strong>.</p><p> </p><p>Et en plus, <strong>une coupe qui serre mes biceps tout en camouflant le ventre</strong>.</p><p> </p><p>Le chanvre semblait être la réponse : <strong>la fibre la plus solide de la planète</strong>.</p><p> </p><p>Mais les t-shirts 100 % chanvre, c’était comme porter du carton. <strong>Pas confortables, pas respirants, pas pratiques pour la vraie vie</strong>.</p>",
+        "ggF9aAPMTTb_text": "<strong>À la recherche de la perfection</strong>",
+        "ggVgY8Jr-S4_text": "<p>Il me fallait quelque chose de <strong>durable, respirant et confortable</strong>.</p><p> </p><p>Premier essai… j’ai mélangé <strong>chanvre et polyester</strong>.</p><p> </p><p><strong>BOUM.</strong> J’avais créé <strong>le t-shirt le plus résistant au monde, avec garantie à vie</strong>.</p><p> </p><p>Ce n’était pas hyper respirant, mais <strong>UndrDog Hemp a cartonné. Succès total !</strong></p><p> </p><p>Puis, tout a changé.</p>",
+        "ggkZs0srpzJ_text": "<p>Le <span style=\"color:#FF7701;\">déclic</span></p>",
+        "ggfnXwuzLI__text": "<p>Après <strong>quatre ans à essayer d’avoir un enfant avec ma femme</strong>, j’ai commencé à chercher pourquoi ça ne fonctionnait pas.</p><p> </p><p>Je suis tombé sur quelque chose lié à l’infertilité que je ne m’attendais pas à trouver : <strong>le polyester</strong>.</p><p> </p><p>Plus précisément, <strong>les produits chimiques PFAS qu’il contient</strong>. Des études montrent qu’ils sont liés à <strong>une baisse de testostérone, à l’infertilité et à d’autres risques graves pour la santé</strong>.</p>",
+        "ggAW9Ooxg7v_text": "<p>La recherche indique que <strong>porter du polyester libère des </strong><span style=\"color:#FF7701;\"><strong>microplastiques toxiques directement dans notre organisme</strong>.</span></p>",
+        "ggHYc35EPs2_text": "<strong>Le Tournant</strong>",
+        "ggYlwFl2r68_text": "<p>J’avais un choix : <strong>continuer à vendre des t-shirts toxiques comme tout le monde</strong>, ou <strong>changer les choses</strong>.</p><p> </p><p>J’ai choisi de faire mieux.</p><p> </p><p>Je suis retourné à la planche à dessin avec une seule question en tête :</p><p> </p><p><strong>Comment créer un t-shirt solide, respirant et confortable, avec une garantie à vie, SANS produits chimiques toxiques ?</strong></p><p> </p><p><strong>Adieu polyester, bonjour bambou !</strong></p>",
+        "ggaP5PnqBXe_text": "<p><strong>Il respirait comme un rêve, un vrai paradis pour l’air, doux et confortable… mais il manquait de solidité.</strong></p><p> </p><p>Alors je me suis dit :</p>"
+      }
+    },
     "featured_collection_zGfzRX": {
       "type": "featured-collection",
       "disabled": true,
@@ -579,6 +597,7 @@
     "horizontal_ticker_J47Hik",
     "gp_global_section_601118538362520498_7yywC6",
     "gp_global_section_601118599599358828_myxwWA",
+    "gp_global_section_601118565122179948_8FLKKm",
     "featured_collection_zGfzRX",
     "featured_product_xFdh3j",
     "trustpilot_reviews_9eViaT"
