@@ -203,6 +203,17 @@
         "ggWbvJicCkg_text": "<p>Restez au frais grâce à la respirabilité naturelle du bambou.</p>"
       }
     },
+    "gp_global_section_601121248470107058_AXwNqg": {
+      "type": "gp-global-section-601121248470107058",
+      "name": "camoufle le ventre",
+      "settings": {
+        "section_preload": "off_lazy_script",
+        "checksum": "",
+        "ggFORxgWn3P_text": "Camoufle le ventre et la poitrine",
+        "ggxtRyrQ61k_text": "<p>La résistance ferme du chanvre épouse votre corps là où il faut.</p>",
+        "ggzNzsmv9np_label": "<p>Profiter de L'Offre !</p>"
+      }
+    },
     "gp_global_section_601120352080233317_AWCHf8": {
       "type": "gp-global-section-601120352080233317",
       "name": "4X PLUS RÉSISTANT",
@@ -667,6 +678,7 @@
     "gp_global_section_601118599599358828_myxwWA",
     "gp_global_section_601118565122179948_8FLKKm",
     "gp_global_section_601120231133283250_qTwxQn",
+    "gp_global_section_601121248470107058_AXwNqg",
     "gp_global_section_601120300758729650_pb8rJR",
     "gp_global_section_601120352080233317_AWCHf8",
     "gp_global_section_601120402076337004_APijPq",
