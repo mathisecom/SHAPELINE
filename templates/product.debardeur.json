@@ -547,9 +547,9 @@
       "settings": {
         "display_id": false,
         "visibility": "always-display",
-        "title": "Results",
-        "title_highlight_color": "#6D388B",
-        "heading_size": "h1",
+        "title": "<strong>RÉSULTATS PROUVÉS </strong>",
+        "title_highlight_color": "#ec612a",
+        "heading_size": "h2",
         "text": "",
         "video_muted_autoplay": true,
         "color_scheme": "background-1",
