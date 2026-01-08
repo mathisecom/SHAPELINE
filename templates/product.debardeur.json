@@ -443,7 +443,7 @@
             "icon": "check_circle",
             "filled_icon": true,
             "title": "COMPRESSION AVANCÉE DU TORSE ET DU VENTRE",
-            "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post</p>"
+            "text": "<p>Élimine complètement les bosses, renflements et plis sous votre t-shirt.</p>"
           }
         },
         "icon_aGeim3": {
@@ -452,7 +452,7 @@
             "icon": "check_circle",
             "filled_icon": true,
             "title": "SOUTIEN DU DOS",
-            "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post</p>"
+            "text": "<p>Améliore la posture et la mobilité. Particulièrement utile en cas de mauvaise posture.</p>"
           }
         },
         "icon_6QUVqj": {
@@ -461,7 +461,7 @@
             "icon": "check_circle",
             "filled_icon": true,
             "title": "CONÇU POUR DURER",
-            "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post</p>"
+            "text": "<p>Conserve son élasticité, offrant un maintien et un modelage constants, lavage après lavage.</p>"
           }
         },
         "image_fQLq9T": {
@@ -503,7 +503,7 @@
         "display_id": false,
         "visibility": "always-display",
         "color_scheme": "background-2",
-        "icon_size": "m",
+        "icon_size": "l",
         "icon_position": "next-to-title",
         "icon_color": "accent-1",
         "icon_heading_size": "h3",
