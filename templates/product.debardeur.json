@@ -365,16 +365,16 @@
           "settings": {
             "color_scheme": "accent-2",
             "show_custom_bg": false,
-            "custom_bg_color": "#F2F2F2",
+            "custom_bg_color": "#f2f2f2",
             "corner_radius": 12,
             "border_width": 0,
-            "border_color": "#B7B7B7",
+            "border_color": "#b7b7b7",
             "avatar_alignment": "top",
             "avatar_corner_radius": 40,
             "star_color": "#05b67a",
             "stars_translate": 0,
-            "checkmark_color": "#6D388B",
-            "checkmark_icon_color": "#FFFFFF",
+            "checkmark_color": "#6d388b",
+            "checkmark_icon_color": "#ffffff",
             "author_1": "<em>Lucas</em> [stars]",
             "text_1": "<p>Ce débardeur sculpte vraiment la silhouette – mon torse et mon ventre ont l’air beaucoup plus nets sous mes chemises. Très confortable même toute la journée.</p>"
           }
@@ -384,16 +384,16 @@
           "settings": {
             "color_scheme": "accent-2",
             "show_custom_bg": false,
-            "custom_bg_color": "#F2F2F2",
+            "custom_bg_color": "#f2f2f2",
             "corner_radius": 12,
             "border_width": 0,
-            "border_color": "#B7B7B7",
+            "border_color": "#b7b7b7",
             "avatar_alignment": "top",
             "avatar_corner_radius": 40,
             "star_color": "#05b67a",
             "stars_translate": 0,
-            "checkmark_color": "#6D388B",
-            "checkmark_icon_color": "#FFFFFF",
+            "checkmark_color": "#6d388b",
+            "checkmark_icon_color": "#ffffff",
             "author_1": "Romain G. [stars]",
             "text_1": "<p>Je n’aime pas les vêtements qui compressent trop, mais celui‑ci est parfait : il modelle sans gêner. Je le porte au bureau, en sortie ou à la salle, il reste confortable.</p>"
           }
@@ -403,16 +403,16 @@
           "settings": {
             "color_scheme": "accent-2",
             "show_custom_bg": false,
-            "custom_bg_color": "#F2F2F2",
+            "custom_bg_color": "#f2f2f2",
             "corner_radius": 12,
             "border_width": 0,
-            "border_color": "#B7B7B7",
+            "border_color": "#b7b7b7",
             "avatar_alignment": "top",
             "avatar_corner_radius": 40,
             "star_color": "#05b67a",
             "stars_translate": 0,
-            "checkmark_color": "#6D388B",
-            "checkmark_icon_color": "#FFFFFF",
+            "checkmark_color": "#6d388b",
+            "checkmark_icon_color": "#ffffff",
             "author_1": "Mickaël P. [stars]",
             "text_1": "<p>Je le trouve bien ajusté et solide. Peut‑être un peu serré au départ, mais il s’assouplit avec le temps. Résultat visible sous les t‑shirts !</p>"
           }
@@ -450,7 +450,7 @@
         "desktop_padding_bottom": 56,
         "custom_colors_background": "#ffffff",
         "custom_gradient_background": "",
-        "custom_colors_text": "#2E2A39"
+        "custom_colors_text": "#2e2a39"
       }
     },
     "image_with_text_TGV7f6": {
@@ -815,7 +815,7 @@
           "settings": {
             "star_color": "#00b67a",
             "bg_star_color": "#c8c8c8",
-            "star_symbol_color": "#fff",
+            "star_symbol_color": "#ffffff",
             "stars_rating": 5,
             "title": "Très Confortable",
             "text": "<p>Ce débardeur sculpte vraiment la silhouette – mon torse et mon ventre ont l’air beaucoup plus nets sous mes chemises. Très confortable même toute la journée.</p>",
@@ -827,7 +827,7 @@
           "settings": {
             "star_color": "#00b67a",
             "bg_star_color": "#c8c8c8",
-            "star_symbol_color": "#fff",
+            "star_symbol_color": "#ffffff",
             "stars_rating": 5,
             "title": "Super maintien sans être serré",
             "text": "<p>Je n’aime pas les vêtements qui compressent trop, mais celui‑ci est parfait : il modelle sans gêner. Je le porte au bureau, en sortie ou à la salle, il reste confortable.</p>",
@@ -839,7 +839,7 @@
           "settings": {
             "star_color": "#00b67a",
             "bg_star_color": "#c8c8c8",
-            "star_symbol_color": "#fff",
+            "star_symbol_color": "#ffffff",
             "stars_rating": 5,
             "title": "Beau design et bon confort",
             "text": "<p>Je le trouve bien ajusté et solide. Peut‑être un peu serré au départ, mais il s’assouplit avec le temps. Résultat visible sous les t‑shirts !</p>",
@@ -851,7 +851,7 @@
           "settings": {
             "star_color": "#00b67a",
             "bg_star_color": "#c8c8c8",
-            "star_symbol_color": "#fff",
+            "star_symbol_color": "#ffffff",
             "stars_rating": 5,
             "title": "Boost de confiance instantané",
             "text": "<p>Ce débardeur me fait me sentir plus tonique et plus droit dans ma posture. On voit tout de suite la différence, et ça m’a même motivé à mieux m’entraîner.</p>",
@@ -882,7 +882,7 @@
         "subheading_font": "body",
         "star_color": "#00b67a",
         "bg_star_color": "#c8c8c8",
-        "star_symbol_color": "#fff",
+        "star_symbol_color": "#ffffff",
         "stars_rating": 5,
         "text": "",
         "cards_border_radius": 16,
@@ -897,7 +897,7 @@
         "dots_color_scheme": "inverse",
         "desktop_full_page": false,
         "columns_desktop": 3,
-        "slider_desktop": false,
+        "slider_desktop": true,
         "per_move_desktop": 1,
         "desktop_spacing": 24,
         "desktop_side_padding": 0,
@@ -912,12 +912,12 @@
         "mobile_arrows_position": "under",
         "padding_top": 36,
         "padding_bottom": 36,
-        "custom_colors_background": "#FFFFFF",
+        "custom_colors_background": "#ffffff",
         "custom_gradient_background": "",
-        "custom_colors_text": "#2E2A39",
-        "custom_cards_colors_background": "#F3F3F3",
+        "custom_colors_text": "#2e2a39",
+        "custom_cards_colors_background": "#f3f3f3",
         "custom_cards_gradient_background": "",
-        "custom_cards_colors_text": "#2E2A39"
+        "custom_cards_colors_text": "#2e2a39"
       }
     },
     "related-products": {
