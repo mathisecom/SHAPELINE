@@ -621,6 +621,18 @@
     "trustpilot_reviews_9eViaT": {
       "type": "trustpilot-reviews",
       "blocks": {
+        "column_4nxn4m": {
+          "type": "column",
+          "settings": {
+            "star_color": "#00b67a",
+            "bg_star_color": "#c8c8c8",
+            "star_symbol_color": "#ffffff",
+            "stars_rating": 5,
+            "title": "Qualité exceptionnelle",
+            "text": "<p>Ce t-shirt est très agréable à porter. Après le premier lavage, il a un peu rétréci, mais il s’est ensuite bien détendu et s’adapte parfaitement. Idéal comme couche de base en hiver et super respirant pour l’été</p>",
+            "author": "<em><strong>Author</strong></em>"
+          }
+        },
         "column_MFq7h7": {
           "type": "column",
           "settings": {
@@ -628,9 +640,9 @@
             "bg_star_color": "#c8c8c8",
             "star_symbol_color": "#ffffff",
             "stars_rating": 5,
-            "title": "Heading",
-            "text": "<p>Share positive thoughts and feedback from your customer..</p>",
-            "author": "<em><strong>Author</strong></em>"
+            "title": "Super t-shirt !",
+            "text": "<p>J’adore ce t-shirt ! Même si j’ai l’habitude des modèles en col V, celui-ci reste mon préféré</p>",
+            "author": "<em><strong>Mathieu B.</strong></em>"
           }
         },
         "column_PkfWbF": {
@@ -640,31 +652,20 @@
             "bg_star_color": "#c8c8c8",
             "star_symbol_color": "#ffffff",
             "stars_rating": 5,
-            "title": "Heading",
-            "text": "<p>Share positive thoughts and feedback from your customer..</p>",
-            "author": "<em><strong>Author</strong></em>"
-          }
-        },
-        "column_4nxn4m": {
-          "type": "column",
-          "settings": {
-            "star_color": "#00b67a",
-            "bg_star_color": "#c8c8c8",
-            "star_symbol_color": "#ffffff",
-            "stars_rating": 5,
-            "title": "Heading",
-            "text": "<p>Share positive thoughts and feedback from your customer..</p>",
-            "author": "<em><strong>Author</strong></em>"
+            "title": "Parfait pour les grands gabarits",
+            "text": "<p>Je prends habituellement du XXL et celui-ci m’a parfaitement convenu. Le tissu est léger, respirant et très confortable. J’ai hâte de tester les autres produits UndrDog ! </p>",
+            "author": "<em><strong>Thomas V.</strong></em>"
           }
         },
         "column_afKNpV": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "star_color": "#00b67a",
             "bg_star_color": "#c8c8c8",
             "star_symbol_color": "#ffffff",
             "stars_rating": 5,
-            "title": "Heading",
+            "title": "Excellente qualité",
             "text": "<p>Share positive thoughts and feedback from your customer..</p>",
             "author": "<em><strong>Author</strong></em>"
           }
@@ -676,16 +677,16 @@
             "bg_star_color": "#c8c8c8",
             "star_symbol_color": "#ffffff",
             "stars_rating": 5,
-            "title": "Heading",
-            "text": "<p>Share positive thoughts and feedback from your customer..</p>",
-            "author": "<em><strong>Author</strong></em>"
+            "title": "Le meilleur t-shirt que j’ai jamais eu",
+            "text": "<p>Dès que je l’ai sorti de la boîte, j’ai senti la différence : il est plus épais qu’un t-shirt en coton classique, très respirant et super confortable. Même après plusieurs lavages, il reste comme neuf.</p>",
+            "author": "<em><strong>Alex K.</strong></em>"
           }
         }
       },
       "block_order": [
+        "column_4nxn4m",
         "column_MFq7h7",
         "column_PkfWbF",
-        "column_4nxn4m",
         "column_afKNpV",
         "column_DHN8jJ"
       ],
@@ -701,8 +702,8 @@
         "heading_size": "h1",
         "subtitle": "Excellent [rating] <strong>/ 5</strong> [rating_stars]",
         "subheading_rating_text": "<strong>4.7</strong>",
-        "subheading_mobile_text_size": 18,
-        "subheading_desktop_text_size": 20,
+        "subheading_mobile_text_size": 16,
+        "subheading_desktop_text_size": 16,
         "subheading_font": "body",
         "star_color": "#00b67a",
         "bg_star_color": "#c8c8c8",
@@ -720,7 +721,7 @@
         "transparent_arrows": true,
         "dots_color_scheme": "inverse",
         "desktop_full_page": false,
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "slider_desktop": true,
         "per_move_desktop": 1,
         "desktop_spacing": 24,
