@@ -378,7 +378,7 @@
           "4f3e2a5f-006d-40ed-8370-49b15e0e427d": {
             "type": "subtotals",
             "settings": {
-              "display_total_savings": true,
+              "display_total_savings": false,
               "savings_left_text": "<strong>Total</strong>",
               "savings_right_text": "<strong>-[savings]</strong>",
               "savings_alignment": "spaced",
