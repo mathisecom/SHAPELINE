@@ -24,6 +24,7 @@
         },
         "text_nPQFPb": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "mobile_text_size": 8,
             "desktop_text_size": 12,
@@ -55,6 +56,7 @@
         },
         "trustpilot_stars_3pyXma": {
           "type": "trustpilot_stars",
+          "disabled": true,
           "settings": {
             "rating": 4.7,
             "star_color": "#00b67a",
@@ -366,6 +368,7 @@
     },
     "gp_global_section_601121248470107058_TeGHhD": {
       "type": "gp-global-section-601121248470107058",
+      "disabled": true,
       "name": "camoufle le ventre",
       "settings": {
         "section_preload": "off_lazy_script",
@@ -377,6 +380,7 @@
     },
     "gp_global_section_601120300758729650_9bUXEg": {
       "type": "gp-global-section-601120300758729650",
+      "disabled": true,
       "name": "RESPIRE BAMBOU",
       "settings": {
         "section_preload": "off_lazy_script",
@@ -387,6 +391,7 @@
     },
     "gp_global_section_601120352080233317_DbwXX8": {
       "type": "gp-global-section-601120352080233317",
+      "disabled": true,
       "name": "4X PLUS RÉSISTANT",
       "settings": {
         "section_preload": "off_lazy_script",
@@ -397,6 +402,7 @@
     },
     "gp_global_section_601120402076337004_hQdmrm": {
       "type": "gp-global-section-601120402076337004",
+      "disabled": true,
       "name": "300% plus résistant",
       "settings": {
         "section_preload": "off_lazy_script",
@@ -407,6 +413,7 @@
     },
     "gp_global_section_601125787780776666_HtMank": {
       "type": "gp-global-section-601125787780776666",
+      "disabled": true,
       "name": "différence",
       "settings": {
         "section_preload": "off_lazy_script",
@@ -427,6 +434,7 @@
     },
     "gp_global_section_601126241822573420_8mwBz6": {
       "type": "gp-global-section-601126241822573420",
+      "disabled": true,
       "name": "indispensable",
       "settings": {
         "section_preload": "off_lazy_script",
@@ -443,6 +451,7 @@
     },
     "gp_global_section_601199012107780695_JH7QG6": {
       "type": "gp-global-section-601199012107780695",
+      "disabled": true,
       "name": "5 controle qualité",
       "settings": {
         "section_preload": "off_lazy_script",
@@ -463,6 +472,7 @@
     },
     "gp_global_section_601200470635054031_AeaYrM": {
       "type": "gp-global-section-601200470635054031",
+      "disabled": true,
       "name": "FAQ",
       "settings": {
         "section_preload": "off_lazy_script",
