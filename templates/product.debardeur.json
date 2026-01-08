@@ -375,8 +375,8 @@
             "stars_translate": 0,
             "checkmark_color": "#6D388B",
             "checkmark_icon_color": "#FFFFFF",
-            "author_1": "<em>Author</em> [stars]",
-            "text_1": "<p>Share positive thoughts and feedback from your customer.</p>"
+            "author_1": "<em>Lucas</em> [stars]",
+            "text_1": "<p>Ce débardeur sculpte vraiment la silhouette – mon torse et mon ventre ont l’air beaucoup plus nets sous mes chemises. Très confortable même toute la journée.</p>"
           }
         },
         "reviews_6tFPn3": {
@@ -817,9 +817,9 @@
             "bg_star_color": "#c8c8c8",
             "star_symbol_color": "#fff",
             "stars_rating": 5,
-            "title": "Heading",
-            "text": "<p>Share positive thoughts and feedback from your customer..</p>",
-            "author": "<em><strong>Author</strong></em>"
+            "title": "Très Confortable",
+            "text": "<p>Ce débardeur sculpte vraiment la silhouette – mon torse et mon ventre ont l’air beaucoup plus nets sous mes chemises. Très confortable même toute la journée.</p>",
+            "author": "<em><strong>Lucas T.</strong></em>"
           }
         },
         "column_wwnPEA": {
@@ -829,9 +829,9 @@
             "bg_star_color": "#c8c8c8",
             "star_symbol_color": "#fff",
             "stars_rating": 5,
-            "title": "Heading",
-            "text": "<p>Share positive thoughts and feedback from your customer..</p>",
-            "author": "<em><strong>Author</strong></em>"
+            "title": "Super maintien sans être serré",
+            "text": "<p>Je n’aime pas les vêtements qui compressent trop, mais celui‑ci est parfait : il modelle sans gêner. Je le porte au bureau, en sortie ou à la salle, il reste confortable.</p>",
+            "author": "<em><strong>Antoine L.</strong></em>"
           }
         },
         "column_pxqDAq": {
@@ -841,9 +841,9 @@
             "bg_star_color": "#c8c8c8",
             "star_symbol_color": "#fff",
             "stars_rating": 5,
-            "title": "Heading",
-            "text": "<p>Share positive thoughts and feedback from your customer..</p>",
-            "author": "<em><strong>Author</strong></em>"
+            "title": "Beau design et bon confort",
+            "text": "<p>Je le trouve bien ajusté et solide. Peut‑être un peu serré au départ, mais il s’assouplit avec le temps. Résultat visible sous les t‑shirts !</p>",
+            "author": "<em><strong>Mickaël P.</strong></em>"
           }
         }
       },
