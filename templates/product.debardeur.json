@@ -426,7 +426,7 @@
       "name": "Horizontal Ticker",
       "settings": {
         "visibility": "always-display",
-        "speed": 3,
+        "speed": 2.5,
         "direction": "normal",
         "stop_on_hover": false,
         "mobile_spacing": 60,
@@ -444,7 +444,7 @@
         "hidden_products": "",
         "enable_specific_display": false,
         "displayed_products": "",
-        "mobile_padding_top": 12,
+        "mobile_padding_top": 28,
         "mobile_padding_bottom": 48,
         "desktop_padding_top": 16,
         "desktop_padding_bottom": 56,
