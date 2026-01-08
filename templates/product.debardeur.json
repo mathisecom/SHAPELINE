@@ -368,6 +368,85 @@
         "desktop_padding_bottom": 36
       }
     },
+    "icons_with_content_JgJfA9": {
+      "type": "icons-with-content",
+      "blocks": {
+        "icon_fptxRN": {
+          "type": "icon",
+          "settings": {
+            "icon": "check_circle",
+            "filled_icon": false,
+            "title": "Icon with text",
+            "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post</p>"
+          }
+        },
+        "icon_aGeim3": {
+          "type": "icon",
+          "settings": {
+            "icon": "check_circle",
+            "filled_icon": false,
+            "title": "Icon with text",
+            "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post</p>"
+          }
+        },
+        "icon_6QUVqj": {
+          "type": "icon",
+          "settings": {
+            "icon": "check_circle",
+            "filled_icon": false,
+            "title": "Icon with text",
+            "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post</p>"
+          }
+        },
+        "heading_CWJtmL": {
+          "type": "heading",
+          "settings": {
+            "title": "Content heading",
+            "title_highlight_color": "#6D388B",
+            "heading_size": "h1"
+          }
+        },
+        "text_LBKH9D": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair icons with content to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "icon_fptxRN",
+        "icon_aGeim3",
+        "icon_6QUVqj",
+        "heading_CWJtmL",
+        "text_LBKH9D"
+      ],
+      "name": "Icons with content",
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "color_scheme": "background-1",
+        "icon_size": "m",
+        "icon_position": "next-to-title",
+        "icon_color": "accent-1",
+        "icon_heading_size": "h3",
+        "icon_text_alignment": "left",
+        "icons_desktop_layout": "1-column",
+        "icons_mobile_layout": "1-column",
+        "desktop_content_alignment": "left",
+        "layout": "image_first",
+        "mobile_layout": "text_first",
+        "hide_content_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "custom_colors_background": "#FFFFFF",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#2E2A39",
+        "custom_colors_solid_button_background": "#dd1d1d",
+        "custom_colors_solid_button_text": "#ffffff",
+        "custom_colors_outline_button": "#dd1d1d"
+      }
+    },
     "gp_global_section_601121248470107058_TeGHhD": {
       "type": "gp-global-section-601121248470107058",
       "disabled": true,
@@ -526,6 +605,7 @@
   },
   "order": [
     "main",
+    "icons_with_content_JgJfA9",
     "gp_global_section_601121248470107058_TeGHhD",
     "gp_global_section_601120300758729650_9bUXEg",
     "gp_global_section_601120352080233317_DbwXX8",
