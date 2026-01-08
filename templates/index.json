@@ -403,6 +403,12 @@
             "margin_bottom": 24
           }
         },
+        "bf_size_charts_homepage_block_rPgmxE": {
+          "type": "shopify://apps/bf-size-charts/blocks/homepage-block/47ee4f2e-eb5e-41af-9beb-e2786646bf2a",
+          "settings": {
+            "product": "{{section.settings.product}}"
+          }
+        },
         "variant_picker_Q4CxVK": {
           "type": "variant_picker",
           "disabled": true,
@@ -552,6 +558,7 @@
         "trustpilot_stars_UjNj74",
         "price_aBQUKW",
         "reviews_cEM7Kw",
+        "bf_size_charts_homepage_block_rPgmxE",
         "variant_picker_Q4CxVK",
         "kaching_bundles_app_block_ygTeMD",
         "buy_buttons_j6aYPw",
