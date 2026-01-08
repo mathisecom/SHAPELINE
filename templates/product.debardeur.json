@@ -413,13 +413,13 @@
         "mobile_padding_bottom": 16,
         "desktop_padding_top": 36,
         "desktop_padding_bottom": 36,
-        "custom_colors_background": "#2E2A39",
+        "custom_colors_background": "#2e2a39",
         "custom_gradient_background": "",
-        "custom_colors_text": "#FFFFFF",
+        "custom_colors_text": "#ffffff",
         "custom_colors_solid_button_background": "#dd1d1d",
         "custom_colors_solid_button_text": "#ffffff",
         "custom_colors_outline_button": "#dd1d1d",
-        "custom_section_colors_background": "#FFFFFF",
+        "custom_section_colors_background": "#ffffff",
         "custom_section_gradient_background": ""
       }
     },
@@ -466,7 +466,7 @@
           "disabled": true,
           "settings": {
             "title": "Content heading",
-            "title_highlight_color": "#6D388B",
+            "title_highlight_color": "#6d388b",
             "heading_size": "h1"
           }
         },
@@ -505,9 +505,73 @@
         "hide_content_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36,
+        "custom_colors_background": "#ffffff",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#2e2a39",
+        "custom_colors_solid_button_background": "#dd1d1d",
+        "custom_colors_solid_button_text": "#ffffff",
+        "custom_colors_outline_button": "#dd1d1d"
+      }
+    },
+    "results_3QDWhm": {
+      "type": "results",
+      "blocks": {
+        "row_LQLVhN": {
+          "type": "row",
+          "settings": {
+            "percentage": 97,
+            "row_text": "<p>Noticed that this product has significantly improved their life.</p>"
+          }
+        },
+        "row_Y8BwMw": {
+          "type": "row",
+          "settings": {
+            "percentage": 92,
+            "row_text": "<p>Noticed that this product has significantly improved their life.</p>"
+          }
+        },
+        "row_FnHeAf": {
+          "type": "row",
+          "settings": {
+            "percentage": 87,
+            "row_text": "<p>Noticed that this product has significantly improved their life.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_LQLVhN",
+        "row_Y8BwMw",
+        "row_FnHeAf"
+      ],
+      "name": "Results",
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "title": "Results",
+        "title_highlight_color": "#6D388B",
+        "heading_size": "h1",
+        "text": "",
+        "video_muted_autoplay": true,
+        "color_scheme": "background-1",
+        "layout": "results_second",
+        "results_headline": "",
+        "results_title_highlight_color": "#6D388B",
+        "results_headline_size": "h2",
+        "results_text": "",
+        "results_headline_alignment": "left",
+        "caption": "<p>Caption about the results and/or link for their proof.</p>",
+        "button_label": "",
+        "link": "",
+        "button_style_secondary": false,
+        "atc_button_label": "",
+        "atc_product": "",
+        "atc_skip_cart": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
         "custom_colors_background": "#FFFFFF",
         "custom_gradient_background": "",
         "custom_colors_text": "#2E2A39",
+        "custom_colors_accent": "#dd1d1d",
         "custom_colors_solid_button_background": "#dd1d1d",
         "custom_colors_solid_button_text": "#ffffff",
         "custom_colors_outline_button": "#dd1d1d"
@@ -673,6 +737,7 @@
     "main",
     "image_with_text_TGV7f6",
     "icons_with_content_JgJfA9",
+    "results_3QDWhm",
     "gp_global_section_601121248470107058_TeGHhD",
     "gp_global_section_601120300758729650_9bUXEg",
     "gp_global_section_601120352080233317_DbwXX8",
