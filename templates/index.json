@@ -679,6 +679,26 @@
         "custom_cards_gradient_background": "",
         "custom_cards_colors_text": "#2e2a39"
       }
+    },
+    "gp_global_section_601199012107780695_few38y": {
+      "type": "gp-global-section-601199012107780695",
+      "name": "5 controle qualité",
+      "settings": {
+        "section_preload": "off_lazy_script",
+        "checksum": "",
+        "ggo9AiX-_2T_text": "Les 5 contrôles qualité UndrDog",
+        "ggOVkLqp_th_text": "<strong>Grâce à la technologie innovante DuraFlow™</strong>",
+        "ggLyJ8l5o99_text": "<p>Excellence du Style</p>",
+        "gg_GNfLCCmp_text": "<p><strong>Coupe ajustée</strong> : Maintien en haut, plus ample en bas<br><strong>Look moderne</strong> : Ourlet incurvé à l’avant et à l’arrière<br><strong>Signature UndrDog</strong> : Emblème de marque reconnaissable</p>",
+        "ggYUHfBn78Z_text": "<p>Performance Avancée</p>",
+        "ggv7nobO7K8_text": "<p><strong>Tenue parfaite</strong> : Ne se détend pas, ne s’affaisse pas, ne rétrécit pas<br><strong>Infroissable</strong> : Sèche rapidement, sans repassage<br><strong>Respectueux de la peau</strong> : Protection UV et hypoallergénique</p>",
+        "gg4hfcS3bzw_text": "<p>Écoresponsable &amp; Durable</p>",
+        "ggxPcDxm8Af_text": "<p><strong>Écologique</strong> : Sans polyester, fibres biodégradables<br><strong>Anti-pollution</strong> : Préserve les sols, l’air et les océans<br><strong>Sans PFAS</strong> : Zéro produits chimiques, durable par nature</p>",
+        "ggGZNoL-YGo_text": "<p>Excellence en Durabilité</p>",
+        "ggED_ToSb9H_text": "<p><strong>Résistant</strong> : Solidité du chanvre + grammage équilibré<br><strong>Ultra robuste</strong> : Ourlets renforcés à double couture<br><strong>Anti-déchirure</strong> : Résiste à l’usure et à l’abrasion</p>",
+        "ggadI4Jv93__text": "<p>Respirabilité &amp; Confort</p>",
+        "ggbtTPVeGgW_text": "<p><strong>Respirant</strong> : Design optimisé pour une circulation d’air maximale<br><strong>Anti-odeurs</strong> : Propriétés antibactériennes naturelles<br><strong>Poids intermédiaire</strong> : Confort immédiat et agréable dès l’enfilage<br><strong>Douceur durable</strong> : Confort longue durée chanvre &amp; bambou</p>"
+      }
     }
   },
   "order": [
@@ -694,6 +714,7 @@
     "gp_global_section_601120402076337004_APijPq",
     "featured_collection_zGfzRX",
     "featured_product_xFdh3j",
-    "trustpilot_reviews_9eViaT"
+    "trustpilot_reviews_9eViaT",
+    "gp_global_section_601199012107780695_few38y"
   ]
 }
