@@ -242,7 +242,7 @@
             "collapse_icon": "carret",
             "display_top_border": true,
             "open": false,
-            "content": "<p><strong>UnderDog Hemp</strong> : <strong>51 % chanvre, 31 % bambou, 18 % coton biologique</strong></p><p>Sans <strong>PFAS</strong>, <strong>microplastiques</strong> ni <strong>produits chimiques cancérigènes</strong>.</p><p>Conçu avec la technologie <strong>DuraFlow™</strong> : elle combine la résistance naturelle du chanvre et la respirabilité du bambou pour créer un t-shirt durable, sans produits chimiques éternels.</p><p><strong>Poids</strong> : confort intermédiaire avec une circulation d’air maximale<br/><br/><strong>Durabilité renforcée</strong> : 4× plus résistant que le coton<br/><br/><strong>Ultra-respirant</strong> : restez au frais grâce au bambou<br/><br/><strong>Évacuation de l’humidité</strong> : absorbe la transpiration, restez au sec<br/><br/><strong>Conserve sa forme</strong> : aucun affaissement ni étirement pendant 30 ans<br/><br/><strong>Infroissable</strong> : entretien facile, peu de repassage<br/><br/><strong>Éco-responsable</strong> : fibres 100 % naturelles – sans plastique<br/><br/><strong>Confort</strong> : confort élevé et durable<br/><br/><strong>Résistant à la décoloration</strong> : conserve sa couleur dans le temps<br/><br/><strong>Économique</strong> : dure plus longtemps que 10 t-shirts classiques<br/><br/><strong>Protection solaire</strong> : protection UV naturelle<br/><br/><strong>Hypoallergénique</strong> : sans allergies ni irritations</p>",
+            "content": "<p><strong>83 % Spandex, 17 % Nylon :</strong> Après de nombreuses recherches, notre équipe a déterminé que ce mélange offre les capacités de modelage et de tonification les plus efficaces du marché.</p><p><strong>Tissu à double couche :</strong> Nous sommes les seuls à utiliser deux fois plus de tissu que les gaines masculines classiques, pour des résultats supérieurs.</p>",
             "page": "",
             "margin_top": 24,
             "margin_bottom": 0
@@ -250,6 +250,7 @@
         },
         "de158e68-5d0d-4819-a625-e2dabdff87d1": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Garantie UndrDog à vie",
             "heading_size": "large",
@@ -282,6 +283,7 @@
         },
         "collapsible_tab_WeUEhR": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Existe-t-il d’autres couleurs ?",
             "heading_size": "large",
