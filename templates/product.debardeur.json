@@ -55,7 +55,6 @@
         },
         "trustpilot_stars_3pyXma": {
           "type": "trustpilot_stars",
-          "disabled": true,
           "settings": {
             "rating": 4.7,
             "star_color": "#00b67a",
