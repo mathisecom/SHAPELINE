@@ -379,6 +379,14 @@
             "heading_size": "h1"
           }
         },
+        "caption_fANHVT": {
+          "type": "caption",
+          "settings": {
+            "caption": "Un corps mieux sculpté = Une apparence améliorée",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "small"
+          }
+        },
         "text_FfA37m": {
           "type": "text",
           "settings": {
@@ -389,6 +397,7 @@
       },
       "block_order": [
         "heading_4FVbUw",
+        "caption_fANHVT",
         "text_FfA37m"
       ],
       "name": "t:sections.image-with-text.presets.name",
