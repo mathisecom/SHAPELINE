@@ -711,6 +711,106 @@
         "ggHO8sz1Tw1_label": "<p>PROFITER DE L'OFFRE !</p>"
       }
     },
+    "trustpilot_reviews_nMyGeH": {
+      "type": "trustpilot-reviews",
+      "blocks": {
+        "column_4qXGNA": {
+          "type": "column",
+          "settings": {
+            "star_color": "#00b67a",
+            "bg_star_color": "#c8c8c8",
+            "star_symbol_color": "#fff",
+            "stars_rating": 5,
+            "title": "Heading",
+            "text": "<p>Share positive thoughts and feedback from your customer..</p>",
+            "author": "<em><strong>Author</strong></em>"
+          }
+        },
+        "column_wwnPEA": {
+          "type": "column",
+          "settings": {
+            "star_color": "#00b67a",
+            "bg_star_color": "#c8c8c8",
+            "star_symbol_color": "#fff",
+            "stars_rating": 5,
+            "title": "Heading",
+            "text": "<p>Share positive thoughts and feedback from your customer..</p>",
+            "author": "<em><strong>Author</strong></em>"
+          }
+        },
+        "column_pxqDAq": {
+          "type": "column",
+          "settings": {
+            "star_color": "#00b67a",
+            "bg_star_color": "#c8c8c8",
+            "star_symbol_color": "#fff",
+            "stars_rating": 5,
+            "title": "Heading",
+            "text": "<p>Share positive thoughts and feedback from your customer..</p>",
+            "author": "<em><strong>Author</strong></em>"
+          }
+        }
+      },
+      "block_order": [
+        "column_4qXGNA",
+        "column_wwnPEA",
+        "column_pxqDAq"
+      ],
+      "name": "Trustpilot reviews",
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "color_scheme": "background-1",
+        "desktop_content_position": "above",
+        "desktop_content_alignment": "center",
+        "title": "Trustpilot reviews",
+        "title_highlight_color": "#6D388B",
+        "heading_size": "h1",
+        "subtitle": "Excellent [rating] <strong>/ 5</strong> [rating_stars]",
+        "subheading_rating_text": "<strong>4.8</strong>",
+        "subheading_mobile_text_size": 15,
+        "subheading_desktop_text_size": 16,
+        "subheading_font": "body",
+        "star_color": "#00b67a",
+        "bg_star_color": "#c8c8c8",
+        "star_symbol_color": "#fff",
+        "stars_rating": 5,
+        "text": "",
+        "cards_border_radius": 16,
+        "card_alignment": "center",
+        "show_stars": true,
+        "cards_color_scheme": "background-2",
+        "type": "slide",
+        "autoplay": false,
+        "autoplay_speed": 5,
+        "arrows_color_scheme": "inverse",
+        "transparent_arrows": true,
+        "dots_color_scheme": "inverse",
+        "desktop_full_page": false,
+        "columns_desktop": 3,
+        "slider_desktop": false,
+        "per_move_desktop": 1,
+        "desktop_spacing": 24,
+        "desktop_side_padding": 0,
+        "desktop_padding_calc": true,
+        "desktop_adaptive_height": false,
+        "desktop_dots_position": "under",
+        "desktop_arrows_position": "sides",
+        "slider_mobile": true,
+        "enable_mobile_preview": false,
+        "mobile_adaptive_height": false,
+        "mobile_dots_position": "under",
+        "mobile_arrows_position": "under",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "custom_colors_background": "#FFFFFF",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#2E2A39",
+        "custom_cards_colors_background": "#F3F3F3",
+        "custom_cards_gradient_background": "",
+        "custom_cards_colors_text": "#2E2A39"
+      }
+    },
     "related-products": {
       "type": "related-products",
       "disabled": true,
@@ -746,6 +846,7 @@
     "gp_global_section_601126241822573420_8mwBz6",
     "gp_global_section_601199012107780695_JH7QG6",
     "gp_global_section_601200470635054031_AeaYrM",
+    "trustpilot_reviews_nMyGeH",
     "related-products"
   ]
 }
