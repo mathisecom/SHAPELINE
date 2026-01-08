@@ -520,21 +520,21 @@
           "type": "row",
           "settings": {
             "percentage": 97,
-            "row_text": "<p>Noticed that this product has significantly improved their life.</p>"
+            "row_text": "<p><strong>Une silhouette plus sculptée et tonique</strong> dans toutes les tenues, pour toutes les occasions.</p>"
           }
         },
         "row_Y8BwMw": {
           "type": "row",
           "settings": {
             "percentage": 92,
-            "row_text": "<p>Noticed that this product has significantly improved their life.</p>"
+            "row_text": "<p><strong>Se sentir plus attirant</strong>, que ce soit en rendez-vous, au bureau ou à la salle de sport.</p>"
           }
         },
         "row_FnHeAf": {
           "type": "row",
           "settings": {
             "percentage": 87,
-            "row_text": "<p>Noticed that this product has significantly improved their life.</p>"
+            "row_text": "<p><strong>Se sentir tellement en forme</strong> que cela les a inspirés à intensifier leurs entraînements.</p>"
           }
         }
       },
@@ -559,7 +559,7 @@
         "results_headline_size": "h2",
         "results_text": "",
         "results_headline_alignment": "left",
-        "caption": "<p>Caption about the results and/or link for their proof.</p>",
+        "caption": "",
         "button_label": "",
         "link": "",
         "button_style_secondary": false,
