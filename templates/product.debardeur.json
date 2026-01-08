@@ -24,13 +24,12 @@
         },
         "text_nPQFPb": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "mobile_text_size": 8,
+            "mobile_text_size": 10,
             "desktop_text_size": 12,
             "alignment": "left",
             "text_color": "#121212",
-            "text_1": "<strong>CHANVRE. BAMBOU. SANS PFAS. ÉPOUSE LES BRAS. CACHE LE VENTRE.</strong>",
+            "text_1": "<strong>#MEILLEUR FAÇONNEUR DE SILHOUETTE</strong>",
             "text_2": "",
             "text_3": "",
             "icon_scale": 120,
@@ -72,6 +71,7 @@
         },
         "reviews_8UgFbe": {
           "type": "reviews",
+          "disabled": true,
           "settings": {
             "color_scheme": "background-1",
             "show_custom_bg": false,
