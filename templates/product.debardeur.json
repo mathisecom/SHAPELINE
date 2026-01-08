@@ -1,0 +1,527 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "text_size": "h2",
+            "title_alignment": "left",
+            "uppercase_title": false,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "text_nPQFPb": {
+          "type": "text",
+          "settings": {
+            "mobile_text_size": 8,
+            "desktop_text_size": 12,
+            "alignment": "left",
+            "text_color": "#121212",
+            "text_1": "<strong>CHANVRE. BAMBOU. SANS PFAS. ÉPOUSE LES BRAS. CACHE LE VENTRE.</strong>",
+            "text_2": "",
+            "text_3": "",
+            "icon_scale": 120,
+            "icon_color": "#121212",
+            "icon_1": "",
+            "filled_icon_1": false,
+            "icon_2": "check_circle",
+            "filled_icon_2": false,
+            "icon_3": "check_circle",
+            "filled_icon_3": false,
+            "width": "100%",
+            "direction": "horizontal",
+            "column_gap": 3,
+            "enable_bg": false,
+            "bg_color": "#f3f3f3",
+            "corner_radius": 40,
+            "padding": 3,
+            "border_size": 0,
+            "border_color": "#b7b7b7",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "trustpilot_stars_3pyXma": {
+          "type": "trustpilot_stars",
+          "settings": {
+            "rating": 4.7,
+            "star_color": "#00b67a",
+            "bg_star_color": "#c8c8c8",
+            "star_symbol_color": "#ffffff",
+            "label": "<strong>4.7/5 </strong>sur 1,478 Avis Clients",
+            "size": 12,
+            "alignment": "flex-start",
+            "scroll_id": "",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "reviews_8UgFbe": {
+          "type": "reviews",
+          "settings": {
+            "color_scheme": "background-1",
+            "show_custom_bg": false,
+            "custom_bg_color": "#f2f2f2",
+            "corner_radius": 10,
+            "border_width": 1,
+            "border_color": "#ec612a",
+            "avatar_alignment": "top",
+            "avatar_corner_radius": 32,
+            "star_color": "#05b67a",
+            "stars_translate": 0,
+            "checkmark_color": "#6d388b",
+            "checkmark_icon_color": "#ffffff",
+            "slider_type": "slide",
+            "autoplay": false,
+            "autoplay_speed": 5,
+            "display_arrows": false,
+            "display_dots": false,
+            "author_1": "<em>Mark T</em> [stars]",
+            "image_1": "shopify://shop_images/hero-author_small_1bd07e01-6cfe-4f0e-bb5b-cf14afc66317.png",
+            "text_1": "<p><strong>\"Le chanvre, c’est du sérieux ! Hyper respirant, doux, durable, et en plus il cache mon ventre\"</strong></p>",
+            "author_2": "",
+            "text_2": "",
+            "author_3": "",
+            "text_3": "",
+            "margin_top": 24,
+            "margin_bottom": 15
+          }
+        },
+        "price": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "layout": "price_first",
+            "price_color": "accent-1",
+            "compare_price_color": "text",
+            "displayed_badge": "sale",
+            "icon_scale": 140,
+            "custom_badge_text": "[icon_1] SPECIAL OFFER",
+            "icon_1": "redeem",
+            "filled_icon_1": false,
+            "icon_2": "check_circle",
+            "filled_icon_2": false,
+            "margin_top": 9,
+            "margin_bottom": 15
+          }
+        },
+        "5fcc0428-e768-4cb7-bea3-eb0274198dd1": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_types": "pills, dropdown, dropdown",
+            "custom_labels": "[name] - [selected]",
+            "skip_unavailable": false,
+            "swatches_size": "small",
+            "swatches_custom_colors": "disabled",
+            "swatches_custom_colors_list": "#000000, #6D388B, #0000FF, #FFCC00",
+            "full_width_dropdowns": false,
+            "breaks_style": "normal",
+            "breaks_headline": "BUNDLE & SAVE",
+            "breaks_display_selected_indicator": true,
+            "breaks_border_radius": 10,
+            "breaks_border_width": 2,
+            "breaks_color_scheme": "accent-1",
+            "breaks_badges": "[empty], Most popular, [empty]",
+            "breaks_badge_style": "1",
+            "breaks_badge_color": "accent-1",
+            "breaks_displayed_images": "variant_images",
+            "breaks_custom_images": "",
+            "breaks_image_width": 70,
+            "breaks_space_images": true,
+            "breaks_vertical_images_position": "top",
+            "breaks_vertical_prices_layout": "vertical",
+            "breaks_labels": "[name], [name], [name]",
+            "breaks_benefits": "[empty], Free Shipping, Free Shipping",
+            "breaks_benefit_position": "top",
+            "breaks_benefit_style": "outlined",
+            "breaks_benefit_color": "accent-1",
+            "breaks_captions": "Variant 1 caption, Variant 2 caption, Variant 3 caption",
+            "breaks_price_texts": "[price], [price], [price]",
+            "breaks_compare_price_texts": "[compare_price], [compare_price], [compare_price]",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "skip_cart": false,
+            "uppercase_text": true,
+            "icon_scale": 120,
+            "icon_spacing": 10,
+            "display_price": false,
+            "enable_custom_color": true,
+            "custom_color": "#42993e",
+            "enable_secondary_btn": false,
+            "secondary_btn_label": "Buy It Now",
+            "secondary_btn_enable_custom_color": false,
+            "secondary_btn_custom_color": "#dd1d1d",
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "payment_badges_GfNhhT": {
+          "type": "payment_badges",
+          "settings": {
+            "enabled_payment_types": "apple_pay, visa, paypal, maestro, master, american_express",
+            "margin_top": 0,
+            "margin_bottom": 15
+          }
+        },
+        "e0a0b690-50df-4ca4-acfd-ce2980696cce": {
+          "type": "shipping_checkpoints",
+          "disabled": true,
+          "settings": {
+            "icon_1": "add_shopping_cart",
+            "filled_icon_1": false,
+            "top_text_1": "<strong>[start_date]</strong>",
+            "bottom_text_1": "Ordered",
+            "min_days_1": 0,
+            "max_days_1": 0,
+            "icon_2": "local_shipping",
+            "filled_icon_2": false,
+            "top_text_2": "<strong>[start_date] - [end_date]</strong>",
+            "bottom_text_2": "Order Ready",
+            "min_days_2": 1,
+            "max_days_2": 2,
+            "icon_3": "redeem",
+            "filled_icon_3": false,
+            "top_text_3": "<strong>[start_date] - [end_date]</strong>",
+            "bottom_text_3": "Delivered",
+            "min_days_3": 10,
+            "max_days_3": 12,
+            "icon_4": "",
+            "filled_icon_4": false,
+            "top_text_4": "",
+            "bottom_text_4": "",
+            "date_format": "mm_dd",
+            "days_labels": "Mon, Tue, Wed, Thu, Fri, Sat, Sun",
+            "months_labels": "Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec",
+            "color_scheme": "inverse",
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "custom_liquid_4mN7UR": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"product-info__liquid\">\n            <!-- VALORISE — Livraison dynamique (court, mobile, point animé) -->\n<div class=\"valo-delivery\" id=\"valoDelivery\" role=\"status\">\n  <style>\n    .valo-delivery{\n      display:flex; align-items:center; gap:6px;\n      justify-content:center;\n      font-size:12px; font-weight:500; color:#111;\n      background:transparent; padding:4px 0;\n      white-space:nowrap;\n    }\n    .valo-delivery .dot{\n      width:9px; height:9px; border-radius:9999px;\n      background:rgba(34,197,94,.25);\n      box-shadow:0 0 0 0 rgba(34,197,94,.35);\n      animation:valoPulse 1.6s infinite;\n      flex-shrink:0;\n    }\n    .valo-delivery b{\n      color:#b27345; font-weight:600;\n    }\n    @keyframes valoPulse{\n      0%{box-shadow:0 0 0 0 rgba(34,197,94,.35);}\n      70%{box-shadow:0 0 0 6px rgba(34,197,94,0);}\n      100%{box-shadow:0 0 0 0 rgba(34,197,94,0);}\n    }\n    @media(max-width:420px){\n      .valo-delivery{font-size:11px; gap:5px; white-space:normal;}\n    }\n  </style>\n\n  <span class=\"dot\" aria-hidden=\"true\"></span>\n  <span id=\"valoDeliveryText\">En stock · Livraison express <b>sam 10 janv.</b> – <b>lun 12 janv.</b></span>\n\n  <script>\n    (function(){\n      const el = document.getElementById(\"valoDeliveryText\");\n      const today = new Date();\n\n      // ajoute des jours en sautant le dimanche\n      function addDaysSkipSunday(date, days){\n        const d = new Date(date);\n        let added = 0;\n        while(added < days){\n          d.setDate(d.getDate() + 1);\n          if (d.getDay() !== 0) added++; // 0 = dimanche\n        }\n        return d;\n      }\n\n      // expédition le lendemain\n      const ship = new Date(today);\n      ship.setDate(ship.getDate() + 1);\n      if (ship.getDay() === 0) ship.setDate(ship.getDate() + 1); // si dimanche → lundi\n\n      // fenêtre 48–72h ouvrées\n      const min = addDaysSkipSunday(ship, 2);\n      const max = addDaysSkipSunday(ship, 3);\n\n      const opt = { weekday: \"short\", day: \"numeric\", month: \"short\" };\n      const s1 = min.toLocaleDateString(\"fr-FR\", opt).replace(\".\", \"\");\n      const s2 = max.toLocaleDateString(\"fr-FR\", opt).replace(\".\", \"\");\n\n      // version courte pour mobile\n      el.innerHTML = `En stock · Livraison express <b>${s1}</b> – <b>${s2}</b>`;\n    })();\n  </script>\n</div>\n          </div>"
+          }
+        },
+        "collapsible_tab_prfPi9": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Matériau",
+            "heading_size": "large",
+            "icon": "",
+            "filled_icon": false,
+            "collapse_icon": "carret",
+            "display_top_border": true,
+            "open": false,
+            "content": "<p><strong>UnderDog Hemp</strong> : <strong>51 % chanvre, 31 % bambou, 18 % coton biologique</strong></p><p>Sans <strong>PFAS</strong>, <strong>microplastiques</strong> ni <strong>produits chimiques cancérigènes</strong>.</p><p>Conçu avec la technologie <strong>DuraFlow™</strong> : elle combine la résistance naturelle du chanvre et la respirabilité du bambou pour créer un t-shirt durable, sans produits chimiques éternels.</p><p><strong>Poids</strong> : confort intermédiaire avec une circulation d’air maximale<br/><br/><strong>Durabilité renforcée</strong> : 4× plus résistant que le coton<br/><br/><strong>Ultra-respirant</strong> : restez au frais grâce au bambou<br/><br/><strong>Évacuation de l’humidité</strong> : absorbe la transpiration, restez au sec<br/><br/><strong>Conserve sa forme</strong> : aucun affaissement ni étirement pendant 30 ans<br/><br/><strong>Infroissable</strong> : entretien facile, peu de repassage<br/><br/><strong>Éco-responsable</strong> : fibres 100 % naturelles – sans plastique<br/><br/><strong>Confort</strong> : confort élevé et durable<br/><br/><strong>Résistant à la décoloration</strong> : conserve sa couleur dans le temps<br/><br/><strong>Économique</strong> : dure plus longtemps que 10 t-shirts classiques<br/><br/><strong>Protection solaire</strong> : protection UV naturelle<br/><br/><strong>Hypoallergénique</strong> : sans allergies ni irritations</p>",
+            "page": "",
+            "margin_top": 24,
+            "margin_bottom": 0
+          }
+        },
+        "de158e68-5d0d-4819-a625-e2dabdff87d1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Garantie UndrDog à vie",
+            "heading_size": "large",
+            "icon": "",
+            "filled_icon": false,
+            "collapse_icon": "carret",
+            "display_top_border": true,
+            "open": false,
+            "content": "<p><strong>Vous n’aimez pas la coupe ? Vous n’aimez pas la matière ?</strong><br/><br/>Contactez simplement <a><strong>support@undrdoghemp.com</strong></a> pour un retour facile.<br/><br/><strong>Garantie UndrDog à vie, sans compromis.</strong><br/><br/>Oui… on est aussi confiants que ça. </p>",
+            "page": "",
+            "margin_top": 24,
+            "margin_bottom": 0
+          }
+        },
+        "collapsible_tab_qmFVic": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Taille & Coupe",
+            "heading_size": "large",
+            "icon": "",
+            "filled_icon": false,
+            "collapse_icon": "carret",
+            "display_top_border": true,
+            "open": false,
+            "content": "<ul><li><strong>Coupe</strong> : ajustée au niveau des bras et de la poitrine, plus ample au niveau du ventre. Une silhouette musclée, quelle que soit votre morphologie.</li></ul><p></p><ul><li><strong>Pour une coupe légèrement</strong> décontractée, prenez votre <strong>taille habituelle</strong>. Pour un rendu plus ajusté, prenez <strong>une taille en dessous</strong>.</li></ul>",
+            "page": "",
+            "margin_top": 24,
+            "margin_bottom": 0
+          }
+        },
+        "collapsible_tab_WeUEhR": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Existe-t-il d’autres couleurs ?",
+            "heading_size": "large",
+            "icon": "",
+            "filled_icon": false,
+            "collapse_icon": "carret",
+            "display_top_border": true,
+            "open": false,
+            "content": "<p>Ceci est <strong>« Project 001 : Midnight »</strong>. Le <strong>seul projet disponible au public</strong>.<br/><br/>C’est <strong>l’emblème officiel d’UndrDog</strong>.</p><p>Après votre achat, vous rejoindrez <strong>des milliers de membres du collectif UndrDog</strong>, avec un accès <strong>exclusif aux futurs projets en édition limitée</strong> (différentes couleurs, styles, designs, etc.).</p>",
+            "page": "",
+            "margin_top": 24,
+            "margin_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "text_nPQFPb",
+        "trustpilot_stars_3pyXma",
+        "reviews_8UgFbe",
+        "price",
+        "5fcc0428-e768-4cb7-bea3-eb0274198dd1",
+        "buy_buttons",
+        "payment_badges_GfNhhT",
+        "e0a0b690-50df-4ca4-acfd-ce2980696cce",
+        "description",
+        "custom_liquid_4mN7UR",
+        "collapsible_tab_prfPi9",
+        "de158e68-5d0d-4819-a625-e2dabdff87d1",
+        "collapsible_tab_qmFVic",
+        "collapsible_tab_WeUEhR"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_id": false,
+        "enable_sticky_info": true,
+        "display_variant_image_first": false,
+        "disable_prepend": true,
+        "hide_variants": false,
+        "variant_image_filtering": "none",
+        "image_zoom": "none",
+        "thumbnails_ratio": "square",
+        "arrows_color_scheme": "inverse",
+        "transparent_arrows": false,
+        "dots_color_scheme": "inverse",
+        "video_player": "play_btn",
+        "enable_video_looping": false,
+        "autoplay_videos_pause_btn": false,
+        "video_sound_btn": false,
+        "video_timeline": false,
+        "play_btn_color_scheme": "accent-1",
+        "sound_btn_color_scheme": "inverse",
+        "timeline_color": "accent-1",
+        "media_size": "medium",
+        "media_position": "left",
+        "gallery_layout": "thumbnail_slider",
+        "desktop_thumbnails_position": "bottom",
+        "desktop_thumbnails_count": 5,
+        "desktop_vertical_thumbnails_width": 16,
+        "desktop_vertical_thumbnails_hide_arrows": false,
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "desktop_arrows_position": "hidden",
+        "mobile_media_corner_radius": 0,
+        "mobile_spacing_pixels": 10,
+        "mobile_arrows_position": "hidden",
+        "mobile_pagination": "dots_under",
+        "mobile_thumbnails_position": "hidden",
+        "mobile_thumbnails_count": 5,
+        "mobile_vertical_thumbnails_width": 22,
+        "mobile_vertical_thumbnails_hide_arrows": true,
+        "mobile_scroll_padding_percentage": 0,
+        "mobile_scroll_padding_pixels": 14,
+        "enable_mobile_outher_spacing": false,
+        "mobile_slides_container_width": 100,
+        "mobile_slides_inner_width": 100,
+        "trust_badge_position": "top-right",
+        "trust_badge_size": "medium",
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 16,
+        "desktop_padding_top": 36,
+        "desktop_padding_bottom": 36
+      }
+    },
+    "gp_global_section_601121248470107058_TeGHhD": {
+      "type": "gp-global-section-601121248470107058",
+      "name": "camoufle le ventre",
+      "settings": {
+        "section_preload": "off_lazy_script",
+        "checksum": "",
+        "ggFORxgWn3P_text": "Camoufle le ventre et la poitrine",
+        "ggxtRyrQ61k_text": "<p>La résistance ferme du chanvre épouse votre corps là où il faut.</p>",
+        "ggzNzsmv9np_label": "<p>Profiter de L'Offre !</p>"
+      }
+    },
+    "gp_global_section_601120300758729650_9bUXEg": {
+      "type": "gp-global-section-601120300758729650",
+      "name": "RESPIRE BAMBOU",
+      "settings": {
+        "section_preload": "off_lazy_script",
+        "checksum": "",
+        "gg3QzAcbQUe_text": "<span style=\"color:#F2F2F2;\">Respirabilité</span> <span style=\"color:#ED6129;\">Inégalée</span>",
+        "ggWbvJicCkg_text": "<p>Restez au frais grâce à la respirabilité naturelle du bambou.</p>"
+      }
+    },
+    "gp_global_section_601120352080233317_DbwXX8": {
+      "type": "gp-global-section-601120352080233317",
+      "name": "4X PLUS RÉSISTANT",
+      "settings": {
+        "section_preload": "off_lazy_script",
+        "checksum": "",
+        "ggjwsEGrxnm_text": "<span style=\"color:#ED6129;\">4× plus résistant</span><span style=\"color:#F2F2F2;\"> que le coton</span>",
+        "gggpwWFHyAZ_text": "<p>Le chanvre à haute ténacité rend ce t-shirt presque indestructible.</p>"
+      }
+    },
+    "gp_global_section_601120402076337004_hQdmrm": {
+      "type": "gp-global-section-601120402076337004",
+      "name": "300% plus résistant",
+      "settings": {
+        "section_preload": "off_lazy_script",
+        "checksum": "",
+        "ggKePD6T9Hr_text": "300 % <span style=\"color:#EC6129;\">plus résistant à la transpiration</span> que les T-Shirts en Coton Classiques",
+        "ggIGmbT9LJW_text": "<p>Le chanvre crée une barrière naturelle qui absorbe l’humidité, vous gardant au sec et avec une odeur bien meilleure que prévu.</p>"
+      }
+    },
+    "gp_global_section_601125787780776666_HtMank": {
+      "type": "gp-global-section-601125787780776666",
+      "name": "différence",
+      "settings": {
+        "section_preload": "off_lazy_script",
+        "checksum": "",
+        "ggsawoC9-NB_text": "Pourquoi UndrDog fait la différence",
+        "ggQuaEznvy9_text": "<p>Les autres marques proposent 20 modèles de t-shirts.</p><p> </p><p>Nous, on en propose un seul. Parce qu’un seul suffit lorsqu’il est parfaitement conçu.</p><p> </p><p>Nous avons passé au peigne fin :</p>",
+        "gg-TxmIp5dS_childItem_0": "<p>Densité de couture</p>",
+        "gg-TxmIp5dS_childItem_1": "<p>Tombé du tissu</p>",
+        "gg-TxmIp5dS_childItem_2": "<p><strong>Courbure de l’ourlet</strong></p>",
+        "gg-TxmIp5dS_childItem_3": "<p>Coupe ajustée des manches</p>",
+        "gg-TxmIp5dS_childItem_4": "<p>Reprise de forme après étirement</p>",
+        "ggOsyZQPTl6_childItem_0": "<p>Tenue du col dans le temps</p>",
+        "ggOsyZQPTl6_childItem_1": "<p>Douceur sans produits chimiques</p>",
+        "ggOsyZQPTl6_childItem_2": "<p><strong>Durabilité</strong></p>",
+        "ggOsyZQPTl6_childItem_3": "<p><strong>Maille respirante à haute circulation d’air</strong></p>",
+        "ggnndQ8Fuwh_text": "Résultat ? "
+      }
+    },
+    "gp_global_section_601126241822573420_8mwBz6": {
+      "type": "gp-global-section-601126241822573420",
+      "name": "indispensable",
+      "settings": {
+        "section_preload": "off_lazy_script",
+        "checksum": "",
+        "ggx8r4pcRTR_text": "Voici pourquoi c’est indispensable",
+        "ggXAwPGzh_L_text": "<p><span style=\"font-size:14px;\">Vous pensiez que vos t-shirts étaient corrects… jusqu’à ce que vous enfiliez celui-ci. <strong>Et là, vous vous demandez soudain :</strong></span></p>",
+        "ggwq55xu6bz_childItem_0": "<p><span style=\"font-size:14px;\"><strong>« Pourquoi rien d’autre ne tombe aussi bien ? »</strong></span></p>",
+        "ggwq55xu6bz_childItem_1": "<p><strong>« Pourquoi mes autres t-shirts sentent le renfermé après une seule fois portée ? »</strong></p>",
+        "ggwq55xu6bz_childItem_2": "<p><strong>« Attends… mes bras ont vraiment l’air plus musclés ou c’est juste la coupe ? »</strong></p>",
+        "ggS2aPy9ci7_text": "<span style=\"color:#ED6129;\"><strong>Spoiler :</strong></span><strong> c’est la coupe.</strong>",
+        "ggd6ukn5vmH_text": "<p>Ce t-shirt fait plus pour votre confiance en </p><p>vous que votre poudre de protéines.</p>",
+        "gg2-CfmIk5O_label": "<p>PROFITER DE L'OFFRE !</p>"
+      }
+    },
+    "gp_global_section_601199012107780695_JH7QG6": {
+      "type": "gp-global-section-601199012107780695",
+      "name": "5 controle qualité",
+      "settings": {
+        "section_preload": "off_lazy_script",
+        "checksum": "",
+        "ggo9AiX-_2T_text": "Les 5 contrôles qualité UndrDog",
+        "ggOVkLqp_th_text": "<strong>Grâce à la technologie innovante DuraFlow™</strong>",
+        "ggLyJ8l5o99_text": "<p>Excellence du Style</p>",
+        "gg_GNfLCCmp_text": "<p><strong>Coupe ajustée</strong> : Maintien en haut, plus ample en bas<br><strong>Look moderne</strong> : Ourlet incurvé à l’avant et à l’arrière<br><strong>Signature UndrDog</strong> : Emblème de marque reconnaissable</p>",
+        "ggYUHfBn78Z_text": "<p>Performance Avancée</p>",
+        "ggv7nobO7K8_text": "<p><strong>Tenue parfaite</strong> : Ne se détend pas, ne s’affaisse pas, ne rétrécit pas<br><strong>Infroissable</strong> : Sèche rapidement, sans repassage<br><strong>Respectueux de la peau</strong> : Protection UV et hypoallergénique</p>",
+        "gg4hfcS3bzw_text": "<p>Écoresponsable &amp; Durable</p>",
+        "ggxPcDxm8Af_text": "<p><strong>Écologique</strong> : Sans polyester, fibres biodégradables<br><strong>Anti-pollution</strong> : Préserve les sols, l’air et les océans<br><strong>Sans PFAS</strong> : Zéro produits chimiques, durable par nature</p>",
+        "ggGZNoL-YGo_text": "<p>Excellence en Durabilité</p>",
+        "ggED_ToSb9H_text": "<p><strong>Résistant</strong> : Solidité du chanvre + grammage équilibré<br><strong>Ultra robuste</strong> : Ourlets renforcés à double couture<br><strong>Anti-déchirure</strong> : Résiste à l’usure et à l’abrasion</p>",
+        "ggadI4Jv93__text": "<p>Respirabilité &amp; Confort</p>",
+        "ggbtTPVeGgW_text": "<p><strong>Respirant</strong> : Design optimisé pour une circulation d’air maximale<br><strong>Anti-odeurs</strong> : Propriétés antibactériennes naturelles<br><strong>Poids intermédiaire</strong> : Confort immédiat et agréable dès l’enfilage<br><strong>Douceur durable</strong> : Confort longue durée chanvre &amp; bambou</p>"
+      }
+    },
+    "gp_global_section_601200470635054031_AeaYrM": {
+      "type": "gp-global-section-601200470635054031",
+      "name": "FAQ",
+      "settings": {
+        "section_preload": "off_lazy_script",
+        "checksum": "",
+        "gg-plpLtMSq_text": "Questions Fréquentes",
+        "ggCXSNqC15m_childItem_0": "<p><strong>Sera-t-il vraiment confortable ?</strong></p>",
+        "ggCXSNqC15m_childItem_1": "<p><strong>Comment peut-il être à la fois respirant </strong><i><strong>et</strong></i><strong> durable ?</strong></p>",
+        "ggCXSNqC15m_childItem_2": "<p><strong>Qu’est-ce qui le rend sans odeurs ni mauvaises senteurs ?</strong></p>",
+        "ggCXSNqC15m_childItem_3": "<p><strong>Un lavage normal suffit-il ?</strong></p>",
+        "ggCXSNqC15m_childItem_4": "<p><strong>Qu’a de si spécial la technologie DuraFlow™ ?</strong></p>",
+        "ggCXSNqC15m_childItem_5": "<p><strong>Pourquoi utiliser du chanvre, du bambou et du coton ?</strong></p>",
+        "ggCXSNqC15m_childItem_6": "<p><strong>Une garantie à vie… vraiment ?</strong></p>",
+        "ggCXSNqC15m_childItem_7": "<p><strong>Qu’est-ce qui le rend infroissable ?</strong></p>",
+        "ggCXSNqC15m_childItem_8": "<p><strong>À quel point ce t-shirt est-il durable et écoresponsable ?</strong></p>",
+        "ggp04JxOygp_text": "<p><strong>Absolument. Le mélange DuraFlow™ de chanvre, de bambou et de coton biologique crée un t-shirt de poids intermédiaire, avec un grammage plus élevé, conçu pour un confort optimal. Il est respirant, doux et ajusté pour mettre en valeur la silhouette masculine, en épousant le corps aux bons endroits afin de garantir un confort durable tout au long de la journée.</strong></p>",
+        "ggFyOQ31RSz_text": "<p><strong>UndrDog associe la résistance incomparable du chanvre à la respirabilité naturelle du bambou. Résultat : un t-shirt à la fois robuste et léger, qui vous garde à l’aise en toutes circonstances.</strong></p>",
+        "ggh9_6OK-1q_text": "<p><strong>Le bambou et le chanvre possèdent naturellement des propriétés antimicrobiennes qui neutralisent les odeurs. Leur conception évacue efficacement l’humidité, éloigne la transpiration de la peau et facilite son évaporation, pour vous garder au sec. Aucun produit chimique synthétique — uniquement des performances 100 % naturelles.</strong></p>",
+        "ggQXETDRMNZ_text": "<p><strong>Oui, lavez-le et séchez-le comme n’importe quel autre t-shirt, sans entretien particulier. Sa durabilité et sa tenue de forme restent intactes, même après de nombreux lavages et un passage au sèche-linge à basse température.</strong></p>",
+        "ggzOQohLGuu_text": "<p><strong>DuraFlow™ est une technologie révolutionnaire en instance de brevet, et le tout premier mélange au monde associant la solidité du chanvre, la respirabilité du bambou et la douceur du coton biologique.</strong></p><p> </p><p>Sa conception tri-matières repose sur une structure à trois brins, plus résistante qu’une structure à deux brins grâce à une tension uniforme, et plus stable qu’une structure à quatre brins, où les fibres peuvent se gêner entre elles.</p><p> </p><p>Cet équilibre parfait combine solidité, durabilité et respirabilité, pour créer le t-shirt le plus résistant au monde, sans toxines, avec <strong>garantie à vie</strong>. Conçu pour le confort, pensé pour durer.</p>",
+        "ggfmxCrYpii_text": "<p><strong>Le chanvre apporte une solidité incomparable, le bambou assure respirabilité et confort, et le coton biologique ajoute une douceur exceptionnelle. Ensemble, ils créent le tissu le plus satisfaisant en termes de durabilité, de respirabilité et de confort.</strong></p>",
+        "ggy3mk5lzDa_text": "<p><strong>Oui, vraiment ! Nos t-shirts sont conçus pour durer toute une vie. Si votre t-shirt UndrDog est de la mauvaise taille ou s’use, nous le remplacerons par un tout neuf, gratuitement. Il vous suffit de prendre en charge le petit coût de retour, et nous nous occupons du reste. C’est notre engagement qualité, pour que vous soyez toujours couvert.</strong></p>",
+        "ggxtCxDTj7u_text": "<p><strong>Le mélange chanvre et bambou résiste naturellement aux plis, gardant votre t-shirt impeccable après une longue journée ou un passage en machine. Les fibres conservent leur forme, vous n’avez donc pas à vous soucier du repassage.</strong></p>",
+        "gg1rLP2J42f_text": "<p><strong>100 % durable. Les matériaux sont biologiques et respectueux de l’environnement. UndrDog adopte une position ferme contre les produits chimiques toxiques, les microplastiques et les pratiques non durables. Leur mélange de chanvre, bambou et coton biologique minimise l’impact sur la planète, tout en vous offrant un t-shirt bénéfique pour vous et pour les générations futures.</strong></p>",
+        "ggUUMVRdjKI_text": "<p>Adopté Par 100,000 Hommes</p>",
+        "ggHO8sz1Tw1_label": "<p>PROFITER DE L'OFFRE !</p>"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "display_id": false,
+        "title": "You may also like",
+        "title_highlight_color": "#6d388b",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    }
+  },
+  "order": [
+    "main",
+    "gp_global_section_601121248470107058_TeGHhD",
+    "gp_global_section_601120300758729650_9bUXEg",
+    "gp_global_section_601120352080233317_DbwXX8",
+    "gp_global_section_601120402076337004_hQdmrm",
+    "gp_global_section_601125787780776666_HtMank",
+    "gp_global_section_601126241822573420_8mwBz6",
+    "gp_global_section_601199012107780695_JH7QG6",
+    "gp_global_section_601200470635054031_AeaYrM",
+    "related-products"
+  ]
+}
