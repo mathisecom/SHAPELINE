@@ -1155,16 +1155,60 @@
         "collapsible_row_r3LLxA": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Ce débardeur fonctionne-t-il pour tous les types de silhouette ?",
             "icon": "",
             "filled_icon": false,
-            "row_content": "",
+            "row_content": "<p>Oui ! Il est conçu pour épouser toutes les morphologies et sculpter la silhouette de manière naturelle.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_HTLYrT": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Est-il confortable à porter toute la journée ?",
+            "icon": "",
+            "filled_icon": false,
+            "row_content": "<p>Absolument. Sa matière douce et extensible permet un port jusqu’à 12 heures sans gêne ni roulage.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Vjq9Ry": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Ce débardeur se voit-il sous les vêtements ?",
+            "icon": "",
+            "filled_icon": false,
+            "row_content": "<p>Non, son design discret et ajusté le rend invisible sous vos tenues quotidiennes.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_HRMk7f": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Peut-on le laver en machine sans l’abîmer ?",
+            "icon": "",
+            "filled_icon": false,
+            "row_content": "<p>Oui, nous recommandons un lavage à froid et un séchage à l’air libre pour préserver l’élasticité et la forme du débardeur.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_8CfzL3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Quelle taille choisir pour un maintien optimal ?",
+            "icon": "",
+            "filled_icon": false,
+            "row_content": "<p>Référez-vous à notre guide des tailles pour trouver la taille qui correspond le mieux à vos mensurations et garantir un maintien efficace.</p>",
             "page": ""
           }
         }
       },
       "block_order": [
-        "collapsible_row_r3LLxA"
+        "collapsible_row_r3LLxA",
+        "collapsible_row_HTLYrT",
+        "collapsible_row_Vjq9Ry",
+        "collapsible_row_HRMk7f",
+        "collapsible_row_8CfzL3"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
@@ -1173,7 +1217,7 @@
         "caption": "",
         "title": "Questions Fréquentes",
         "title_highlight_color": "#6d388b",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
         "color_scheme": "background-1",
