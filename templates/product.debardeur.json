@@ -395,7 +395,7 @@
         "reviews_BEYrga": {
           "type": "reviews",
           "settings": {
-            "color_scheme": "accent-2",
+            "color_scheme": "accent-1",
             "show_custom_bg": false,
             "custom_bg_color": "#f2f2f2",
             "corner_radius": 12,
@@ -413,6 +413,7 @@
         },
         "image_TaDaT4": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/23.webp"
           }
@@ -420,7 +421,7 @@
         "reviews_6tFPn3": {
           "type": "reviews",
           "settings": {
-            "color_scheme": "accent-2",
+            "color_scheme": "accent-1",
             "show_custom_bg": false,
             "custom_bg_color": "#f2f2f2",
             "corner_radius": 12,
@@ -438,6 +439,7 @@
         },
         "image_JpmqhD": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/24.webp"
           }
@@ -445,7 +447,7 @@
         "reviews_4FwdML": {
           "type": "reviews",
           "settings": {
-            "color_scheme": "accent-2",
+            "color_scheme": "accent-1",
             "show_custom_bg": false,
             "custom_bg_color": "#f2f2f2",
             "corner_radius": 12,
@@ -463,6 +465,7 @@
         },
         "image_kgfyDp": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/59.webp"
           }
@@ -497,9 +500,9 @@
         "hidden_products": "",
         "enable_specific_display": false,
         "displayed_products": "",
-        "mobile_padding_top": 28,
+        "mobile_padding_top": 40,
         "mobile_padding_bottom": 32,
-        "desktop_padding_top": 16,
+        "desktop_padding_top": 24,
         "desktop_padding_bottom": 56,
         "custom_colors_background": "#ffffff",
         "custom_gradient_background": "",
