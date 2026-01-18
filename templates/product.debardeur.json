@@ -608,8 +608,8 @@
           "settings": {
             "icon": "check_circle",
             "filled_icon": false,
-            "title": "Icon",
-            "text": ""
+            "title": "",
+            "text": "<h4>Confort toute la journée</h4>"
           }
         },
         "column_nXzp3A": {
@@ -617,8 +617,8 @@
           "settings": {
             "icon": "check_circle",
             "filled_icon": false,
-            "title": "Icon",
-            "text": ""
+            "title": "",
+            "text": "<h4>Invisible sous les vêtements</h4>"
           }
         }
       },
