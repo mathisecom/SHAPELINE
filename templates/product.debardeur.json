@@ -102,7 +102,7 @@
         "text_J7hdxk": {
           "type": "text",
           "settings": {
-            "mobile_text_size": 14,
+            "mobile_text_size": 15,
             "desktop_text_size": 16,
             "alignment": "left",
             "text_color": "#121212",
@@ -411,6 +411,12 @@
             "text_1": "<p>Ce débardeur sculpte vraiment la silhouette – mon torse et mon ventre ont l’air beaucoup plus nets sous mes chemises. Très confortable même toute la journée.</p>"
           }
         },
+        "image_TaDaT4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/23.webp"
+          }
+        },
         "reviews_6tFPn3": {
           "type": "reviews",
           "settings": {
@@ -428,6 +434,12 @@
             "checkmark_icon_color": "#ffffff",
             "author_1": "Romain G. [stars]",
             "text_1": "<p>Je n’aime pas les vêtements qui compressent trop, mais celui‑ci est parfait : il modelle sans gêner. Je le porte au bureau, en sortie ou à la salle, il reste confortable.</p>"
+          }
+        },
+        "image_JpmqhD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/24.webp"
           }
         },
         "reviews_4FwdML": {
@@ -448,12 +460,21 @@
             "author_1": "Mickaël P. [stars]",
             "text_1": "<p>Je le trouve bien ajusté et solide. Peut‑être un peu serré au départ, mais il s’assouplit avec le temps. Résultat visible sous les t‑shirts !</p>"
           }
+        },
+        "image_kgfyDp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/59.webp"
+          }
         }
       },
       "block_order": [
         "reviews_BEYrga",
+        "image_TaDaT4",
         "reviews_6tFPn3",
-        "reviews_4FwdML"
+        "image_JpmqhD",
+        "reviews_4FwdML",
+        "image_kgfyDp"
       ],
       "name": "Horizontal Ticker",
       "settings": {
@@ -464,13 +485,13 @@
         "mobile_spacing": 60,
         "desktop_spacing": 100,
         "color_scheme": "background-1",
-        "mobile_text_size": 16,
-        "desktop_text_size": 18,
+        "mobile_text_size": 15,
+        "desktop_text_size": 19,
         "italic_text": false,
         "uppercase_text": false,
         "bold_text": false,
-        "mobile_image_height": 26,
-        "desktop_image_height": 40,
+        "mobile_image_height": 160,
+        "desktop_image_height": 160,
         "mobile_reviews_width": 300,
         "desktop_reviews_width": 400,
         "hidden_products": "",
@@ -943,6 +964,7 @@
             "stars_rating": 5,
             "title": "Très Confortable",
             "text": "<p>Ce débardeur sculpte vraiment la silhouette – mon torse et mon ventre ont l’air beaucoup plus nets sous mes chemises. Très confortable même toute la journée.</p>",
+            "author_avatar": "shopify://shop_images/24.webp",
             "author": "<em><strong>Lucas T.</strong></em>"
           }
         },
@@ -955,6 +977,7 @@
             "stars_rating": 5,
             "title": "Super maintien sans être serré",
             "text": "<p>Je n’aime pas les vêtements qui compressent trop, mais celui‑ci est parfait : il modelle sans gêner. Je le porte au bureau, en sortie ou à la salle, il reste confortable.</p>",
+            "author_avatar": "shopify://shop_images/23.webp",
             "author": "<em><strong>Antoine L.</strong></em>"
           }
         },
@@ -967,6 +990,7 @@
             "stars_rating": 5,
             "title": "Beau design et bon confort",
             "text": "<p>Je le trouve bien ajusté et solide. Peut‑être un peu serré au départ, mais il s’assouplit avec le temps. Résultat visible sous les t‑shirts !</p>",
+            "author_avatar": "shopify://shop_images/59.webp",
             "author": "<em><strong>Mickaël P.</strong></em>"
           }
         },
@@ -979,6 +1003,7 @@
             "stars_rating": 5,
             "title": "Boost de confiance instantané",
             "text": "<p>Ce débardeur me fait me sentir plus tonique et plus droit dans ma posture. On voit tout de suite la différence, et ça m’a même motivé à mieux m’entraîner.</p>",
+            "author_avatar": "shopify://shop_images/27.webp",
             "author": "<em><strong>Romain G.</strong></em>"
           }
         }
@@ -993,7 +1018,7 @@
       "settings": {
         "display_id": false,
         "visibility": "always-display",
-        "color_scheme": "background-1",
+        "color_scheme": "background-2",
         "desktop_content_position": "above",
         "desktop_content_alignment": "center",
         "title": "+100,000 CLIENTS <strong>NOUS FONT CONFIANCE</strong>",
