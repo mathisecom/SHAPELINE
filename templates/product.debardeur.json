@@ -511,9 +511,8 @@
       "blocks": {
         "heading_4FVbUw": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "title": "Ayez fière allure. Soyez confiant. <strong>Tous les jours.</strong>",
+            "title": "Transformez <strong>votre quotidien</strong>",
             "title_highlight_color": "#ec612a",
             "heading_size": "h1"
           }
@@ -529,7 +528,6 @@
         },
         "text_FfA37m": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "text": "<p>Un ventre sculpté, des abdos, du dos et des pectoraux renforcés… tout en portant un simple débardeur au look normal. On en a déjà dit assez, non ?</p><p>Ce n’est pas juste un produit, c’est le début de votre transformation vers le corps idéal.</p>",
             "text_style": "body"
