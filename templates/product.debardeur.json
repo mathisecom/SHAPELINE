@@ -455,7 +455,6 @@
         "reviews_6tFPn3",
         "reviews_4FwdML"
       ],
-      "disabled": true,
       "name": "Horizontal Ticker",
       "settings": {
         "visibility": "always-display",
@@ -478,7 +477,7 @@
         "enable_specific_display": false,
         "displayed_products": "",
         "mobile_padding_top": 28,
-        "mobile_padding_bottom": 48,
+        "mobile_padding_bottom": 32,
         "desktop_padding_top": 16,
         "desktop_padding_bottom": 56,
         "custom_colors_background": "#ffffff",
