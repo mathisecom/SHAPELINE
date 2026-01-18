@@ -632,8 +632,8 @@
       "settings": {
         "display_id": false,
         "visibility": "always-display",
-        "title": "Icon bar",
-        "title_highlight_color": "#6D388B",
+        "title": "<strong>Pourquoi Nous Choisir ?</strong>",
+        "title_highlight_color": "#ec612a",
         "heading_size": "h1",
         "text": "",
         "color_scheme": "background-1",
