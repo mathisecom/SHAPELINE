@@ -459,6 +459,7 @@
       "blocks": {
         "heading_4FVbUw": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "title": "Ayez fière allure. Soyez confiant. <strong>Tous les jours.</strong>",
             "title_highlight_color": "#ec612a",
@@ -467,6 +468,7 @@
         },
         "caption_fANHVT": {
           "type": "caption",
+          "disabled": true,
           "settings": {
             "caption": "Un corps mieux sculpté = Une apparence améliorée",
             "text_style": "caption-with-letter-spacing",
@@ -475,6 +477,7 @@
         },
         "text_FfA37m": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Un ventre sculpté, des abdos, du dos et des pectoraux renforcés… tout en portant un simple débardeur au look normal. On en a déjà dit assez, non ?</p><p>Ce n’est pas juste un produit, c’est le début de votre transformation vers le corps idéal.</p>",
             "text_style": "body"
@@ -485,6 +488,71 @@
         "heading_4FVbUw",
         "caption_fANHVT",
         "text_FfA37m"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "video_autoplay": true,
+        "video_loop": true,
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "section_color_scheme": "background-1",
+        "full_desktop_width": false,
+        "content_layout": "no-overlap",
+        "desktop_media_width": 50,
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_full_media_width": false,
+        "mobile_direction": "normal",
+        "mobile_image_quanlity": "2",
+        "mobile_content_alignment": "left",
+        "mobile_padding_top": 20,
+        "mobile_padding_bottom": 16,
+        "desktop_padding_top": 36,
+        "desktop_padding_bottom": 36,
+        "custom_colors_background": "#2e2a39",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#ffffff",
+        "custom_colors_solid_button_background": "#dd1d1d",
+        "custom_colors_solid_button_text": "#ffffff",
+        "custom_colors_outline_button": "#dd1d1d",
+        "custom_section_colors_background": "#ffffff",
+        "custom_section_gradient_background": ""
+      }
+    },
+    "image_with_text_g3ABb7": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_pTREJE": {
+          "type": "heading",
+          "settings": {
+            "title": "Ayez fière allure. Soyez confiant. <strong>Tous les jours.</strong>",
+            "title_highlight_color": "#ec612a",
+            "heading_size": "h1"
+          }
+        },
+        "caption_LT4hPr": {
+          "type": "caption",
+          "settings": {
+            "caption": "Un corps mieux sculpté = Une apparence améliorée",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "small"
+          }
+        },
+        "text_Ex6RJL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Un ventre sculpté, des abdos, du dos et des pectoraux renforcés… tout en portant un simple débardeur au look normal. On en a déjà dit assez, non ?</p><p>Ce n’est pas juste un produit, c’est le début de votre transformation vers le corps idéal.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_pTREJE",
+        "caption_LT4hPr",
+        "text_Ex6RJL"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
@@ -725,7 +793,9 @@
       "settings": {
         "display_id": false,
         "visibility": "always-display",
+        "image": "shopify://shop_images/Fast_drying_from_wet_to_styled_in_10_minutes_with_ZERO_heat_damage._2.svg",
         "image_1_visibility": "mobile-hidden",
+        "image_2": "shopify://shop_images/autres.jpg",
         "image_2_visibility": "desktop-hidden",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
@@ -1014,6 +1084,7 @@
     "main",
     "horizontal_ticker_dxnJT8",
     "image_with_text_TGV7f6",
+    "image_with_text_g3ABb7",
     "icons_with_content_JgJfA9",
     "results_3QDWhm",
     "gp_global_section_601121248470107058_TeGHhD",
