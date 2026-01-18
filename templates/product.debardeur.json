@@ -493,6 +493,7 @@
       "settings": {
         "display_id": false,
         "visibility": "always-display",
+        "image": "shopify://shop_images/CREA_1080X1080_-_2026-01-18T161434.062.jpg",
         "video_autoplay": true,
         "video_loop": true,
         "height": "adapt",
