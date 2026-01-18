@@ -719,6 +719,27 @@
         "ggIGmbT9LJW_text": "<p>Le chanvre crée une barrière naturelle qui absorbe l’humidité, vous gardant au sec et avec une odeur bien meilleure que prévu.</p>"
       }
     },
+    "image_banner_8KddqJ": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "image_1_visibility": "mobile-hidden",
+        "image_2_visibility": "desktop-hidden",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "url": "",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "transparent_container_color": "white",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "gp_global_section_601125787780776666_HtMank": {
       "type": "gp-global-section-601125787780776666",
       "disabled": true,
@@ -944,7 +965,7 @@
         "visibility": "always-display",
         "caption": "",
         "title": "Questions Fréquentes",
-        "title_highlight_color": "#6D388B",
+        "title_highlight_color": "#6d388b",
         "heading_size": "h2",
         "heading_alignment": "center",
         "layout": "none",
@@ -959,12 +980,12 @@
         "display_top_border": true,
         "padding_top": 36,
         "padding_bottom": 36,
-        "custom_colors_background": "#FFFFFF",
+        "custom_colors_background": "#ffffff",
         "custom_gradient_background": "",
-        "custom_colors_text": "#2E2A39",
-        "custom_contaner_colors_background": "#FFFFFF",
+        "custom_colors_text": "#2e2a39",
+        "custom_contaner_colors_background": "#ffffff",
         "custom_container_gradient_background": "",
-        "custom_contaner_colors_text": "#2E2A39"
+        "custom_contaner_colors_text": "#2e2a39"
       }
     },
     "related-products": {
@@ -999,6 +1020,7 @@
     "gp_global_section_601120300758729650_9bUXEg",
     "gp_global_section_601120352080233317_DbwXX8",
     "gp_global_section_601120402076337004_hQdmrm",
+    "image_banner_8KddqJ",
     "gp_global_section_601125787780776666_HtMank",
     "gp_global_section_601126241822573420_8mwBz6",
     "gp_global_section_601199012107780695_JH7QG6",
