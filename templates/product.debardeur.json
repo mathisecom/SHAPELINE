@@ -968,6 +968,70 @@
         "ggHO8sz1Tw1_label": "<p>PROFITER DE L'OFFRE !</p>"
       }
     },
+    "horizontal_ticker_4zXxTq": {
+      "type": "horizontal-ticker",
+      "blocks": {
+        "image_ccY3yr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Progetto_senza_titolo_11-removebg-preview_2_3_82e8e384-2cb3-48e9-bfba-d39d9e187b76.avif"
+          }
+        },
+        "image_JEK747": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Progetto_senza_titolo__16_-removebg-preview_2_3_12699e5e-b8ab-4c51-bf46-3148688f4921.webp"
+          }
+        },
+        "image_GacLtK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Progetto_senza_titolo_7-removebg-preview_2_3_51dcaa46-6f6c-499c-9e07-12f2512bf4f5.avif"
+          }
+        },
+        "image_grFTVB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Progetto_senza_titolo_12-removebg-preview_2_3_226883ce-9ae8-408c-884f-06c331e6a04f.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_ccY3yr",
+        "image_JEK747",
+        "image_GacLtK",
+        "image_grFTVB"
+      ],
+      "name": "Horizontal Ticker",
+      "settings": {
+        "visibility": "always-display",
+        "speed": 3,
+        "direction": "normal",
+        "stop_on_hover": false,
+        "mobile_spacing": 60,
+        "desktop_spacing": 100,
+        "color_scheme": "accent-1",
+        "mobile_text_size": 16,
+        "desktop_text_size": 18,
+        "italic_text": false,
+        "uppercase_text": false,
+        "bold_text": false,
+        "mobile_image_height": 26,
+        "desktop_image_height": 40,
+        "mobile_reviews_width": 300,
+        "desktop_reviews_width": 400,
+        "hidden_products": "",
+        "enable_specific_display": false,
+        "displayed_products": "",
+        "mobile_padding_top": 12,
+        "mobile_padding_bottom": 12,
+        "desktop_padding_top": 16,
+        "desktop_padding_bottom": 16,
+        "custom_colors_background": "#FFFFFF",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#2E2A39"
+      }
+    },
     "trustpilot_reviews_nMyGeH": {
       "type": "trustpilot-reviews",
       "blocks": {
@@ -1169,6 +1233,7 @@
     "gp_global_section_601126241822573420_8mwBz6",
     "gp_global_section_601199012107780695_JH7QG6",
     "gp_global_section_601200470635054031_AeaYrM",
+    "horizontal_ticker_4zXxTq",
     "trustpilot_reviews_nMyGeH",
     "collapsible_content_AV8GQf",
     "related-products"
