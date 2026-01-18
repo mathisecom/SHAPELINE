@@ -590,8 +590,8 @@
           "settings": {
             "icon": "check_circle",
             "filled_icon": false,
-            "title": "Icon",
-            "text": ""
+            "title": "",
+            "text": "<h4>Silhouette affinée</h4>"
           }
         },
         "column_8FnMNj": {
@@ -599,8 +599,8 @@
           "settings": {
             "icon": "check_circle",
             "filled_icon": false,
-            "title": "Icon",
-            "text": ""
+            "title": "",
+            "text": "<h4><strong>Maintien du ventre et du dos</strong></h4>"
           }
         },
         "column_MWydmz": {
