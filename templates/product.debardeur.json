@@ -590,6 +590,7 @@
           "settings": {
             "icon": "check_circle",
             "filled_icon": false,
+            "image": "shopify://shop_images/CREA_1080X1080_-_2026-01-18T180024.099.png",
             "title": "",
             "text": "<h4>Silhouette affinée</h4>"
           }
@@ -599,6 +600,7 @@
           "settings": {
             "icon": "check_circle",
             "filled_icon": false,
+            "image": "shopify://shop_images/CREA_1080X1080_-_2026-01-18T180123.961.png",
             "title": "",
             "text": "<h4><strong>Maintien du ventre et du dos</strong></h4>"
           }
@@ -608,6 +610,7 @@
           "settings": {
             "icon": "check_circle",
             "filled_icon": false,
+            "image": "shopify://shop_images/CREA_1080X1080_-_2026-01-18T180221.943.png",
             "title": "",
             "text": "<h4>Confort toute la journée</h4>"
           }
@@ -617,6 +620,7 @@
           "settings": {
             "icon": "check_circle",
             "filled_icon": false,
+            "image": "shopify://shop_images/CREA_1080X1080_-_2026-01-18T180255.146.png",
             "title": "",
             "text": "<h4>Invisible sous les vêtements</h4>"
           }
