@@ -298,6 +298,53 @@
     "featured_product_xFdh3j": {
       "type": "featured-product",
       "blocks": {
+        "review_avatars_KYRKxm": {
+          "type": "review_avatars",
+          "settings": {
+            "alignment": "start",
+            "corner_radius": 30,
+            "avatars_position": "left",
+            "avatar_size": 40,
+            "avatar_offset": -10,
+            "checkmark_color": "#6d388b",
+            "checkmark_icon_color": "#ffffff",
+            "checkmark_size": 20,
+            "star_color": "#ffcc00",
+            "stars_translate": 0,
+            "stars_scroll_id": "",
+            "avatar_1_verified": false,
+            "avatar_2_verified": false,
+            "avatar_3_verified": false,
+            "avatar_4_verified": false,
+            "avatar_5_verified": false,
+            "text_1_line_1": "<strong>OFFRE ST VALENTIN </strong>💘",
+            "text_1_line_1_size": 12,
+            "text_1_line_2": "-50% DE RÉDUCTION",
+            "text_1_line_2_size": 11,
+            "text_1_color": "#ffffff",
+            "text_1_bg_color": "#ec6129",
+            "text_1_border_size": 0,
+            "text_1_border_color": "#ec6129",
+            "text_1_offset": -30,
+            "text_1_padding_y": 4,
+            "text_1_padding_x": 14,
+            "text_1_stretch_height": true,
+            "text_2_line_1": "",
+            "text_2_line_1_size": 14,
+            "text_2_line_2": "",
+            "text_2_line_2_size": 12,
+            "text_2_color": "#221212",
+            "text_2_bg_color": "#ffffff",
+            "text_2_border_size": 0,
+            "text_2_border_color": "#b7b7b7",
+            "text_2_offset": -14,
+            "text_2_padding_y": 4,
+            "text_2_padding_x": 14,
+            "text_2_stretch_height": true,
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
         "title_nCgLUf": {
           "type": "title",
           "settings": {
@@ -559,6 +606,7 @@
         }
       },
       "block_order": [
+        "review_avatars_KYRKxm",
         "title_nCgLUf",
         "text_qXpyUh",
         "trustpilot_stars_UjNj74",
