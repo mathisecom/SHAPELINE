@@ -317,12 +317,11 @@
           },
           "058d6d0a-ba0d-48cb-9432-de85da1e5aef": {
             "type": "progress_bar",
-            "disabled": true,
             "settings": {
               "goal_type": "subtotal",
               "goal": 50,
-              "progress_message": "Spend [amount] more to get FREE shipping!",
-              "success_message": "Congrats! You get FREE shipping!",
+              "progress_message": "Dépensez [amount] pour bénéficier de la livraison GRATUITE !",
+              "success_message": "Félicitations ! Vous bénéficiez de la livraison GRATUITE !",
               "icon": "local_shipping",
               "icon_filled": false,
               "accent_color": "accent-1",
