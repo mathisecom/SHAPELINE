@@ -74,9 +74,9 @@
         "sections--21450414096679__fe1c8c67-b84c-4466-a515-70df3134c1c0-announcement-1": {
           "type": "announcement",
           "settings": {
-            "text": "<strong>GARANTIE DE 60 JOURS </strong>- ESSAYEZ-LE SANS RISQUE !",
+            "text": "<strong>OFFRE SAINT VALENTIN 💘 JUSQU’À -50%</strong>",
             "text_alignment": "center",
-            "mobile_text_size": 10,
+            "mobile_text_size": 11,
             "desktop_text_size": 12,
             "icon": "",
             "filled_icon": false,
@@ -93,14 +93,13 @@
       "block_order": [
         "sections--21450414096679__fe1c8c67-b84c-4466-a515-70df3134c1c0-announcement-1"
       ],
-      "disabled": true,
       "settings": {
         "columns_desktop": 1,
         "columns_mobile": 1,
         "desktop_spacing": 28,
         "mobile_spacing": 16,
         "show_separator": false,
-        "color_scheme": "accent-1",
+        "color_scheme": "custom",
         "slider_mobile": true,
         "slider_desktop": false,
         "type": "loop",
@@ -111,7 +110,7 @@
         "displayed_products": "",
         "padding_top": 16,
         "padding_bottom": 16,
-        "custom_colors_background": "#dd1d1d",
+        "custom_colors_background": "#ec6129",
         "custom_gradient_background": "",
         "custom_colors_text": "#ffffff"
       }
