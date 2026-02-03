@@ -624,6 +624,7 @@
         "collapsible_tab_gDTeJG",
         "collapsible_tab_pXqbTX"
       ],
+      "disabled": true,
       "name": "t:sections.featured-product.presets.name",
       "settings": {
         "display_id": false,
