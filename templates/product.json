@@ -522,7 +522,7 @@
             "atc_product": "",
             "atc_skip_cart": false,
             "box_align": "middle-center",
-            "show_text_box": true,
+            "show_text_box": false,
             "text_alignment": "center",
             "color_scheme": "background-1",
             "transparent_container_color": "white",
@@ -548,7 +548,7 @@
         "desktop_pagination_position": "over",
         "auto_rotate": false,
         "change_slides_speed": 5,
-        "show_text_below": true,
+        "show_text_below": false,
         "mobile_pagination_position": "under",
         "accessibility_info": "Slideshow about our brand"
       }
