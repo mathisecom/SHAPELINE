@@ -130,6 +130,12 @@
             "margin_bottom": 15
           }
         },
+        "custom_liquid_DNryQ8": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": ""
+          }
+        },
         "price": {
           "type": "price",
           "disabled": true,
@@ -339,6 +345,7 @@
         "trustpilot_stars_3pyXma",
         "reviews_8UgFbe",
         "text_J7hdxk",
+        "custom_liquid_DNryQ8",
         "price",
         "5fcc0428-e768-4cb7-bea3-eb0274198dd1",
         "kaching_bundles_app_block_R3qfNz",
