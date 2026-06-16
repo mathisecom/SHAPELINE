@@ -395,6 +395,7 @@
         "video_slide_RA7y7c": {
           "type": "video_slide",
           "settings": {
+            "video": "shopify://files/videos/0616 (1).mp4",
             "loop": true,
             "muted_autoplay": true,
             "display_play_btn": true,
@@ -412,6 +413,7 @@
         "video_slide_RtMzrA": {
           "type": "video_slide",
           "settings": {
+            "video": "shopify://files/videos/0616 (1)(2).mp4",
             "loop": true,
             "muted_autoplay": true,
             "display_play_btn": true,
@@ -429,6 +431,7 @@
         "video_slide_77nBVN": {
           "type": "video_slide",
           "settings": {
+            "video": "shopify://files/videos/0616 (1)(1).mp4",
             "loop": true,
             "muted_autoplay": true,
             "display_play_btn": true,
@@ -446,6 +449,7 @@
         "video_slide_KLeiEN": {
           "type": "video_slide",
           "settings": {
+            "video": "shopify://files/videos/ssstik.io_@sachajibril_1781641753959.mp4",
             "loop": true,
             "muted_autoplay": true,
             "display_play_btn": true,
