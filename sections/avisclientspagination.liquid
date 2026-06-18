@@ -1,0 +1,480 @@
+{% comment %}
+  Section Shopify : Avis clients paginés façon Judge.me/Loox
+  Installation : Online Store > Themes > Edit code > Sections > Add a new section
+  Nom conseillé : avis-clients-pagination.liquid
+{% endcomment %}
+
+<section id="AvisClients-{{ section.id }}" class="avis-clients-section">
+  <div class="avis-wrap">
+    <div class="avis-summary-card">
+      <h2>{{ section.settings.heading }}</h2>
+
+      <div class="avis-summary-grid">
+        <div class="avis-score-block">
+          <div class="avis-stars" aria-label="Note moyenne {{ section.settings.average_rating }} sur 5">★★★★★</div>
+          <div class="avis-average"><strong>{{ section.settings.average_rating }}</strong> sur 5</div>
+          <div class="avis-count">Basé sur {{ section.settings.total_reviews }} avis <span class="avis-check">✓</span></div>
+        </div>
+
+        <div class="avis-bars-block" aria-label="Répartition des notes">
+          {% assign total_float = section.settings.total_reviews | plus: 0.0 %}
+          {% assign five_pct = section.settings.five_star_count | times: 100 | divided_by: total_float %}
+          {% assign four_pct = section.settings.four_star_count | times: 100 | divided_by: total_float %}
+          {% assign three_pct = section.settings.three_star_count | times: 100 | divided_by: total_float %}
+          {% assign two_pct = section.settings.two_star_count | times: 100 | divided_by: total_float %}
+          {% assign one_pct = section.settings.one_star_count | times: 100 | divided_by: total_float %}
+
+          <div class="avis-bar-row"><span>★★★★★</span><div><i style="width: {{ five_pct }}%"></i></div><em>{{ section.settings.five_star_count }}</em></div>
+          <div class="avis-bar-row"><span>★★★★☆</span><div><i style="width: {{ four_pct }}%"></i></div><em>{{ section.settings.four_star_count }}</em></div>
+          <div class="avis-bar-row"><span>★★★☆☆</span><div><i style="width: {{ three_pct }}%"></i></div><em>{{ section.settings.three_star_count }}</em></div>
+          <div class="avis-bar-row"><span>★★☆☆☆</span><div><i style="width: {{ two_pct }}%"></i></div><em>{{ section.settings.two_star_count }}</em></div>
+          <div class="avis-bar-row"><span>★☆☆☆☆</span><div><i style="width: {{ one_pct }}%"></i></div><em>{{ section.settings.one_star_count }}</em></div>
+        </div>
+
+        <div class="avis-actions-block">
+          <a class="avis-btn avis-btn-primary" href="{{ section.settings.write_review_link }}">{{ section.settings.write_review_label }}</a>
+          <a class="avis-btn avis-btn-outline" href="{{ section.settings.ask_question_link }}">{{ section.settings.ask_question_label }}</a>
+        </div>
+      </div>
+
+      <div class="avis-gallery-line"></div>
+
+      <div class="avis-gallery-wrap">
+        <p>{{ section.settings.gallery_label }}</p>
+        <div class="avis-gallery">
+          {% assign gallery_count = 0 %}
+          {% for block in section.blocks %}
+            {% if block.settings.photo != blank and gallery_count < 8 %}
+              <button class="avis-thumb" type="button" data-review-jump="{{ block.settings.page }}" {{ block.shopify_attributes }}>
+                {{ block.settings.photo | image_url: width: 160 | image_tag: loading: 'lazy', alt: block.settings.name }}
+              </button>
+              {% assign gallery_count = gallery_count | plus: 1 %}
+            {% endif %}
+          {% endfor %}
+          <button class="avis-see-more" type="button" data-open-page="1">Voir<br>plus</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="avis-tabs-card">
+      <div class="avis-tabs">
+        <button type="button" class="avis-tab active" data-tab="reviews">Avis ({{ section.settings.total_reviews }})</button>
+        <button type="button" class="avis-tab" data-tab="questions">Questions ({{ section.settings.questions_count }})</button>
+      </div>
+      <div class="avis-filter-row">
+        <button type="button" class="avis-filter" data-filter-pictures="false">Uniquement les photos <span>⌄</span></button>
+      </div>
+    </div>
+
+    <div class="avis-panel avis-panel-reviews active" data-panel="reviews">
+      <div class="avis-reviews-grid">
+        {% for block in section.blocks %}
+          <article class="avis-card" data-page="{{ block.settings.page }}" data-has-image="{% if block.settings.photo != blank %}true{% else %}false{% endif %}" {{ block.shopify_attributes }}>
+            <div class="avis-card-top">
+              <div>
+                <div class="avis-card-stars">
+                  {% for i in (1..5) %}{% if i <= block.settings.rating %}★{% else %}☆{% endif %}{% endfor %}
+                </div>
+                <div class="avis-author-row">
+                  <span class="avis-avatar" aria-hidden="true">♙</span>
+                  <strong>{{ block.settings.name }}</strong>
+                  {% if block.settings.verified %}<span class="avis-verified">Vérifié</span>{% endif %}
+                </div>
+              </div>
+              <div class="avis-date-pin">
+                <span>{{ block.settings.date }}</span>
+                <span class="avis-pin">⌁</span>
+              </div>
+            </div>
+
+            {% if block.settings.photo != blank %}
+              <div class="avis-photo">
+                {{ block.settings.photo | image_url: width: 720 | image_tag: loading: 'lazy', alt: block.settings.name }}
+              </div>
+            {% else %}
+              <div class="avis-photo avis-photo-placeholder">Ajoute la photo de cet avis dans l’éditeur Shopify</div>
+            {% endif %}
+
+            <p class="avis-text">{{ block.settings.text }}</p>
+          </article>
+        {% endfor %}
+      </div>
+
+      <nav class="avis-pagination" aria-label="Pagination des avis"></nav>
+    </div>
+
+    <div class="avis-panel avis-panel-questions" data-panel="questions">
+      <div class="avis-empty">
+        <h3>Questions clients</h3>
+        <p>{{ section.settings.questions_empty_text }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  #AvisClients-{{ section.id }} {
+    --avis-text: #111;
+    --avis-muted: #646464;
+    --avis-border: #111;
+    --avis-soft-border: #e9e9e9;
+    --avis-bg: #fff;
+    --avis-shadow: 0 6px 18px rgba(0,0,0,.08);
+    color: var(--avis-text);
+    font-family: inherit;
+    padding: {{ section.settings.section_padding_top }}px 0 {{ section.settings.section_padding_bottom }}px;
+  }
+
+  #AvisClients-{{ section.id }} * { box-sizing: border-box; }
+
+  #AvisClients-{{ section.id }} .avis-wrap {
+    width: min({{ section.settings.max_width }}px, calc(100% - 32px));
+    margin: 0 auto;
+  }
+
+  #AvisClients-{{ section.id }} .avis-summary-card,
+  #AvisClients-{{ section.id }} .avis-tabs-card,
+  #AvisClients-{{ section.id }} .avis-card,
+  #AvisClients-{{ section.id }} .avis-empty {
+    background: var(--avis-bg);
+    border-radius: 8px;
+    box-shadow: var(--avis-shadow);
+  }
+
+  #AvisClients-{{ section.id }} .avis-summary-card {
+    padding: 26px 34px 30px;
+    margin-bottom: 22px;
+  }
+
+  #AvisClients-{{ section.id }} h2 {
+    margin: 0 0 22px;
+    text-align: center;
+    font-size: clamp(20px, 2vw, 26px);
+    line-height: 1.15;
+    font-weight: 800;
+  }
+
+  #AvisClients-{{ section.id }} .avis-summary-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.35fr 1fr;
+    align-items: center;
+    gap: 34px;
+  }
+
+  #AvisClients-{{ section.id }} .avis-score-block,
+  #AvisClients-{{ section.id }} .avis-bars-block,
+  #AvisClients-{{ section.id }} .avis-actions-block {
+    min-height: 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #AvisClients-{{ section.id }} .avis-score-block,
+  #AvisClients-{{ section.id }} .avis-actions-block { text-align: center; }
+
+  #AvisClients-{{ section.id }} .avis-bars-block,
+  #AvisClients-{{ section.id }} .avis-actions-block { border-left: 2px solid var(--avis-border); padding-left: 34px; }
+
+  #AvisClients-{{ section.id }} .avis-stars,
+  #AvisClients-{{ section.id }} .avis-card-stars {
+    letter-spacing: 2px;
+    font-size: 16px;
+    line-height: 1;
+    color: #000;
+  }
+
+  #AvisClients-{{ section.id }} .avis-average,
+  #AvisClients-{{ section.id }} .avis-count {
+    font-size: 13px;
+    color: var(--avis-muted);
+    margin-top: 4px;
+  }
+
+  #AvisClients-{{ section.id }} .avis-check {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+    background: #54c6b0;
+    color: #fff;
+    font-size: 10px;
+    vertical-align: middle;
+  }
+
+  #AvisClients-{{ section.id }} .avis-bar-row {
+    display: grid;
+    grid-template-columns: 76px 1fr 34px;
+    gap: 12px;
+    align-items: center;
+    font-size: 12px;
+    margin: 6px 0;
+  }
+
+  #AvisClients-{{ section.id }} .avis-bar-row span { letter-spacing: 1px; }
+  #AvisClients-{{ section.id }} .avis-bar-row div { height: 10px; background: #ededed; border-radius: 999px; overflow: hidden; }
+  #AvisClients-{{ section.id }} .avis-bar-row i { display: block; height: 100%; background: #000; border-radius: inherit; }
+  #AvisClients-{{ section.id }} .avis-bar-row em { font-style: normal; color: var(--avis-muted); text-align: left; }
+
+  #AvisClients-{{ section.id }} .avis-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: min(230px, 100%);
+    min-height: 38px;
+    margin: 5px auto;
+    border: 2px solid #000;
+    border-radius: 999px;
+    font-weight: 800;
+    font-size: 13px;
+    text-decoration: none;
+    transition: transform .2s ease, opacity .2s ease;
+  }
+
+  #AvisClients-{{ section.id }} .avis-btn:hover { transform: translateY(-1px); opacity: .88; }
+  #AvisClients-{{ section.id }} .avis-btn-primary { background: #000; color: #fff; }
+  #AvisClients-{{ section.id }} .avis-btn-outline { background: #fff; color: #000; }
+
+  #AvisClients-{{ section.id }} .avis-gallery-line { border-top: 2px solid var(--avis-border); margin: 24px 0 20px; }
+  #AvisClients-{{ section.id }} .avis-gallery-wrap { text-align: center; }
+  #AvisClients-{{ section.id }} .avis-gallery-wrap p { margin: 0 0 9px; color: var(--avis-muted); font-size: 13px; }
+  #AvisClients-{{ section.id }} .avis-gallery { display: inline-flex; align-items: center; gap: 8px; max-width: 100%; overflow-x: auto; padding-bottom: 2px; }
+  #AvisClients-{{ section.id }} .avis-thumb { border: 0; padding: 0; background: transparent; cursor: pointer; flex: 0 0 auto; }
+  #AvisClients-{{ section.id }} .avis-thumb img { width: 54px; height: 54px; object-fit: cover; border-radius: 4px; display: block; }
+  #AvisClients-{{ section.id }} .avis-see-more { border: 0; background: transparent; text-decoration: underline; color: var(--avis-muted); font-size: 12px; line-height: 1.05; cursor: pointer; }
+
+  #AvisClients-{{ section.id }} .avis-tabs-card { padding: 14px 18px 16px; margin-bottom: 28px; }
+  #AvisClients-{{ section.id }} .avis-tabs { display: flex; gap: 12px; border-bottom: 2px solid #000; }
+  #AvisClients-{{ section.id }} .avis-tab { border: 0; background: transparent; padding: 10px 14px; border-radius: 20px 20px 0 0; cursor: pointer; font-size: 13px; color: #111; }
+  #AvisClients-{{ section.id }} .avis-tab.active { background: #f2f2f2; }
+  #AvisClients-{{ section.id }} .avis-filter-row { margin-top: 13px; }
+  #AvisClients-{{ section.id }} .avis-filter { border: 0; background: transparent; cursor: pointer; color: #111; font-size: 12px; padding: 0; }
+
+  #AvisClients-{{ section.id }} .avis-panel { display: none; }
+  #AvisClients-{{ section.id }} .avis-panel.active { display: block; }
+
+  #AvisClients-{{ section.id }} .avis-reviews-grid {
+    column-count: 3;
+    column-gap: 24px;
+  }
+
+  #AvisClients-{{ section.id }} .avis-card {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 24px;
+    overflow: hidden;
+    break-inside: avoid;
+    vertical-align: top;
+  }
+
+  #AvisClients-{{ section.id }} .avis-card[hidden] { display: none !important; }
+  #AvisClients-{{ section.id }} .avis-card-top { display: flex; justify-content: space-between; gap: 10px; padding: 16px 16px 12px; }
+  #AvisClients-{{ section.id }} .avis-author-row { display: flex; align-items: center; gap: 7px; margin-top: 8px; font-size: 13px; }
+  #AvisClients-{{ section.id }} .avis-avatar { width: 18px; height: 18px; border: 1px solid #111; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 11px; }
+  #AvisClients-{{ section.id }} .avis-verified { background: #000; color: #fff; border-radius: 3px; padding: 2px 5px; font-size: 9px; font-weight: 800; line-height: 1; }
+  #AvisClients-{{ section.id }} .avis-date-pin { display: flex; flex-direction: column; align-items: flex-end; gap: 10px; font-size: 11px; color: var(--avis-muted); white-space: nowrap; }
+  #AvisClients-{{ section.id }} .avis-pin { color: #000; font-size: 16px; line-height: 1; }
+
+  #AvisClients-{{ section.id }} .avis-photo { margin: 0 16px 14px; border-radius: 4px; overflow: hidden; background: #f5f5f5; }
+  #AvisClients-{{ section.id }} .avis-photo img { width: 100%; display: block; object-fit: cover; }
+  #AvisClients-{{ section.id }} .avis-photo-placeholder { min-height: 260px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 22px; color: #777; font-size: 13px; border: 1px dashed #ccc; }
+  #AvisClients-{{ section.id }} .avis-text { margin: 0; padding: 0 16px 18px; color: #333; font-size: 13px; line-height: 1.45; }
+
+  #AvisClients-{{ section.id }} .avis-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 32px 0 4px;
+    font-size: 14px;
+  }
+
+  #AvisClients-{{ section.id }} .avis-page-btn {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    padding: 4px 3px;
+    color: #111;
+  }
+
+  #AvisClients-{{ section.id }} .avis-page-btn.active { font-weight: 900; transform: scale(1.18); }
+  #AvisClients-{{ section.id }} .avis-page-btn:disabled { opacity: .35; cursor: not-allowed; }
+
+  #AvisClients-{{ section.id }} .avis-empty { padding: 30px; text-align: center; }
+  #AvisClients-{{ section.id }} .avis-empty h3 { margin: 0 0 8px; }
+  #AvisClients-{{ section.id }} .avis-empty p { margin: 0; color: var(--avis-muted); }
+
+  @media (max-width: 990px) {
+    #AvisClients-{{ section.id }} .avis-summary-grid { grid-template-columns: 1fr; gap: 20px; }
+    #AvisClients-{{ section.id }} .avis-bars-block,
+    #AvisClients-{{ section.id }} .avis-actions-block { border-left: 0; border-top: 2px solid var(--avis-border); padding-left: 0; padding-top: 20px; }
+    #AvisClients-{{ section.id }} .avis-reviews-grid { column-count: 2; }
+  }
+
+  @media (max-width: 640px) {
+    #AvisClients-{{ section.id }} .avis-wrap { width: min(100% - 20px, {{ section.settings.max_width }}px); }
+    #AvisClients-{{ section.id }} .avis-summary-card { padding: 22px 16px; }
+    #AvisClients-{{ section.id }} .avis-reviews-grid { column-count: 1; }
+    #AvisClients-{{ section.id }} .avis-tabs { overflow-x: auto; }
+    #AvisClients-{{ section.id }} .avis-bar-row { grid-template-columns: 72px 1fr 30px; gap: 8px; }
+  }
+</style>
+
+<script>
+  (() => {
+    const root = document.getElementById('AvisClients-{{ section.id }}');
+    if (!root) return;
+
+    const cards = [...root.querySelectorAll('.avis-card')];
+    const pagination = root.querySelector('.avis-pagination');
+    const totalPages = Number('{{ section.settings.total_pages }}') || 7;
+    let currentPage = 1;
+    let picturesOnly = false;
+
+    const renderPagination = () => {
+      if (!pagination) return;
+      pagination.innerHTML = '';
+
+      const makeBtn = (label, page, className = '') => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = `avis-page-btn ${className}`;
+        btn.textContent = label;
+        btn.disabled = page < 1 || page > totalPages;
+        btn.addEventListener('click', () => showPage(page, true));
+        pagination.appendChild(btn);
+      };
+
+      makeBtn('«', 1);
+      makeBtn('‹', currentPage - 1);
+      for (let i = 1; i <= totalPages; i++) makeBtn(String(i), i, i === currentPage ? 'active' : '');
+      makeBtn('›', currentPage + 1);
+      makeBtn('»', totalPages);
+    };
+
+    const showPage = (page, scroll = false) => {
+      currentPage = Math.max(1, Math.min(totalPages, Number(page) || 1));
+      cards.forEach(card => {
+        const matchPage = Number(card.dataset.page) === currentPage;
+        const matchPhoto = !picturesOnly || card.dataset.hasImage === 'true';
+        card.hidden = !(matchPage && matchPhoto);
+      });
+      renderPagination();
+      if (scroll) root.querySelector('.avis-tabs-card')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
+
+    root.querySelectorAll('[data-review-jump], [data-open-page]').forEach(btn => {
+      btn.addEventListener('click', () => showPage(btn.dataset.reviewJump || btn.dataset.openPage || 1, true));
+    });
+
+    root.querySelectorAll('.avis-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        root.querySelectorAll('.avis-tab').forEach(t => t.classList.remove('active'));
+        root.querySelectorAll('.avis-panel').forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        root.querySelector(`[data-panel="${tab.dataset.tab}"]`)?.classList.add('active');
+      });
+    });
+
+    root.querySelector('[data-filter-pictures]')?.addEventListener('click', event => {
+      picturesOnly = !picturesOnly;
+      event.currentTarget.dataset.filterPictures = String(picturesOnly);
+      event.currentTarget.classList.toggle('active', picturesOnly);
+      showPage(currentPage, false);
+    });
+
+    showPage(1, false);
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Avis clients paginés",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Titre", "default": "Avis clients" },
+    { "type": "text", "id": "average_rating", "label": "Note moyenne", "default": "4.60" },
+    { "type": "number", "id": "total_reviews", "label": "Nombre total d’avis", "default": 1349 },
+    { "type": "number", "id": "questions_count", "label": "Nombre de questions", "default": 27 },
+    { "type": "number", "id": "five_star_count", "label": "Avis 5 étoiles", "default": 906 },
+    { "type": "number", "id": "four_star_count", "label": "Avis 4 étoiles", "default": 352 },
+    { "type": "number", "id": "three_star_count", "label": "Avis 3 étoiles", "default": 90 },
+    { "type": "number", "id": "two_star_count", "label": "Avis 2 étoiles", "default": 1 },
+    { "type": "number", "id": "one_star_count", "label": "Avis 1 étoile", "default": 0 },
+    { "type": "text", "id": "gallery_label", "label": "Texte galerie", "default": "Photos et vidéos des clients" },
+    { "type": "text", "id": "write_review_label", "label": "Bouton avis", "default": "Écrire un avis" },
+    { "type": "url", "id": "write_review_link", "label": "Lien bouton avis" },
+    { "type": "text", "id": "ask_question_label", "label": "Bouton question", "default": "Poser une question" },
+    { "type": "url", "id": "ask_question_link", "label": "Lien bouton question" },
+    { "type": "textarea", "id": "questions_empty_text", "label": "Texte onglet questions", "default": "Les questions/réponses peuvent être ajoutées ici si tu veux reproduire aussi l’onglet Questions." },
+    { "type": "range", "id": "total_pages", "label": "Nombre de pages", "min": 1, "max": 12, "step": 1, "default": 7 },
+    { "type": "range", "id": "max_width", "label": "Largeur maximale", "min": 900, "max": 1500, "step": 20, "default": 1180 },
+    { "type": "range", "id": "section_padding_top", "label": "Marge haute", "min": 0, "max": 120, "step": 4, "default": 28 },
+    { "type": "range", "id": "section_padding_bottom", "label": "Marge basse", "min": 0, "max": 120, "step": 4, "default": 48 }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Avis client",
+      "settings": [
+        { "type": "range", "id": "page", "label": "Page", "min": 1, "max": 12, "step": 1, "default": 1 },
+        { "type": "text", "id": "name", "label": "Nom", "default": "Client" },
+        { "type": "text", "id": "date", "label": "Date", "default": "05/04/2026" },
+        { "type": "range", "id": "rating", "label": "Note", "min": 1, "max": 5, "step": 1, "default": 5 },
+        { "type": "checkbox", "id": "verified", "label": "Afficher Vérifié", "default": true },
+        { "type": "image_picker", "id": "photo", "label": "Photo de l’avis" },
+        { "type": "textarea", "id": "text", "label": "Texte de l’avis", "default": "Très bon produit, confortable et agréable à porter." }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Avis clients paginés",
+      "blocks": [
+        { "type": "review", "settings": { "page": 1, "name": "Charles J.", "date": "05/04/2026", "rating": 5, "verified": true, "text": "Je suis déjà un grand fan de débardeurs gainants et celui-ci est devenu mon préféré. Je le porte presque tous les jours. Il donne une meilleure compression que les autres et un vrai maintien sans gêner les mouvements." } },
+        { "type": "review", "settings": { "page": 1, "name": "Sherry T.", "date": "29/04/2026", "rating": 5, "verified": true, "text": "Mon mari les adore. Je les ai achetés pour mon chéri, il les porte et il en est très content. Ils taillent bien, donnent un rendu plus net sous les vêtements, et le rapport qualité/prix est excellent." } },
+        { "type": "review", "settings": { "page": 1, "name": "Joao L.", "date": "24/04/2026", "rating": 5, "verified": true, "text": "C’est le meilleur investissement que j’ai fait pour améliorer ma silhouette. Le tissu est très confortable, garde une bonne température corporelle quand je cours, et le rendu est propre. Exactement ce que je cherchais." } },
+        { "type": "review", "settings": { "page": 1, "name": "Jacob Clifton", "date": "19/10/2023", "rating": 5, "verified": true, "text": "Je les utilise comme sous-vêtements et ils me gardent au frais tout en étant confortables. Très bon boost de confiance. J’en ai acheté plusieurs, ça montre à quel point je les aime." } },
+        { "type": "review", "settings": { "page": 1, "name": "Z Brown", "date": "26/02/2026", "rating": 5, "verified": true, "text": "Je porte un peu de poids en trop autour du ventre et j’adore les poignées qui rendent l’utilisation pratique. Le débardeur gainant sous mes chemises change vraiment la silhouette." } },
+
+        { "type": "review", "settings": { "page": 2, "name": "Joe C.", "date": "12/03/2026", "rating": 5, "verified": true, "text": "Je suis très content de l’avoir. Le tissu est doux et je me sens plus confiant parce qu’il aide à cacher mon ventre. La qualité est au rendez-vous et je vais sûrement en reprendre." } },
+        { "type": "review", "settings": { "page": 2, "name": "Reditri S.", "date": "01/03/2026", "rating": 5, "verified": true, "text": "Livraison rapide. Je l’ai essayé dès réception et la taille était parfaite. Très confortable, ça aide vraiment à mettre une tenue en valeur." } },
+        { "type": "review", "settings": { "page": 2, "name": "Bin S.", "date": "20/02/2026", "rating": 5, "verified": true, "text": "J’ai perdu environ 15 livres cette année et ce produit m’aide à obtenir une silhouette plus serrée et plus nette. Il reste très confortable à porter." } },
+        { "type": "review", "settings": { "page": 2, "name": "Hector R.", "date": "15/10/2023", "rating": 5, "verified": true, "text": "Il donne une très bonne compression autour du ventre. Facile à enfiler et simple à retirer. Aucun signe d’inconfort en le portant. Très bon prix." } },
+        { "type": "review", "settings": { "page": 2, "name": "Eddie", "date": "17/10/2023", "rating": 5, "verified": true, "text": "J’en ai acheté deux et je viens de les recevoir. Je suis vraiment satisfait. Le maintien est agréable, ça respire bien et le rendu sous mes chemises est propre." } },
+
+        { "type": "review", "settings": { "page": 3, "name": "Ricardo C.", "date": "12/10/2023", "rating": 5, "verified": true, "text": "Ce débardeur booste vraiment ma confiance. Il est moins gênant qu’un body, donc je peux travailler plus facilement. Il maintient bien la poitrine et je vais rester client." } },
+        { "type": "review", "settings": { "page": 3, "name": "Thomas P.", "date": "09/10/2023", "rating": 5, "verified": true, "text": "Je l’ai porté pendant une journée de travail de 12 heures et il a aidé ma posture. J’en ai déjà commandé un autre." } },
+        { "type": "review", "settings": { "page": 3, "name": "Anthony A.", "date": "06/10/2023", "rating": 5, "verified": true, "text": "Un peu cher mais ça vaut vraiment le prix. Le modèle 2XL est parfait, assez long et efficace sous les chemises. Je vais en commander d’autres." } },
+        { "type": "review", "settings": { "page": 3, "name": "Kerry M.", "date": "05/10/2023", "rating": 5, "verified": true, "text": "Exactement ce qu’il me fallait pour la salle. Je recommande." } },
+        { "type": "review", "settings": { "page": 3, "name": "Brad M.", "date": "06/10/2023", "rating": 5, "verified": true, "text": "Je l’ai acheté pour mon père après une chirurgie abdominale. Il l’aime beaucoup, le maintien est bon et ça ne gêne pas ses mouvements." } },
+
+        { "type": "review", "settings": { "page": 4, "name": "Aj C.", "date": "02/10/2023", "rating": 5, "verified": true, "text": "J’adore. Il me garde au frais et évite que mon ventre se voie trop." } },
+        { "type": "review", "settings": { "page": 4, "name": "Victor S.", "date": "02/10/2023", "rating": 5, "verified": true, "text": "Même si le prix est un peu plus élevé, la compression est top. Le modèle 2.0 vaut vraiment le coup, il rentre le ventre et donne une grosse motivation." } },
+        { "type": "review", "settings": { "page": 4, "name": "Leo Anderson", "date": "02/10/2023", "rating": 4, "verified": true, "text": "Très satisfait de la valeur et de l’expérience globale. Je n’ai pas eu la bonne taille au début, mais le remplacement est en route. Merci." } },
+        { "type": "review", "settings": { "page": 4, "name": "Michael A.", "date": "29/09/2023", "rating": 5, "verified": true, "text": "La coupe est incroyable. Je vais clairement en commander un autre pour ne jamais être sans." } },
+        { "type": "review", "settings": { "page": 4, "name": "Kenny D.", "date": "02/10/2023", "rating": 5, "verified": true, "text": "Ce nouveau modèle a dépassé mes attentes. J’en recommande bientôt." } },
+
+        { "type": "review", "settings": { "page": 5, "name": "Robert G.", "date": "27/09/2023", "rating": 5, "verified": true, "text": "Je l’aime vraiment et je prévois d’en prendre d’autres. Merci beaucoup." } },
+        { "type": "review", "settings": { "page": 5, "name": "Alexander S.", "date": "26/09/2023", "rating": 5, "verified": true, "text": "Un vrai changement pour moi. Facile à mettre et à enlever, on oublie presque qu’on le porte. Je ne me suis jamais senti aussi bien dans mes vêtements." } },
+        { "type": "review", "settings": { "page": 5, "name": "Lawrence D.", "date": "25/09/2023", "rating": 5, "verified": true, "text": "Premier essai avec un débardeur gainant et je suis impressionné. La coupe est parfaite, agréable à porter et ça donne une silhouette plus nette." } },
+        { "type": "review", "settings": { "page": 5, "name": "Corey F.", "date": "25/09/2023", "rating": 5, "verified": true, "text": "C’est mon troisième achat, et pour une bonne raison. Le tissu est très doux et super confortable. J’adore le fait qu’il ne remonte presque pas." } },
+        { "type": "review", "settings": { "page": 5, "name": "Renalto B.", "date": "24/09/2023", "rating": 5, "verified": true, "text": "Excellent sous-vêtement. Après l’avoir essayé, je recommande à tous mes amis. Ça donne la confiance pour porter exactement ce que je veux." } },
+
+        { "type": "review", "settings": { "page": 6, "name": "Tim M.", "date": "23/09/2023", "rating": 5, "verified": true, "text": "Parfait pour le sport, à porter sous un t-shirt au travail ou avec un costume. Il ne te grossit pas, il aide juste à se sentir plus net." } },
+        { "type": "review", "settings": { "page": 6, "name": "James", "date": "22/09/2023", "rating": 5, "verified": true, "text": "Il maintient tout et je peux enfin cacher mon ventre. Ça donne l’air plus net, il a quasiment tout le temps une coupe confortable et ne coupe pas." } },
+        { "type": "review", "settings": { "page": 6, "name": "Rafael L.", "date": "21/09/2023", "rating": 5, "verified": true, "text": "J’adore ce débardeur. Il fonctionne et il est très confortable, même après plusieurs heures. Je me sens plus confiant en le portant." } },
+        { "type": "review", "settings": { "page": 6, "name": "Ryan D.", "date": "19/09/2023", "rating": 5, "verified": true, "text": "Je l’aime vraiment. Il fait ce qu’il est censé faire. Je l’utilise tous les jours." } },
+        { "type": "review", "settings": { "page": 6, "name": "Rogelio A.", "date": "17/09/2023", "rating": 5, "verified": true, "text": "Je viens de l’essayer et le rendu est super naturel. C’est comme porter un débardeur musclé." } },
+
+        { "type": "review", "settings": { "page": 7, "name": "Fred H.", "date": "17/09/2023", "rating": 4, "verified": false, "text": "La livraison a été légèrement retardée, mais le produit a dépassé mes attentes avec son service client, sa qualité et la première impression." } },
+        { "type": "review", "settings": { "page": 7, "name": "J***a", "date": "10/09/2023", "rating": 5, "verified": false, "text": "Très bon." } },
+        { "type": "review", "settings": { "page": 7, "name": "Larry H.", "date": "09/09/2023", "rating": 5, "verified": true, "text": "J’aime la coupe et le rendu sur moi." } },
+        { "type": "review", "settings": { "page": 7, "name": "J***E", "date": "09/09/2023", "rating": 5, "verified": false, "text": "Excellent." } },
+        { "type": "review", "settings": { "page": 7, "name": "E. H.", "date": "09/09/2023", "rating": 5, "verified": true, "text": "Ça fait très bien le travail, il faut juste choisir la bonne taille. J’ai pris du large et ça fonctionne comme prévu." } }
+      ]
+    }
+  ]
+}
+{% endschema %}
