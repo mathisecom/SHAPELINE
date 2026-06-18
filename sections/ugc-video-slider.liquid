@@ -1,0 +1,595 @@
+{% comment %}
+  Section: UGC Video Slider
+  Description: Slider vidéo responsive avec autoplay, loop et bouton son.
+{% endcomment %}
+
+<section
+  id="ugc-video-section-{{ section.id }}"
+  class="ugc-video-section"
+>
+  <div class="ugc-video-container">
+
+    {% if section.settings.title != blank or section.settings.highlight_text != blank %}
+      <h2 class="ugc-title">
+        {{ section.settings.title }}
+        {% if section.settings.highlight_text != blank %}
+          <span>{{ section.settings.highlight_text }}</span>
+        {% endif %}
+      </h2>
+    {% endif %}
+
+    <div class="ugc-slider-wrapper">
+      <div class="ugc-video-slider" data-ugc-slider>
+        {% for block in section.blocks %}
+          <div class="ugc-video-card" {{ block.shopify_attributes }}>
+
+            {% if block.settings.video != blank %}
+              {{
+                block.settings.video
+                | video_tag:
+                  autoplay: true,
+                  loop: true,
+                  muted: true,
+                  controls: false,
+                  playsinline: true,
+                  preload: 'metadata',
+                  class: 'ugc-video'
+              }}
+
+            {% elsif block.settings.video_url != blank %}
+              <video
+                class="ugc-video"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                {% if block.settings.poster != blank %}
+                  poster="{{ block.settings.poster | image_url: width: 1000 }}"
+                {% endif %}
+              >
+                <source src="{{ block.settings.video_url }}" type="video/mp4">
+              </video>
+
+            {% else %}
+              <div class="ugc-video-placeholder">
+                Ajoute une vidéo
+              </div>
+            {% endif %}
+
+            <button
+              class="ugc-sound-btn"
+              type="button"
+              aria-label="Activer ou couper le son"
+              data-sound-btn
+            >
+              <span class="sound-muted">🔇</span>
+              <span class="sound-active">🔊</span>
+            </button>
+
+          </div>
+        {% endfor %}
+      </div>
+
+      <div class="ugc-dots" data-ugc-dots></div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  #ugc-video-section-{{ section.id }} {
+    width: 100%;
+    background: {{ section.settings.background_color }};
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    overflow: hidden;
+  }
+
+  #ugc-video-section-{{ section.id }} .ugc-video-container {
+    max-width: {{ section.settings.container_width }}px;
+    margin: 0 auto;
+    padding: 0 18px;
+  }
+
+  #ugc-video-section-{{ section.id }} .ugc-title {
+    text-align: center;
+    font-size: {{ section.settings.title_size }}px;
+    line-height: 1.2;
+    font-weight: 800;
+    color: {{ section.settings.title_color }};
+    margin: 0 0 {{ section.settings.title_margin_bottom }}px;
+  }
+
+  #ugc-video-section-{{ section.id }} .ugc-title span {
+    color: {{ section.settings.highlight_color }};
+  }
+
+  #ugc-video-section-{{ section.id }} .ugc-slider-wrapper {
+    position: relative;
+  }
+
+  #ugc-video-section-{{ section.id }} .ugc-video-slider {
+    display: flex;
+    gap: {{ section.settings.desktop_gap }}px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding-bottom: 18px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #ugc-video-section-{{ section.id }} .ugc-video-slider::-webkit-scrollbar {
+    display: none;
+  }
+
+  #ugc-video-section-{{ section.id }} .ugc-video-card {
+    position: relative;
+    flex: 0 0 calc((100% - ({{ section.settings.desktop_gap }}px * 3)) / 4);
+    aspect-ratio: 9 / 16;
+    background: #000;
+    overflow: hidden;
+    scroll-snap-align: start;
+  }
+
+  #ugc-video-section-{{ section.id }} .ugc-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  #ugc-video-section-{{ section.id }} .ugc-video-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eeeeee;
+    color: #111111;
+    font-weight: 700;
+  }
+
+  #ugc-video-section-{{ section.id }} .ugc-sound-btn {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0, 0, 0, 0.68);
+    color: #ffffff;
+    font-size: 17px;
+    cursor: pointer;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, background 0.2s ease;
+  }
+
+  #ugc-video-section-{{ section.id }} .ugc-sound-btn:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: scale(1.05);
+  }
+
+  #ugc-video-section-{{ section.id }} .ugc-sound-btn .sound-active {
+    display: none;
+  }
+
+  #ugc-video-section-{{ section.id }} .ugc-sound-btn.is-active .sound-muted {
+    display: none;
+  }
+
+  #ugc-video-section-{{ section.id }} .ugc-sound-btn.is-active .sound-active {
+    display: inline;
+  }
+
+  #ugc-video-section-{{ section.id }} .ugc-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    margin-top: 4px;
+  }
+
+  #ugc-video-section-{{ section.id }} .ugc-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    background: #9b9b9b;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  #ugc-video-section-{{ section.id }} .ugc-dot.is-active {
+    width: 10px;
+    height: 10px;
+    background: {{ section.settings.dot_active_color }};
+  }
+
+  @media screen and (max-width: 768px) {
+    #ugc-video-section-{{ section.id }} {
+      padding-top: {{ section.settings.mobile_padding_top }}px;
+      padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
+    }
+
+    #ugc-video-section-{{ section.id }} .ugc-video-container {
+      padding: 0 7px;
+    }
+
+    #ugc-video-section-{{ section.id }} .ugc-title {
+      text-align: {{ section.settings.mobile_title_alignment }};
+      font-size: {{ section.settings.mobile_title_size }}px;
+      margin-bottom: {{ section.settings.mobile_title_margin_bottom }}px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    #ugc-video-section-{{ section.id }} .ugc-video-slider {
+      gap: {{ section.settings.mobile_gap }}px;
+    }
+
+    #ugc-video-section-{{ section.id }} .ugc-video-card {
+      flex: 0 0 calc((100% - {{ section.settings.mobile_gap }}px) / 2);
+    }
+
+    #ugc-video-section-{{ section.id }} .ugc-sound-btn {
+      width: 34px;
+      height: 34px;
+      right: 8px;
+      bottom: 8px;
+      font-size: 15px;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const section = document.querySelector('#ugc-video-section-{{ section.id }}');
+    if (!section) return;
+
+    const slider = section.querySelector('[data-ugc-slider]');
+    const dotsContainer = section.querySelector('[data-ugc-dots]');
+    if (!slider || !dotsContainer) return;
+
+    const cards = Array.from(slider.querySelectorAll('.ugc-video-card'));
+    const videos = Array.from(slider.querySelectorAll('video'));
+    const soundButtons = Array.from(slider.querySelectorAll('[data-sound-btn]'));
+
+    if (!cards.length) return;
+
+    function playVideos() {
+      videos.forEach(function(video) {
+        video.muted = true;
+        video.loop = true;
+        video.playsInline = true;
+
+        const playPromise = video.play();
+
+        if (playPromise !== undefined) {
+          playPromise.catch(function() {});
+        }
+      });
+    }
+
+    playVideos();
+
+    soundButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        const card = button.closest('.ugc-video-card');
+        const currentVideo = card ? card.querySelector('video') : null;
+
+        if (!currentVideo) return;
+
+        videos.forEach(function(video) {
+          if (video !== currentVideo) {
+            video.muted = true;
+          }
+        });
+
+        soundButtons.forEach(function(btn) {
+          if (btn !== button) {
+            btn.classList.remove('is-active');
+          }
+        });
+
+        currentVideo.muted = !currentVideo.muted;
+
+        if (currentVideo.muted) {
+          button.classList.remove('is-active');
+        } else {
+          button.classList.add('is-active');
+          currentVideo.play();
+        }
+      });
+    });
+
+    function getCardsPerView() {
+      return window.innerWidth <= 768 ? 2 : 4;
+    }
+
+    function createDots() {
+      dotsContainer.innerHTML = '';
+
+      const cardsPerView = getCardsPerView();
+      const totalDots = Math.ceil(cards.length / cardsPerView);
+
+      for (let i = 0; i < totalDots; i++) {
+        const dot = document.createElement('button');
+        dot.type = 'button';
+        dot.className = 'ugc-dot';
+        dot.setAttribute('aria-label', 'Voir les vidéos ' + (i + 1));
+
+        if (i === 0) {
+          dot.classList.add('is-active');
+        }
+
+        dot.addEventListener('click', function() {
+          const targetCard = cards[i * cardsPerView];
+
+          if (targetCard) {
+            slider.scrollTo({
+              left: targetCard.offsetLeft - slider.offsetLeft,
+              behavior: 'smooth'
+            });
+          }
+        });
+
+        dotsContainer.appendChild(dot);
+      }
+    }
+
+    function updateDots() {
+      const dots = Array.from(dotsContainer.querySelectorAll('.ugc-dot'));
+      if (!dots.length || !cards.length) return;
+
+      const cardsPerView = getCardsPerView();
+      const gap = parseFloat(window.getComputedStyle(slider).gap) || 0;
+      const cardWidth = cards[0].offsetWidth + gap;
+      const activeIndex = Math.round(slider.scrollLeft / (cardWidth * cardsPerView));
+
+      dots.forEach(function(dot) {
+        dot.classList.remove('is-active');
+      });
+
+      if (dots[activeIndex]) {
+        dots[activeIndex].classList.add('is-active');
+      }
+    }
+
+    let scrollTimeout;
+
+    slider.addEventListener('scroll', function() {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(updateDots, 80);
+    });
+
+    window.addEventListener('resize', function() {
+      createDots();
+      updateDots();
+    });
+
+    document.addEventListener('shopify:section:load', function(event) {
+      if (event.detail.sectionId === '{{ section.id }}') {
+        playVideos();
+      }
+    });
+
+    createDots();
+    updateDots();
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Vidéos clients UGC",
+  "tag": "section",
+  "class": "section-ugc-video-slider",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titre",
+      "default": "Adopté Par"
+    },
+    {
+      "type": "text",
+      "id": "highlight_text",
+      "label": "Texte en couleur",
+      "default": "+100,000 Clients"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Couleur de fond",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Couleur du titre",
+      "default": "#1f1f1f"
+    },
+    {
+      "type": "color",
+      "id": "highlight_color",
+      "label": "Couleur du texte mis en avant",
+      "default": "#f05a24"
+    },
+    {
+      "type": "color",
+      "id": "dot_active_color",
+      "label": "Couleur du point actif",
+      "default": "#111111"
+    },
+    {
+      "type": "range",
+      "id": "container_width",
+      "label": "Largeur maximale de la section",
+      "min": 900,
+      "max": 1600,
+      "step": 20,
+      "default": 1320
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Taille du titre desktop",
+      "min": 18,
+      "max": 44,
+      "step": 1,
+      "default": 26
+    },
+    {
+      "type": "range",
+      "id": "mobile_title_size",
+      "label": "Taille du titre mobile",
+      "min": 16,
+      "max": 34,
+      "step": 1,
+      "default": 22
+    },
+    {
+      "type": "select",
+      "id": "mobile_title_alignment",
+      "label": "Alignement du titre mobile",
+      "default": "left",
+      "options": [
+        {
+          "value": "left",
+          "label": "Gauche"
+        },
+        {
+          "value": "center",
+          "label": "Centre"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "title_margin_bottom",
+      "label": "Espace sous le titre desktop",
+      "min": 10,
+      "max": 70,
+      "step": 2,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "mobile_title_margin_bottom",
+      "label": "Espace sous le titre mobile",
+      "min": 10,
+      "max": 60,
+      "step": 2,
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "desktop_gap",
+      "label": "Espacement entre vidéos desktop",
+      "min": 8,
+      "max": 50,
+      "step": 2,
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "mobile_gap",
+      "label": "Espacement entre vidéos mobile",
+      "min": 6,
+      "max": 24,
+      "step": 1,
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Marge haute desktop",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Marge basse desktop",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "default": 46
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "label": "Marge haute mobile",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "default": 22
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "label": "Marge basse mobile",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "default": 32
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video",
+      "name": "Vidéo",
+      "settings": [
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Vidéo Shopify"
+        },
+        {
+          "type": "text",
+          "id": "video_url",
+          "label": "Lien vidéo MP4",
+          "info": "Optionnel : colle ici un lien MP4 Shopify si tu n’utilises pas le sélecteur vidéo."
+        },
+        {
+          "type": "image_picker",
+          "id": "poster",
+          "label": "Image de couverture",
+          "info": "Utilisée surtout si tu mets un lien MP4 manuel."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vidéos clients UGC",
+      "blocks": [
+        {
+          "type": "video"
+        },
+        {
+          "type": "video"
+        },
+        {
+          "type": "video"
+        },
+        {
+          "type": "video"
+        },
+        {
+          "type": "video"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
