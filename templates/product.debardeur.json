@@ -416,6 +416,74 @@
         "desktop_padding_bottom": 36
       }
     },
+    "ugc_video_slider_EzfHkw": {
+      "type": "ugc-video-slider",
+      "blocks": {
+        "video_wfQNAh": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/0616 (1).mp4",
+            "video_url": ""
+          }
+        },
+        "video_efC6Fk": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/0616 (1)(1).mp4",
+            "video_url": ""
+          }
+        },
+        "video_kfDmHf": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/ssstik.io_@sachajibril_1781641753959.mp4",
+            "video_url": ""
+          }
+        },
+        "video_6hqaCx": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/0616 (1)(3).mp4",
+            "video_url": ""
+          }
+        },
+        "video_EcNER7": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/0616 (1)(4).mp4",
+            "video_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_wfQNAh",
+        "video_efC6Fk",
+        "video_kfDmHf",
+        "video_6hqaCx",
+        "video_EcNER7"
+      ],
+      "name": "Vidéos clients UGC",
+      "settings": {
+        "title": "Adopté Par",
+        "highlight_text": "+100,000 Clients",
+        "background_color": "#ffffff",
+        "title_color": "#1f1f1f",
+        "highlight_color": "#f05a24",
+        "dot_active_color": "#111111",
+        "container_width": 1320,
+        "title_size": 26,
+        "mobile_title_size": 20,
+        "mobile_title_alignment": "center",
+        "title_margin_bottom": 30,
+        "mobile_title_margin_bottom": 28,
+        "desktop_gap": 28,
+        "mobile_gap": 12,
+        "padding_top": 36,
+        "padding_bottom": 46,
+        "mobile_padding_top": 22,
+        "mobile_padding_bottom": 0
+      }
+    },
     "image_slider_ta4gBE": {
       "type": "image-slider",
       "blocks": {
@@ -536,6 +604,7 @@
         "video_slide_XKkbhA",
         "video_slide_f6eJG3"
       ],
+      "disabled": true,
       "name": "Image/Video Slider",
       "settings": {
         "display_id": false,
@@ -2035,6 +2104,7 @@
   },
   "order": [
     "main",
+    "ugc_video_slider_EzfHkw",
     "image_slider_ta4gBE",
     "horizontal_ticker_dxnJT8",
     "image_with_text_TGV7f6",
