@@ -1554,6 +1554,7 @@
             "date": "05/04/2026",
             "rating": 5,
             "verified": true,
+            "photo": "shopify://shop_images/1713539841__0__JABGysDl__YAiKWuz7F_H__original.avif",
             "text": "Je suis déjà un grand fan de débardeurs gainants et celui-ci est devenu mon préféré. Je le porte presque tous les jours. Il donne une meilleure compression que les autres et un vrai maintien sans gêner les mouvements."
           }
         },
@@ -1565,6 +1566,7 @@
             "date": "29/04/2026",
             "rating": 5,
             "verified": true,
+            "photo": "shopify://shop_images/ChatGPT_Image_19_juin_2026_00_13_09.png",
             "text": "Mon mari les adore. Je les ai achetés pour mon chéri, il les porte et il en est très content. Ils taillent bien, donnent un rendu plus net sous les vêtements, et le rapport qualité/prix est excellent."
           }
         },
@@ -1576,6 +1578,7 @@
             "date": "24/04/2026",
             "rating": 5,
             "verified": true,
+            "photo": "shopify://shop_images/1713539868__0__M4zDhpxp__rpbUpH4ffD__original.avif",
             "text": "C’est le meilleur investissement que j’ai fait pour améliorer ma silhouette. Le tissu est très confortable, garde une bonne température corporelle quand je cours, et le rendu est propre. Exactement ce que je cherchais."
           }
         },
@@ -1985,7 +1988,6 @@
         "write_review_link": "",
         "ask_question_label": "Poser une question",
         "ask_question_link": "",
-        "questions_empty_text": "Les questions/réponses peuvent être ajoutées ici si tu veux reproduire aussi l’onglet Questions.",
         "total_pages": 7,
         "max_width": 1180,
         "section_padding_top": 28,

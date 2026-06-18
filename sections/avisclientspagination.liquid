@@ -1,5 +1,5 @@
 {% comment %}
-  Section Shopify : Avis clients paginés façon Judge.me/Loox
+  Section Shopify : Avis clients + questions façon Judge.me/Loox
   Installation : Online Store > Themes > Edit code > Sections > Add a new section
   Nom conseillé : avis-clients-pagination.liquid
 {% endcomment %}
@@ -44,7 +44,7 @@
         <div class="avis-gallery">
           {% assign gallery_count = 0 %}
           {% for block in section.blocks %}
-            {% if block.settings.photo != blank and gallery_count < 8 %}
+            {% if block.type == 'review' and block.settings.photo != blank and gallery_count < 8 %}
               <button class="avis-thumb" type="button" data-review-jump="{{ block.settings.page }}" {{ block.shopify_attributes }}>
                 {{ block.settings.photo | image_url: width: 160 | image_tag: loading: 'lazy', alt: block.settings.name }}
               </button>
@@ -69,34 +69,36 @@
     <div class="avis-panel avis-panel-reviews active" data-panel="reviews">
       <div class="avis-reviews-grid">
         {% for block in section.blocks %}
-          <article class="avis-card" data-page="{{ block.settings.page }}" data-has-image="{% if block.settings.photo != blank %}true{% else %}false{% endif %}" {{ block.shopify_attributes }}>
-            <div class="avis-card-top">
-              <div>
-                <div class="avis-card-stars">
-                  {% for i in (1..5) %}{% if i <= block.settings.rating %}★{% else %}☆{% endif %}{% endfor %}
+          {% if block.type == 'review' %}
+            <article class="avis-card" data-page="{{ block.settings.page }}" data-has-image="{% if block.settings.photo != blank %}true{% else %}false{% endif %}" {{ block.shopify_attributes }}>
+              <div class="avis-card-top">
+                <div>
+                  <div class="avis-card-stars">
+                    {% for i in (1..5) %}{% if i <= block.settings.rating %}★{% else %}☆{% endif %}{% endfor %}
+                  </div>
+                  <div class="avis-author-row">
+                    <span class="avis-avatar" aria-hidden="true">♙</span>
+                    <strong>{{ block.settings.name }}</strong>
+                    {% if block.settings.verified %}<span class="avis-verified">Vérifié</span>{% endif %}
+                  </div>
                 </div>
-                <div class="avis-author-row">
-                  <span class="avis-avatar" aria-hidden="true">♙</span>
-                  <strong>{{ block.settings.name }}</strong>
-                  {% if block.settings.verified %}<span class="avis-verified">Vérifié</span>{% endif %}
+                <div class="avis-date-pin">
+                  <span>{{ block.settings.date }}</span>
+                  <span class="avis-pin">⌁</span>
                 </div>
               </div>
-              <div class="avis-date-pin">
-                <span>{{ block.settings.date }}</span>
-                <span class="avis-pin">⌁</span>
-              </div>
-            </div>
 
-            {% if block.settings.photo != blank %}
-              <div class="avis-photo">
-                {{ block.settings.photo | image_url: width: 720 | image_tag: loading: 'lazy', alt: block.settings.name }}
-              </div>
-            {% else %}
-              <div class="avis-photo avis-photo-placeholder">Ajoute la photo de cet avis dans l’éditeur Shopify</div>
-            {% endif %}
+              {% if block.settings.photo != blank %}
+                <div class="avis-photo">
+                  {{ block.settings.photo | image_url: width: 720 | image_tag: loading: 'lazy', alt: block.settings.name }}
+                </div>
+              {% else %}
+                <div class="avis-photo avis-photo-placeholder">Ajoute la photo de cet avis dans l’éditeur Shopify</div>
+              {% endif %}
 
-            <p class="avis-text">{{ block.settings.text }}</p>
-          </article>
+              <p class="avis-text">{{ block.settings.text }}</p>
+            </article>
+          {% endif %}
         {% endfor %}
       </div>
 
@@ -104,10 +106,144 @@
     </div>
 
     <div class="avis-panel avis-panel-questions" data-panel="questions">
-      <div class="avis-empty">
-        <h3>Questions clients</h3>
-        <p>{{ section.settings.questions_empty_text }}</p>
+      <div class="avis-questions-list">
+        <article class="avis-question-card" data-question-page="1">
+          <div class="avis-question-head">
+            <div class="avis-question-author"><span class="avis-question-avatar" aria-hidden="true">♙</span><strong>John Williams</strong></div>
+            <span>01/09/2024</span>
+          </div>
+          <p class="avis-question-text">Je porte des t-shirts 3XL et des pantalons taille 44. Est-ce que le débardeur 2XL devrait m’aller ?</p>
+          <div class="avis-answer-box"><span>01/10/2024</span><strong>&gt;&gt; {{ section.settings.shop_name }} a répondu :</strong><p>Bien sûr ! Nos débardeurs {{ section.settings.shop_name }} taillent différemment d’un t-shirt classique, donc le 2XL devrait t’aller même si tu portes habituellement du 3XL. Pour plus de précision, utilise notre guide des tailles IA sur le site afin de trouver ta taille idéale.</p></div>
+        </article>
+
+        <article class="avis-question-card" data-question-page="1">
+          <div class="avis-question-head">
+            <div class="avis-question-author"><span class="avis-question-avatar" aria-hidden="true">♙</span><strong>Richard Garcia</strong></div>
+            <span>01/08/2024</span>
+          </div>
+          <p class="avis-question-text">J’en ai acheté 3 : les 2 tailles L me vont bien, mais le XL ne me va pas. Est-ce que je peux l’échanger contre un autre L ?</p>
+          <div class="avis-answer-box"><span>01/09/2024</span><strong>&gt;&gt; {{ section.settings.shop_name }} a répondu :</strong><p>Bien sûr ! Contacte-nous par e-mail ou via le formulaire de contact et nous t’aiderons à remplacer le XL par une taille L. On est là pour trouver la bonne solution pour toi.</p></div>
+        </article>
+
+        <article class="avis-question-card" data-question-page="1">
+          <div class="avis-question-head">
+            <div class="avis-question-author"><span class="avis-question-avatar" aria-hidden="true">♙</span><strong>Robert</strong></div>
+            <span>01/08/2024</span>
+          </div>
+          <p class="avis-question-text">Est-ce que le débardeur est assez long ? Mes sous-vêtements remontent souvent et je veux éviter ce problème.</p>
+          <div class="avis-answer-box"><span>01/09/2024</span><strong>&gt;&gt; {{ section.settings.shop_name }} a répondu :</strong><p>Oui, notre modèle est conçu pour être plus long et mieux rester en place. Il tient bien rentré sous les vêtements pour un maintien plus sûr tout au long de la journée.</p></div>
+        </article>
+
+        <article class="avis-question-card" data-question-page="1">
+          <div class="avis-question-head">
+            <div class="avis-question-author"><span class="avis-question-avatar" aria-hidden="true">♙</span><strong>Jacob</strong></div>
+            <span>01/07/2024</span>
+          </div>
+          <p class="avis-question-text">Est-ce que la matière est confortable à porter pendant plus de 8 heures dans la journée ?</p>
+          <div class="avis-answer-box"><span>01/08/2024</span><strong>&gt;&gt; {{ section.settings.shop_name }} a répondu :</strong><p>Oui, le tissu est pensé pour rester agréable toute la journée. Beaucoup de clients le portent pendant de longues heures sans gêne particulière.</p></div>
+        </article>
+
+        <article class="avis-question-card" data-question-page="1">
+          <div class="avis-question-head">
+            <div class="avis-question-author"><span class="avis-question-avatar" aria-hidden="true">♙</span><strong>David Lopez</strong></div>
+            <span>01/07/2024</span>
+          </div>
+          <p class="avis-question-text">Est-ce qu’il a tendance à remonter souvent ?</p>
+          <div class="avis-answer-box"><span>01/08/2024</span><strong>&gt;&gt; {{ section.settings.shop_name }} a répondu :</strong><p>Non, il est conçu pour rester bien en place. Tu ne devrais donc pas avoir de souci de débardeur qui remonte pendant la journée.</p></div>
+        </article>
+
+        <article class="avis-question-card" data-question-page="2">
+          <div class="avis-question-head">
+            <div class="avis-question-author"><span class="avis-question-avatar" aria-hidden="true">♙</span><strong>Doni</strong></div>
+            <span>01/07/2024</span>
+          </div>
+          <p class="avis-question-text">Quelle taille devrais-je prendre ? Je mesure 1m75 pour environ 132 kg.</p>
+          <div class="avis-answer-box"><span>01/08/2024</span><strong>&gt;&gt; {{ section.settings.shop_name }} a répondu :</strong><p>Pour ta taille et ton poids, le 2XL serait probablement le meilleur choix. Tu peux aussi utiliser notre guide des tailles IA sur le site pour confirmer la taille idéale.</p></div>
+        </article>
+
+        <article class="avis-question-card" data-question-page="2">
+          <div class="avis-question-head">
+            <div class="avis-question-author"><span class="avis-question-avatar" aria-hidden="true">♙</span><strong>James R.</strong></div>
+            <span>01/05/2024</span>
+          </div>
+          <p class="avis-question-text">Est-ce que ça aide pour les poignées d’amour et la poitrine masculine ?</p>
+          <div class="avis-answer-box"><span>01/06/2024</span><strong>&gt;&gt; {{ section.settings.shop_name }} a répondu :</strong><p>Oui, le débardeur {{ section.settings.shop_name }} aide à lisser les zones comme le ventre, les poignées d’amour et le torse grâce à son tissu gainant et à sa coupe près du corps.</p></div>
+        </article>
+
+        <article class="avis-question-card" data-question-page="2">
+          <div class="avis-question-head">
+            <div class="avis-question-author"><span class="avis-question-avatar" aria-hidden="true">♙</span><strong>Thomas</strong></div>
+            <span>01/04/2024</span>
+          </div>
+          <p class="avis-question-text">Je mesure 1m80 pour environ 91 kg. Quelle taille me conviendrait ?</p>
+          <div class="avis-answer-box"><span>01/05/2024</span><strong>&gt;&gt; {{ section.settings.shop_name }} a répondu :</strong><p>Pour ta taille et ton poids, une taille L devrait être idéale si tu veux un effet bien ajusté. Le guide des tailles IA peut aussi t’aider à confirmer.</p></div>
+        </article>
+
+        <article class="avis-question-card" data-question-page="2">
+          <div class="avis-question-head">
+            <div class="avis-question-author"><span class="avis-question-avatar" aria-hidden="true">♙</span><strong>Mark</strong></div>
+            <span>01/03/2024</span>
+          </div>
+          <p class="avis-question-text">Comment est-ce que ça rend sous un polo ?</p>
+          <div class="avis-answer-box"><span>01/04/2024</span><strong>&gt;&gt; {{ section.settings.shop_name }} a répondu :</strong><p>Le débardeur est conçu pour rester discret sous différents types de hauts, y compris les polos, afin d’obtenir une silhouette plus lisse sans lignes trop visibles.</p></div>
+        </article>
+
+        <article class="avis-question-card" data-question-page="2">
+          <div class="avis-question-head">
+            <div class="avis-question-author"><span class="avis-question-avatar" aria-hidden="true">♙</span><strong>Matthew</strong></div>
+            <span>01/02/2024</span>
+          </div>
+          <p class="avis-question-text">Je mesure 1m65 pour environ 111 kg. Quelle taille serait la meilleure pour moi ?</p>
+          <div class="avis-answer-box"><span>01/03/2024</span><strong>&gt;&gt; {{ section.settings.shop_name }} a répondu :</strong><p>Le 2XL devrait être confortable pour toi. Si tu préfères un effet plus serré, tu peux envisager le XL, mais le guide des tailles reste le plus précis.</p></div>
+        </article>
+
+        <article class="avis-question-card" data-question-page="3">
+          <div class="avis-question-head">
+            <div class="avis-question-author"><span class="avis-question-avatar" aria-hidden="true">♙</span><strong>Michael</strong></div>
+            <span>01/01/2024</span>
+          </div>
+          <p class="avis-question-text">Je mesure 1m80 et je pèse environ 99 kg. Avant je pesais 165 kg et j’ai maintenant de la peau relâchée. Quelle taille me faut-il ?</p>
+          <div class="avis-answer-box"><span>01/02/2024</span><strong>&gt;&gt; {{ section.settings.shop_name }} a répondu :</strong><p>Bravo pour ta perte de poids ! Pour ton gabarit, une taille XL devrait être un très bon choix. Utilise notre guide des tailles IA pour confirmer selon le niveau de maintien souhaité.</p></div>
+        </article>
+
+        <article class="avis-question-card" data-question-page="3">
+          <div class="avis-question-head">
+            <div class="avis-question-author"><span class="avis-question-avatar" aria-hidden="true">♙</span><strong>Eric</strong></div>
+            <span>01/01/2024</span>
+          </div>
+          <p class="avis-question-text">Est-ce que le tissu garde une mauvaise odeur après une longue journée ?</p>
+          <div class="avis-answer-box"><span>01/02/2024</span><strong>&gt;&gt; {{ section.settings.shop_name }} a répondu :</strong><p>Non, le tissu est pensé pour rester frais même après plusieurs heures de port. Jusqu’ici, nos clients ne nous remontent pas ce type de problème.</p></div>
+        </article>
+
+        <article class="avis-question-card" data-question-page="3">
+          <div class="avis-question-head">
+            <div class="avis-question-author"><span class="avis-question-avatar" aria-hidden="true">♙</span><strong>Andrew</strong></div>
+            <span>01/01/2024</span>
+          </div>
+          <p class="avis-question-text">Je mesure 1m78 et je pèse environ 73 kg. Quelle taille devrais-je prendre ?</p>
+          <div class="avis-answer-box"><span>01/02/2024</span><strong>&gt;&gt; {{ section.settings.shop_name }} a répondu :</strong><p>Pour 1m78 et 73 kg, une taille S devrait offrir le meilleur rendu avec notre débardeur {{ section.settings.shop_name }}.</p></div>
+        </article>
+
+        <article class="avis-question-card" data-question-page="3">
+          <div class="avis-question-head">
+            <div class="avis-question-author"><span class="avis-question-avatar" aria-hidden="true">♙</span><strong>Charles Davis</strong></div>
+            <span>29/12/2023</span>
+          </div>
+          <p class="avis-question-text">Est-ce que je peux le porter dehors par une journée chaude et ensoleillée, ou je risque d’avoir trop chaud ?</p>
+          <div class="avis-answer-box"><span>29/12/2023</span><strong>&gt;&gt; {{ section.settings.shop_name }} a répondu :</strong><p>Aucun souci. Beaucoup de clients le portent même quand il fait chaud et trouvent le débardeur confortable, respirant et agréable au quotidien.</p></div>
+        </article>
+
+        <article class="avis-question-card" data-question-page="3">
+          <div class="avis-question-head">
+            <div class="avis-question-author"><span class="avis-question-avatar" aria-hidden="true">♙</span><strong>Joseph</strong></div>
+            <span>29/12/2023</span>
+          </div>
+          <p class="avis-question-text">Est-ce que ça aide à perdre du poids ou à réduire le ventre ?</p>
+          <div class="avis-answer-box"><span>30/12/2023</span><strong>&gt;&gt; {{ section.settings.shop_name }} a répondu :</strong><p>Le débardeur aide surtout à lisser la silhouette et à améliorer le maintien. Certains clients se sentent plus motivés pendant le sport, mais l’alimentation et l’activité physique restent essentielles pour la perte de poids.</p></div>
+        </article>
       </div>
+
+      <nav class="avis-question-pagination" aria-label="Pagination des questions"></nav>
     </div>
   </div>
 </section>
@@ -306,6 +442,95 @@
   #AvisClients-{{ section.id }} .avis-empty h3 { margin: 0 0 8px; }
   #AvisClients-{{ section.id }} .avis-empty p { margin: 0; color: var(--avis-muted); }
 
+  #AvisClients-{{ section.id }} .avis-questions-list {
+    display: grid;
+    gap: 18px;
+  }
+
+  #AvisClients-{{ section.id }} .avis-question-card {
+    background: var(--avis-bg);
+    border-radius: 8px;
+    box-shadow: var(--avis-shadow);
+    padding: 18px 18px 20px;
+  }
+
+  #AvisClients-{{ section.id }} .avis-question-card[hidden] { display: none !important; }
+
+  #AvisClients-{{ section.id }} .avis-question-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    color: var(--avis-muted);
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+
+  #AvisClients-{{ section.id }} .avis-question-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #111;
+    font-size: 15px;
+  }
+
+  #AvisClients-{{ section.id }} .avis-question-avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 9px;
+    background: #f1f1f1;
+    color: #111;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex: 0 0 auto;
+  }
+
+  #AvisClients-{{ section.id }} .avis-question-text {
+    margin: 0 0 12px;
+    color: #333;
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  #AvisClients-{{ section.id }} .avis-answer-box {
+    background: #f0f0f0;
+    border-radius: 5px;
+    padding: 13px 16px;
+    color: #111;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  #AvisClients-{{ section.id }} .avis-answer-box span,
+  #AvisClients-{{ section.id }} .avis-answer-box strong,
+  #AvisClients-{{ section.id }} .avis-answer-box p {
+    display: block;
+  }
+
+  #AvisClients-{{ section.id }} .avis-answer-box span {
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+
+  #AvisClients-{{ section.id }} .avis-answer-box strong {
+    font-weight: 900;
+  }
+
+  #AvisClients-{{ section.id }} .avis-answer-box p {
+    margin: 2px 0 0;
+  }
+
+  #AvisClients-{{ section.id }} .avis-question-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 30px 0 4px;
+    font-size: 14px;
+  }
+
   @media (max-width: 990px) {
     #AvisClients-{{ section.id }} .avis-summary-grid { grid-template-columns: 1fr; gap: 20px; }
     #AvisClients-{{ section.id }} .avis-bars-block,
@@ -327,15 +552,21 @@
     const root = document.getElementById('AvisClients-{{ section.id }}');
     if (!root) return;
 
-    const cards = [...root.querySelectorAll('.avis-card')];
-    const pagination = root.querySelector('.avis-pagination');
-    const totalPages = Number('{{ section.settings.total_pages }}') || 7;
-    let currentPage = 1;
+    const reviewCards = [...root.querySelectorAll('.avis-card')];
+    const reviewPagination = root.querySelector('.avis-pagination');
+    const questionCards = [...root.querySelectorAll('.avis-question-card')];
+    const questionPagination = root.querySelector('.avis-question-pagination');
+    const filterRow = root.querySelector('.avis-filter-row');
+
+    const reviewTotalPages = Number('{{ section.settings.total_pages }}') || 7;
+    const questionTotalPages = Math.max(1, ...questionCards.map(card => Number(card.dataset.questionPage) || 1));
+    let currentReviewPage = 1;
+    let currentQuestionPage = 1;
     let picturesOnly = false;
 
-    const renderPagination = () => {
-      if (!pagination) return;
-      pagination.innerHTML = '';
+    const renderPager = (container, totalPages, currentPage, onPageChange) => {
+      if (!container) return;
+      container.innerHTML = '';
 
       const makeBtn = (label, page, className = '') => {
         const btn = document.createElement('button');
@@ -343,8 +574,8 @@
         btn.className = `avis-page-btn ${className}`;
         btn.textContent = label;
         btn.disabled = page < 1 || page > totalPages;
-        btn.addEventListener('click', () => showPage(page, true));
-        pagination.appendChild(btn);
+        btn.addEventListener('click', () => onPageChange(page, true));
+        container.appendChild(btn);
       };
 
       makeBtn('«', 1);
@@ -354,46 +585,64 @@
       makeBtn('»', totalPages);
     };
 
-    const showPage = (page, scroll = false) => {
-      currentPage = Math.max(1, Math.min(totalPages, Number(page) || 1));
-      cards.forEach(card => {
-        const matchPage = Number(card.dataset.page) === currentPage;
+    const showReviewPage = (page, scroll = false) => {
+      currentReviewPage = Math.max(1, Math.min(reviewTotalPages, Number(page) || 1));
+      reviewCards.forEach(card => {
+        const matchPage = Number(card.dataset.page) === currentReviewPage;
         const matchPhoto = !picturesOnly || card.dataset.hasImage === 'true';
         card.hidden = !(matchPage && matchPhoto);
       });
-      renderPagination();
+      renderPager(reviewPagination, reviewTotalPages, currentReviewPage, showReviewPage);
       if (scroll) root.querySelector('.avis-tabs-card')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     };
 
+    const showQuestionPage = (page, scroll = false) => {
+      currentQuestionPage = Math.max(1, Math.min(questionTotalPages, Number(page) || 1));
+      questionCards.forEach(card => {
+        card.hidden = Number(card.dataset.questionPage) !== currentQuestionPage;
+      });
+      renderPager(questionPagination, questionTotalPages, currentQuestionPage, showQuestionPage);
+      if (scroll) root.querySelector('.avis-tabs-card')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
+
+    const activateTab = (tabName) => {
+      root.querySelectorAll('.avis-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tabName));
+      root.querySelectorAll('.avis-panel').forEach(p => p.classList.toggle('active', p.dataset.panel === tabName));
+      if (filterRow) filterRow.hidden = tabName !== 'reviews';
+      if (tabName === 'questions') showQuestionPage(currentQuestionPage, false);
+      if (tabName === 'reviews') showReviewPage(currentReviewPage, false);
+    };
+
     root.querySelectorAll('[data-review-jump], [data-open-page]').forEach(btn => {
-      btn.addEventListener('click', () => showPage(btn.dataset.reviewJump || btn.dataset.openPage || 1, true));
+      btn.addEventListener('click', () => {
+        activateTab('reviews');
+        showReviewPage(btn.dataset.reviewJump || btn.dataset.openPage || 1, true);
+      });
     });
 
     root.querySelectorAll('.avis-tab').forEach(tab => {
-      tab.addEventListener('click', () => {
-        root.querySelectorAll('.avis-tab').forEach(t => t.classList.remove('active'));
-        root.querySelectorAll('.avis-panel').forEach(p => p.classList.remove('active'));
-        tab.classList.add('active');
-        root.querySelector(`[data-panel="${tab.dataset.tab}"]`)?.classList.add('active');
-      });
+      tab.addEventListener('click', () => activateTab(tab.dataset.tab));
     });
 
     root.querySelector('[data-filter-pictures]')?.addEventListener('click', event => {
       picturesOnly = !picturesOnly;
       event.currentTarget.dataset.filterPictures = String(picturesOnly);
       event.currentTarget.classList.toggle('active', picturesOnly);
-      showPage(currentPage, false);
+      showReviewPage(currentReviewPage, false);
     });
 
-    showPage(1, false);
+    showReviewPage(1, false);
+    showQuestionPage(1, false);
+    activateTab('reviews');
   })();
 </script>
 
 {% schema %}
 {
-  "name": "Avis clients paginés",
+  "name": "Avis + Questions",
   "settings": [
     { "type": "text", "id": "heading", "label": "Titre", "default": "Avis clients" },
+    { "type": "text", "id": "shop_name", "label": "Nom de la boutique", "default": "UndrDog" },
     { "type": "text", "id": "average_rating", "label": "Note moyenne", "default": "4.60" },
     { "type": "number", "id": "total_reviews", "label": "Nombre total d’avis", "default": 1349 },
     { "type": "number", "id": "questions_count", "label": "Nombre de questions", "default": 27 },
@@ -407,7 +656,6 @@
     { "type": "url", "id": "write_review_link", "label": "Lien bouton avis" },
     { "type": "text", "id": "ask_question_label", "label": "Bouton question", "default": "Poser une question" },
     { "type": "url", "id": "ask_question_link", "label": "Lien bouton question" },
-    { "type": "textarea", "id": "questions_empty_text", "label": "Texte onglet questions", "default": "Les questions/réponses peuvent être ajoutées ici si tu veux reproduire aussi l’onglet Questions." },
     { "type": "range", "id": "total_pages", "label": "Nombre de pages", "min": 1, "max": 12, "step": 1, "default": 7 },
     { "type": "range", "id": "max_width", "label": "Largeur maximale", "min": 900, "max": 1500, "step": 20, "default": 1180 },
     { "type": "range", "id": "section_padding_top", "label": "Marge haute", "min": 0, "max": 120, "step": 4, "default": 28 },
@@ -430,7 +678,7 @@
   ],
   "presets": [
     {
-      "name": "Avis clients paginés",
+      "name": "Avis + Questions",
       "blocks": [
         { "type": "review", "settings": { "page": 1, "name": "Charles J.", "date": "05/04/2026", "rating": 5, "verified": true, "text": "Je suis déjà un grand fan de débardeurs gainants et celui-ci est devenu mon préféré. Je le porte presque tous les jours. Il donne une meilleure compression que les autres et un vrai maintien sans gêner les mouvements." } },
         { "type": "review", "settings": { "page": 1, "name": "Sherry T.", "date": "29/04/2026", "rating": 5, "verified": true, "text": "Mon mari les adore. Je les ai achetés pour mon chéri, il les porte et il en est très content. Ils taillent bien, donnent un rendu plus net sous les vêtements, et le rapport qualité/prix est excellent." } },
