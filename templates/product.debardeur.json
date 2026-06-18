@@ -199,6 +199,10 @@
             "manual_deal_block_id": ""
           }
         },
+        "bf_size_charts_block_xTPcYC": {
+          "type": "shopify://apps/bf-size-charts/blocks/block/47ee4f2e-eb5e-41af-9beb-e2786646bf2a",
+          "settings": {}
+        },
         "custom_liquid_yiY4Dt": {
           "type": "custom_liquid",
           "settings": {
@@ -349,6 +353,7 @@
         "5fcc0428-e768-4cb7-bea3-eb0274198dd1",
         "custom_liquid_DNryQ8",
         "kaching_bundles_app_block_R3qfNz",
+        "bf_size_charts_block_xTPcYC",
         "custom_liquid_yiY4Dt",
         "buy_buttons",
         "payment_badges_GfNhhT",
@@ -2007,6 +2012,7 @@
       "name": "Avis clients paginés",
       "settings": {
         "heading": "Avis clients",
+        "shop_name": "UndrDog",
         "average_rating": "4.60",
         "total_reviews": 1349,
         "questions_count": 27,
