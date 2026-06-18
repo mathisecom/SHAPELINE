@@ -419,13 +419,6 @@
     "ugc_video_slider_EzfHkw": {
       "type": "ugc-video-slider",
       "blocks": {
-        "video_wfQNAh": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/0616 (1).mp4",
-            "video_url": ""
-          }
-        },
         "video_efC6Fk": {
           "type": "video",
           "settings": {
@@ -453,14 +446,21 @@
             "video": "shopify://files/videos/0616 (1)(4).mp4",
             "video_url": ""
           }
+        },
+        "video_wfQNAh": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/0616 (1).mp4",
+            "video_url": ""
+          }
         }
       },
       "block_order": [
-        "video_wfQNAh",
         "video_efC6Fk",
         "video_kfDmHf",
         "video_6hqaCx",
-        "video_EcNER7"
+        "video_EcNER7",
+        "video_wfQNAh"
       ],
       "name": "Vidéos clients UGC",
       "settings": {
