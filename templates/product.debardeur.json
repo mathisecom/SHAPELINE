@@ -2019,7 +2019,7 @@
         "write_review_label": "Écrire un avis",
         "write_review_link": "",
         "ask_question_label": "Poser une question",
-        "ask_question_link": "",
+        "ask_question_link": "shopify://pages/contact",
         "total_pages": 7,
         "max_width": 1180,
         "section_padding_top": 28,
