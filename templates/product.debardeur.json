@@ -1542,6 +1542,455 @@
         "padding_top": 36,
         "padding_bottom": 24
       }
+    },
+    "avisclientspagination_x4zWX3": {
+      "type": "avisclientspagination",
+      "blocks": {
+        "review_hTNgrL": {
+          "type": "review",
+          "settings": {
+            "page": 1,
+            "name": "Charles J.",
+            "date": "05/04/2026",
+            "rating": 5,
+            "verified": true,
+            "text": "Je suis déjà un grand fan de débardeurs gainants et celui-ci est devenu mon préféré. Je le porte presque tous les jours. Il donne une meilleure compression que les autres et un vrai maintien sans gêner les mouvements."
+          }
+        },
+        "review_eEeyK3": {
+          "type": "review",
+          "settings": {
+            "page": 1,
+            "name": "Sherry T.",
+            "date": "29/04/2026",
+            "rating": 5,
+            "verified": true,
+            "text": "Mon mari les adore. Je les ai achetés pour mon chéri, il les porte et il en est très content. Ils taillent bien, donnent un rendu plus net sous les vêtements, et le rapport qualité/prix est excellent."
+          }
+        },
+        "review_Tm3Hmq": {
+          "type": "review",
+          "settings": {
+            "page": 1,
+            "name": "Joao L.",
+            "date": "24/04/2026",
+            "rating": 5,
+            "verified": true,
+            "text": "C’est le meilleur investissement que j’ai fait pour améliorer ma silhouette. Le tissu est très confortable, garde une bonne température corporelle quand je cours, et le rendu est propre. Exactement ce que je cherchais."
+          }
+        },
+        "review_WYhpP6": {
+          "type": "review",
+          "settings": {
+            "page": 1,
+            "name": "Jacob Clifton",
+            "date": "19/10/2023",
+            "rating": 5,
+            "verified": true,
+            "text": "Je les utilise comme sous-vêtements et ils me gardent au frais tout en étant confortables. Très bon boost de confiance. J’en ai acheté plusieurs, ça montre à quel point je les aime."
+          }
+        },
+        "review_VrgPr3": {
+          "type": "review",
+          "settings": {
+            "page": 1,
+            "name": "Z Brown",
+            "date": "26/02/2026",
+            "rating": 5,
+            "verified": true,
+            "text": "Je porte un peu de poids en trop autour du ventre et j’adore les poignées qui rendent l’utilisation pratique. Le débardeur gainant sous mes chemises change vraiment la silhouette."
+          }
+        },
+        "review_wKDRWy": {
+          "type": "review",
+          "settings": {
+            "page": 2,
+            "name": "Joe C.",
+            "date": "12/03/2026",
+            "rating": 5,
+            "verified": true,
+            "text": "Je suis très content de l’avoir. Le tissu est doux et je me sens plus confiant parce qu’il aide à cacher mon ventre. La qualité est au rendez-vous et je vais sûrement en reprendre."
+          }
+        },
+        "review_QAHmYW": {
+          "type": "review",
+          "settings": {
+            "page": 2,
+            "name": "Reditri S.",
+            "date": "01/03/2026",
+            "rating": 5,
+            "verified": true,
+            "text": "Livraison rapide. Je l’ai essayé dès réception et la taille était parfaite. Très confortable, ça aide vraiment à mettre une tenue en valeur."
+          }
+        },
+        "review_RY8CfW": {
+          "type": "review",
+          "settings": {
+            "page": 2,
+            "name": "Bin S.",
+            "date": "20/02/2026",
+            "rating": 5,
+            "verified": true,
+            "text": "J’ai perdu environ 15 livres cette année et ce produit m’aide à obtenir une silhouette plus serrée et plus nette. Il reste très confortable à porter."
+          }
+        },
+        "review_fTjRMi": {
+          "type": "review",
+          "settings": {
+            "page": 2,
+            "name": "Hector R.",
+            "date": "15/10/2023",
+            "rating": 5,
+            "verified": true,
+            "text": "Il donne une très bonne compression autour du ventre. Facile à enfiler et simple à retirer. Aucun signe d’inconfort en le portant. Très bon prix."
+          }
+        },
+        "review_nbec8V": {
+          "type": "review",
+          "settings": {
+            "page": 2,
+            "name": "Eddie",
+            "date": "17/10/2023",
+            "rating": 5,
+            "verified": true,
+            "text": "J’en ai acheté deux et je viens de les recevoir. Je suis vraiment satisfait. Le maintien est agréable, ça respire bien et le rendu sous mes chemises est propre."
+          }
+        },
+        "review_zGyN7c": {
+          "type": "review",
+          "settings": {
+            "page": 3,
+            "name": "Ricardo C.",
+            "date": "12/10/2023",
+            "rating": 5,
+            "verified": true,
+            "text": "Ce débardeur booste vraiment ma confiance. Il est moins gênant qu’un body, donc je peux travailler plus facilement. Il maintient bien la poitrine et je vais rester client."
+          }
+        },
+        "review_3rfyPa": {
+          "type": "review",
+          "settings": {
+            "page": 3,
+            "name": "Thomas P.",
+            "date": "09/10/2023",
+            "rating": 5,
+            "verified": true,
+            "text": "Je l’ai porté pendant une journée de travail de 12 heures et il a aidé ma posture. J’en ai déjà commandé un autre."
+          }
+        },
+        "review_MfYGtj": {
+          "type": "review",
+          "settings": {
+            "page": 3,
+            "name": "Anthony A.",
+            "date": "06/10/2023",
+            "rating": 5,
+            "verified": true,
+            "text": "Un peu cher mais ça vaut vraiment le prix. Le modèle 2XL est parfait, assez long et efficace sous les chemises. Je vais en commander d’autres."
+          }
+        },
+        "review_UgkBPU": {
+          "type": "review",
+          "settings": {
+            "page": 3,
+            "name": "Kerry M.",
+            "date": "05/10/2023",
+            "rating": 5,
+            "verified": true,
+            "text": "Exactement ce qu’il me fallait pour la salle. Je recommande."
+          }
+        },
+        "review_eRajmq": {
+          "type": "review",
+          "settings": {
+            "page": 3,
+            "name": "Brad M.",
+            "date": "06/10/2023",
+            "rating": 5,
+            "verified": true,
+            "text": "Je l’ai acheté pour mon père après une chirurgie abdominale. Il l’aime beaucoup, le maintien est bon et ça ne gêne pas ses mouvements."
+          }
+        },
+        "review_PnLHcw": {
+          "type": "review",
+          "settings": {
+            "page": 4,
+            "name": "Aj C.",
+            "date": "02/10/2023",
+            "rating": 5,
+            "verified": true,
+            "text": "J’adore. Il me garde au frais et évite que mon ventre se voie trop."
+          }
+        },
+        "review_hgAp8E": {
+          "type": "review",
+          "settings": {
+            "page": 4,
+            "name": "Victor S.",
+            "date": "02/10/2023",
+            "rating": 5,
+            "verified": true,
+            "text": "Même si le prix est un peu plus élevé, la compression est top. Le modèle 2.0 vaut vraiment le coup, il rentre le ventre et donne une grosse motivation."
+          }
+        },
+        "review_iP8ddm": {
+          "type": "review",
+          "settings": {
+            "page": 4,
+            "name": "Leo Anderson",
+            "date": "02/10/2023",
+            "rating": 4,
+            "verified": true,
+            "text": "Très satisfait de la valeur et de l’expérience globale. Je n’ai pas eu la bonne taille au début, mais le remplacement est en route. Merci."
+          }
+        },
+        "review_4Lqe4f": {
+          "type": "review",
+          "settings": {
+            "page": 4,
+            "name": "Michael A.",
+            "date": "29/09/2023",
+            "rating": 5,
+            "verified": true,
+            "text": "La coupe est incroyable. Je vais clairement en commander un autre pour ne jamais être sans."
+          }
+        },
+        "review_Hy6mVr": {
+          "type": "review",
+          "settings": {
+            "page": 4,
+            "name": "Kenny D.",
+            "date": "02/10/2023",
+            "rating": 5,
+            "verified": true,
+            "text": "Ce nouveau modèle a dépassé mes attentes. J’en recommande bientôt."
+          }
+        },
+        "review_CjNYWg": {
+          "type": "review",
+          "settings": {
+            "page": 5,
+            "name": "Robert G.",
+            "date": "27/09/2023",
+            "rating": 5,
+            "verified": true,
+            "text": "Je l’aime vraiment et je prévois d’en prendre d’autres. Merci beaucoup."
+          }
+        },
+        "review_Hf4ppr": {
+          "type": "review",
+          "settings": {
+            "page": 5,
+            "name": "Alexander S.",
+            "date": "26/09/2023",
+            "rating": 5,
+            "verified": true,
+            "text": "Un vrai changement pour moi. Facile à mettre et à enlever, on oublie presque qu’on le porte. Je ne me suis jamais senti aussi bien dans mes vêtements."
+          }
+        },
+        "review_mUngqy": {
+          "type": "review",
+          "settings": {
+            "page": 5,
+            "name": "Lawrence D.",
+            "date": "25/09/2023",
+            "rating": 5,
+            "verified": true,
+            "text": "Premier essai avec un débardeur gainant et je suis impressionné. La coupe est parfaite, agréable à porter et ça donne une silhouette plus nette."
+          }
+        },
+        "review_qGVjaa": {
+          "type": "review",
+          "settings": {
+            "page": 5,
+            "name": "Corey F.",
+            "date": "25/09/2023",
+            "rating": 5,
+            "verified": true,
+            "text": "C’est mon troisième achat, et pour une bonne raison. Le tissu est très doux et super confortable. J’adore le fait qu’il ne remonte presque pas."
+          }
+        },
+        "review_HxXnJh": {
+          "type": "review",
+          "settings": {
+            "page": 5,
+            "name": "Renalto B.",
+            "date": "24/09/2023",
+            "rating": 5,
+            "verified": true,
+            "text": "Excellent sous-vêtement. Après l’avoir essayé, je recommande à tous mes amis. Ça donne la confiance pour porter exactement ce que je veux."
+          }
+        },
+        "review_tfxzhD": {
+          "type": "review",
+          "settings": {
+            "page": 6,
+            "name": "Tim M.",
+            "date": "23/09/2023",
+            "rating": 5,
+            "verified": true,
+            "text": "Parfait pour le sport, à porter sous un t-shirt au travail ou avec un costume. Il ne te grossit pas, il aide juste à se sentir plus net."
+          }
+        },
+        "review_NHFfTf": {
+          "type": "review",
+          "settings": {
+            "page": 6,
+            "name": "James",
+            "date": "22/09/2023",
+            "rating": 5,
+            "verified": true,
+            "text": "Il maintient tout et je peux enfin cacher mon ventre. Ça donne l’air plus net, il a quasiment tout le temps une coupe confortable et ne coupe pas."
+          }
+        },
+        "review_3rDMqG": {
+          "type": "review",
+          "settings": {
+            "page": 6,
+            "name": "Rafael L.",
+            "date": "21/09/2023",
+            "rating": 5,
+            "verified": true,
+            "text": "J’adore ce débardeur. Il fonctionne et il est très confortable, même après plusieurs heures. Je me sens plus confiant en le portant."
+          }
+        },
+        "review_bRHAg6": {
+          "type": "review",
+          "settings": {
+            "page": 6,
+            "name": "Ryan D.",
+            "date": "19/09/2023",
+            "rating": 5,
+            "verified": true,
+            "text": "Je l’aime vraiment. Il fait ce qu’il est censé faire. Je l’utilise tous les jours."
+          }
+        },
+        "review_bUJ46M": {
+          "type": "review",
+          "settings": {
+            "page": 6,
+            "name": "Rogelio A.",
+            "date": "17/09/2023",
+            "rating": 5,
+            "verified": true,
+            "text": "Je viens de l’essayer et le rendu est super naturel. C’est comme porter un débardeur musclé."
+          }
+        },
+        "review_P4KG8A": {
+          "type": "review",
+          "settings": {
+            "page": 7,
+            "name": "Fred H.",
+            "date": "17/09/2023",
+            "rating": 4,
+            "verified": false,
+            "text": "La livraison a été légèrement retardée, mais le produit a dépassé mes attentes avec son service client, sa qualité et la première impression."
+          }
+        },
+        "review_TnYzBn": {
+          "type": "review",
+          "settings": {
+            "page": 7,
+            "name": "J***a",
+            "date": "10/09/2023",
+            "rating": 5,
+            "verified": false,
+            "text": "Très bon."
+          }
+        },
+        "review_Ak9mrE": {
+          "type": "review",
+          "settings": {
+            "page": 7,
+            "name": "Larry H.",
+            "date": "09/09/2023",
+            "rating": 5,
+            "verified": true,
+            "text": "J’aime la coupe et le rendu sur moi."
+          }
+        },
+        "review_7fpF7U": {
+          "type": "review",
+          "settings": {
+            "page": 7,
+            "name": "J***E",
+            "date": "09/09/2023",
+            "rating": 5,
+            "verified": false,
+            "text": "Excellent."
+          }
+        },
+        "review_MaRq4C": {
+          "type": "review",
+          "settings": {
+            "page": 7,
+            "name": "E. H.",
+            "date": "09/09/2023",
+            "rating": 5,
+            "verified": true,
+            "text": "Ça fait très bien le travail, il faut juste choisir la bonne taille. J’ai pris du large et ça fonctionne comme prévu."
+          }
+        }
+      },
+      "block_order": [
+        "review_hTNgrL",
+        "review_eEeyK3",
+        "review_Tm3Hmq",
+        "review_WYhpP6",
+        "review_VrgPr3",
+        "review_wKDRWy",
+        "review_QAHmYW",
+        "review_RY8CfW",
+        "review_fTjRMi",
+        "review_nbec8V",
+        "review_zGyN7c",
+        "review_3rfyPa",
+        "review_MfYGtj",
+        "review_UgkBPU",
+        "review_eRajmq",
+        "review_PnLHcw",
+        "review_hgAp8E",
+        "review_iP8ddm",
+        "review_4Lqe4f",
+        "review_Hy6mVr",
+        "review_CjNYWg",
+        "review_Hf4ppr",
+        "review_mUngqy",
+        "review_qGVjaa",
+        "review_HxXnJh",
+        "review_tfxzhD",
+        "review_NHFfTf",
+        "review_3rDMqG",
+        "review_bRHAg6",
+        "review_bUJ46M",
+        "review_P4KG8A",
+        "review_TnYzBn",
+        "review_Ak9mrE",
+        "review_7fpF7U",
+        "review_MaRq4C"
+      ],
+      "name": "Avis clients paginés",
+      "settings": {
+        "heading": "Avis clients",
+        "average_rating": "4.60",
+        "total_reviews": 1349,
+        "questions_count": 27,
+        "five_star_count": 906,
+        "four_star_count": 352,
+        "three_star_count": 90,
+        "two_star_count": 1,
+        "one_star_count": 0,
+        "gallery_label": "Photos et vidéos des clients",
+        "write_review_label": "Écrire un avis",
+        "write_review_link": "",
+        "ask_question_label": "Poser une question",
+        "ask_question_link": "",
+        "questions_empty_text": "Les questions/réponses peuvent être ajoutées ici si tu veux reproduire aussi l’onglet Questions.",
+        "total_pages": 7,
+        "max_width": 1180,
+        "section_padding_top": 28,
+        "section_padding_bottom": 48
+      }
     }
   },
   "order": [
@@ -1565,6 +2014,7 @@
     "horizontal_ticker_4zXxTq",
     "trustpilot_reviews_nMyGeH",
     "collapsible_content_AV8GQf",
-    "related-products"
+    "related-products",
+    "avisclientspagination_x4zWX3"
   ]
 }
