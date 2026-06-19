@@ -319,7 +319,7 @@
             "type": "progress_bar",
             "settings": {
               "goal_type": "subtotal",
-              "goal": 50,
+              "goal": 49,
               "progress_message": "Dépensez [amount] pour bénéficier de la livraison GRATUITE !",
               "success_message": "Félicitations ! Vous bénéficiez de la livraison GRATUITE !",
               "icon": "local_shipping",
@@ -430,6 +430,7 @@
           "0935e47c-9604-4faa-b47a-d61ca49c0c16",
           "68fdc0a0-cd7c-40b9-97b3-a76eb7917a47"
         ],
+        "custom_css": [],
         "settings": {
           "test_mode": false,
           "heading_text": "Panier • [count]",
