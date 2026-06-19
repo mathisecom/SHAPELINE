@@ -255,9 +255,9 @@
             "filled_icon_4": false,
             "top_text_4": "",
             "bottom_text_4": "",
-            "date_format": "mm_dd",
+            "date_format": "dd_mm",
             "days_labels": "Mon, Tue, Wed, Thu, Fri, Sat, Sun",
-            "months_labels": "Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec",
+            "months_labels": "Janv, Fév, Mars, Avr, Mai, Juin, Juil, Août, Sept, Oct, Nov, Déc",
             "color_scheme": "inverse",
             "margin_top": 24,
             "margin_bottom": 24
